@@ -1,0 +1,453 @@
+/* ==========================================================================
+   NAVEGACIÓN EDITORIAL CLÁSICA (Sin menús inferiores de App)
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background-color: rgba(250, 248, 245, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+.brand-seal {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+
+.brand- motto, .brand-sub {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent-bronze);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.4rem 0;
+  letter-spacing: 0.01em;
+  transition: color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accent-bronze);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+  color: var(--accent-bronze-dark);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.nav-cta:hover {
+  background-color: var(--accent-bronze);
+  color: #FFFFFF;
+  border-color: var(--accent-bronze);
+}
+
+/* Botón menú móvil */
+.mobile-menu-toggle {
+  display: none;
+  padding: 0.5rem;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-subtle);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1.25rem;
+    gap: 1.1rem;
+    box-shadow: var(--shadow-card);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+  }
+
+  .site-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    width: 100%;
+    padding: 0.4rem 0;
+  }
+
+  .nav-cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* ==========================================================================
+   BOTONES EDITORIALES
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border: 1px solid var(--text-primary);
+}
+
+.btn-primary:hover {
+  background-color: #2E2E33;
+  transform: translateY(-1px);
+}
+
+.btn-bronze {
+  background-color: var(--accent-bronze);
+  color: #FFFFFF;
+  border: 1px solid var(--accent-bronze);
+  box-shadow: 0 4px 14px rgba(154, 123, 62, 0.25);
+}
+
+.btn-bronze:hover {
+  background-color: var(--accent-bronze-dark);
+  border-color: var(--accent-bronze-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(154, 123, 62, 0.35);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.btn-outline:hover {
+  border-color: var(--text-primary);
+  background-color: var(--bg-subtle);
+}
+
+/* ==========================================================================
+   TARJETAS DE ESTUDIO (Catálogo de Biblioteca)
+   ========================================================================== */
+.study-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--accent-bronze-border);
+}
+
+.study-cover-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #141416;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.study-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.study-card:hover .study-cover-img {
+  transform: scale(1.03);
+}
+
+.study-edition-badge {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  background: rgba(22, 22, 24, 0.82);
+  backdrop-filter: blur(6px);
+  color: #FAF8F5;
+  border: 1px solid rgba(222, 203, 164, 0.35);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+}
+
+.study-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.study-series {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--accent-bronze);
+  margin-bottom: 0.5rem;
+}
+
+.study-title {
+  font-family: var(--font-serif);
+  font-size: 1.42rem;
+  font-weight: 600;
+  line-height: 1.24;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.study-scripture {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.study-excerpt {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1.35rem;
+  flex: 1;
+}
+
+.study-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.study-read-link {
+  font-weight: 600;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.study-card:hover .study-read-link {
+  color: var(--accent-bronze-dark);
+}
+
+/* ==========================================================================
+   BADGES DE IDIOMAS (Etymos)
+   ========================================================================== */
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: var(--radius-sm);
+}
+
+.lang-hebreo {
+  background-color: var(--badge-hebrew-bg);
+  color: var(--badge-hebrew-text);
+}
+
+.lang-griego {
+  background-color: var(--badge-greek-bg);
+  color: var(--badge-greek-text);
+}
+
+.lang-arameo {
+  background-color: var(--badge-aramaic-bg);
+  color: var(--badge-aramaic-text);
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA ACADÉMICO
+   ========================================================================== */
+.site-footer {
+  margin-top: 5rem;
+  background-color: var(--bg-subtle);
+  border-top: 1px solid var(--border-subtle);
+  padding: 3.5rem 0 2.5rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.footer-brand {
+  max-width: 420px;
+}
+
+.footer-brand .brand-name {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.footer-nav-col h4 {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-bronze);
+  margin-bottom: 0.85rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.footer-bottom {
+  padding-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.soli-deo {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--accent-bronze-dark);
+  letter-spacing: 0.04em;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etymos · Diccionario Exegético y Nombres Bíblicos | Códice Bíblico</title>
+  <meta name="description" content="Diccionario exegético de Hebreo, Griego y Arameo con raíces etimológicas y apartado de Nombres Bíblicos cambiados por Dios.">
+  <link rel="icon" type="image/png" href="assets/sello.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Navegación Clásica Editorial -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/sello.png" alt="Sello Códice Bíblico" class="brand-seal">
+        <div class="brand-text">
+          <span class="brand-name">CÓDICE BÍBLICO</span>
+          <span class="brand-sub">Biblioteca Teológica · Sola Scriptura</span>
+        </div>
+      </a>
+
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link">Estudios</a>
+        <a href="etymos.html" class="nav-link active">Etymos (Diccionario)</a>
+        <a href="nosotros.html" class="nav-link">Nosotros / Apoyo</a>
+        <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          Apoyar Ministerio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Etymos -->
+    <section class="hero-editorial">
+      <div class="container">
+        <span class="eyebrow">Léxico de los Idiomas Originales</span>
+        <h1>Etymos: Diccionario Exegético</h1>
+        <p class="hero-lead">
+          Explora las raíces del Hebreo, Griego y Arameo bíblico, junto con el estudio teológico de los nombres de nacimiento y los nombres transformados por el pacto de Dios.
+        </p>
+
+        <!-- Selector de Apartado: Léxico vs. Nombres Bíblicos -->
+        <div class="etymos-mode-switcher" role="tablist" aria-label="Apartados de Etymos">
+          <button type="button" class="mode-btn active" data-mode="lexico">
+            📜 Léxico Exegético (Hebreo · Griego · Arameo)
+          </button>
+          <button type="button" class="mode-btn" data-mode="nombres">
+            ✦ Nombres Bíblicos (Nacimiento / Cambio Divino)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Barra de Búsqueda y Filtros -->
+      <div class="etymos-toolbar">
+        <div class="etymos-search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="search"
+            id="etymos-search"
+            class="etymos-search-input"
+            placeholder="Buscar palabra en Griego, Hebreo, Arameo o español (ej. Hesed, Gracia, Logos, Kabod)..."
+            autocomplete="off"
+          >
+        </div>
+
+        <!-- Filtros para Léxico -->
+        <div class="filter-tabs" id="etymos-lang-filters">
+          <button type="button" class="filter-tab active" data-idioma="todos">Todos</button>
+          <button type="button" class="filter-tab" data-idioma="hebreo">Hebreo</button>
+          <button type="button" class="filter-tab" data-idioma="griego">Griego</button>
+          <button type="button" class="filter-tab" data-idioma="arameo">Arameo</button>
+        </div>
+
+        <!-- Filtros para Nombres Bíblicos -->
+        <div class="filter-tabs" id="etymos-name-filters" style="display: none;">
+          <button type="button" class="filter-tab active" data-tipo="cambio">Nombres Cambiados por Dios (ej. Jacob / Israel)</button>
+          <button type="button" class="filter-tab" data-tipo="todos">Todos los Nombres Bíblicos</button>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.25rem; font-size: 0.82rem; color: var(--text-muted);" id="etymos-count">
+        Cargando registros...
+      </div>
+
+      <!-- Contenedor 1: Léxico Exegético -->
+      <div class="lexicon-grid" id="lexicon-results"></div>
+
+      <!-- Contenedor 2: Nombres Bíblicos -->
+      <div class="names-grid" id="names-results" style="display: none;"></div>
+    </section>
+
+    <!-- Modal Académico de Ficha Exegética Visual -->
+    <div class="etymos-modal-backdrop" id="etymos-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="etymos-modal-title">
+      <div class="etymos-modal" id="etymos-modal-content">
+        <!-- Inyectado dinámicamente por js/etymos.js -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">CÓDICE BÍBLICO</div>
+          <p class="footer-desc">
+            Plataforma de literatura teológica y análisis exegético comprometida con la suficiencia de las Escrituras y la centralidad de Jesucristo.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Catálogo de Estudios</a></li>
+            <li><a href="etymos.html">Etymos · Léxico y Nombres</a></li>
+            <li><a href="nosotros.html">Visión y Apoyo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Ministerio</h4>
+          <ul class="footer-links">
+            <li><a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer">Apoyar Ministerio</a></li>
+            <li><a href="nosotros.html#apoyo">Conocer la Visión</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Códice Bíblico · Domingo Curbeira. Todos los derechos reservados.</span>
+        <span class="soli-deo">Soli Deo Gloria</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/etymos.js"></script>
+</body>
+</html>

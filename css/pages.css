@@ -1,0 +1,1282 @@
+/* ==========================================================================
+   1. PÁGINA DE INICIO / CATÁLOGO DE ESTUDIOS
+   ========================================================================== */
+.hero-editorial {
+  padding: 4.5rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-page) 100%);
+}
+
+.hero-editorial h1 {
+  font-size: clamp(2.35rem, 4.5vw, 3.6rem);
+  max-width: 780px;
+  margin: 0 auto 1.15rem;
+  font-weight: 600;
+}
+
+.hero-lead {
+  font-family: var(--font-reading);
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  color: var(--text-secondary);
+  max-width: 660px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.75;
+}
+
+.hero-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.hero-pillars span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.hero-pillars span::before {
+  content: '•';
+  color: var(--accent-bronze);
+}
+
+.hero-pillars span:first-child::before {
+  display: none;
+}
+
+/* Barra de Filtros y Búsqueda del Catálogo */
+.catalog-controls {
+  padding: 2.25rem 0 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.filter-tab:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.filter-tab.active {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+}
+
+.search-box {
+  position: relative;
+  min-width: 280px;
+  flex: 0 1 320px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.4rem;
+  font-size: 0.88rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.search-input:focus {
+  border-color: var(--accent-bronze);
+  box-shadow: 0 0 0 3px rgba(154, 123, 62, 0.12);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+}
+
+/* Grid de Libros / Estudios */
+.studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .studies-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-box {
+    flex: 1 1 100%;
+  }
+}
+
+/* ==========================================================================
+   2. PÁGINA DE LECTURA DE ESTUDIO (estudio.html - Visor PDF Protegido)
+   ========================================================================== */
+.reader-breadcrumb {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface);
+}
+
+.breadcrumb-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.back-link:hover {
+  color: var(--accent-bronze-dark);
+}
+
+.reader-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 2.25rem;
+  padding: 2rem 0 4rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contenedor Protegido del Visor PDF.js */
+.pdf-protected-wrapper {
+  background-color: var(--bg-viewer);
+  border-radius: var(--radius-md);
+  border: 1px solid #333230;
+  box-shadow: var(--shadow-card);
+  /* Bloqueo total de selección e interacción nativa */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.pdf-toolbar {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 20;
+  background-color: var(--bg-viewer-bar);
+  color: #E4E2DD;
+  padding: 0.75rem 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-bottom: 1px solid #2E2D2A;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.pdf-toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.pdf-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  background-color: #2A2926;
+  color: #F4F2ED;
+  border: 1px solid #3E3C38;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.pdf-tool-btn:hover:not(:disabled) {
+  background-color: var(--accent-bronze);
+  border-color: var(--accent-bronze);
+  color: #FFFFFF;
+}
+
+.pdf-tool-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pdf-page-indicator {
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  padding: 0 0.5rem;
+  color: #CFCBC2;
+}
+
+.pdf-security-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: #B8A072;
+  background: rgba(154, 123, 62, 0.14);
+  border: 1px solid rgba(154, 123, 62, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.pdf-canvas-stage {
+  position: relative;
+  min-height: 680px;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--bg-viewer);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  overflow-x: auto;
+}
+
+.pdf-page-container {
+  position: relative;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  box-shadow: var(--shadow-pdf);
+  border-radius: 2px;
+  max-width: 100%;
+}
+
+.pdf-page-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Escudo transparente sobre el canvas para impedir arrastrar o guardar imagen */
+.pdf-shield-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: transparent;
+  cursor: default;
+}
+
+/* Columna Lateral (Ficha Técnica + Tarjeta Destacada de Descarga/Apoyo) */
+.reader-sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + 1.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.study-meta-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.study-meta-panel h1 {
+  font-size: 1.55rem;
+  margin-bottom: 0.65rem;
+}
+
+.study-meta-ref {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.86rem;
+  color: var(--accent-bronze-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.study-meta-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Tarjeta Destacada Premium / Descargar PDF Oficial */
+.official-pdf-card {
+  background: linear-gradient(180deg, #FDFBF7 0%, #F6EFE2 100%);
+  border: 1.5px solid var(--accent-bronze-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.6rem;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.official-pdf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-bronze-dark);
+  background-color: rgba(154, 123, 62, 0.12);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+}
+
+.official-pdf-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+
+.official-pdf-card p {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.15rem;
+}
+
+.official-perks {
+  list-style: none;
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+}
+
+.official-perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.official-perks li span {
+  color: var(--accent-bronze-dark);
+  font-weight: 700;
+}
+
+.official-pdf-card .btn-bronze {
+  width: 100%;
+  padding: 0.95rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.official-note {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+/* ==========================================================================
+   3. PÁGINA ETYMOS (Diccionario Exegético + Nombres Bíblicos)
+   ========================================================================== */
+.etymos-mode-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.mode-btn.active {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.etymos-toolbar {
+  padding: 2rem 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 2rem;
+}
+
+.etymos-search-wrap {
+  position: relative;
+  flex: 1 1 380px;
+}
+
+.etymos-search-input {
+  width: 100%;
+  padding: 0.85rem 1.2rem 0.85rem 2.75rem;
+  font-size: 0.95rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+.etymos-search-input:focus {
+  border-color: var(--accent-bronze);
+  box-shadow: 0 0 0 3px rgba(154, 123, 62, 0.12);
+}
+
+/* Grid de Términos Exegéticos */
+.lexicon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.lexicon-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.lexicon-card:hover {
+  border-color: var(--accent-bronze-border);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.lexicon-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.85rem;
+}
+
+.lexicon-original {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  line-height: 1.1;
+}
+
+.lexicon-term-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.lexicon-translit {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.lexicon-field-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-bronze);
+  margin-bottom: 0.2rem;
+}
+
+.lexicon-root {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.lexicon-meaning {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.lexicon-christ {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-page);
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Tarjetas de Nombres Bíblicos (Nacimiento vs. Nombre Cambiado por Dios) */
+.names-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  gap: 1.75rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .lexicon-grid,
+  .names-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.name-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: all var(--transition);
+}
+
+.name-card:hover {
+  border-color: var(--accent-bronze-border);
+  box-shadow: var(--shadow-card);
+}
+
+.name-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+@media (max-width: 560px) {
+  .name-comparison {
+    grid-template-columns: 1fr;
+  }
+  .name-arrow {
+    transform: rotate(90deg);
+    margin: 0.25rem auto;
+  }
+}
+
+.name-phase {
+  padding: 1.15rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.name-phase.birth {
+  background-color: var(--bg-page);
+}
+
+.name-phase.divine {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze-border);
+}
+
+.phase-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.name-phase.divine .phase-tag {
+  color: var(--accent-bronze-dark);
+}
+
+.phase-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.phase-original {
+  font-size: 1.1rem;
+  color: var(--accent-bronze-dark);
+  font-family: var(--font-serif);
+}
+
+.phase-meaning {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-top: 0.25rem;
+}
+
+.name-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-bronze);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.name-exegesis {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ==========================================================================
+   4. PÁGINA NOSOTROS / APOYO (nosotros.html)
+   ========================================================================== */
+.about-section {
+  padding: 4rem 0;
+}
+
+.manifesto-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .manifesto-box {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+.manifesto-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.manifesto-box p {
+  font-family: var(--font-reading);
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.pillar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.pillar-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.support-banner {
+  background: linear-gradient(180deg, #FDFBF7 0%, #F5EFE2 100%);
+  border: 1.5px solid var(--accent-bronze-border);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.support-banner h2 {
+  font-size: 2.1rem;
+  margin-bottom: 0.85rem;
+}
+
+.support-banner p {
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+/* ==========================================================================
+   5. INFOGRAFÍAS, ESQUEMAS DOCTRINALES Y MAPAS TEOLÓGICOS
+   ========================================================================== */
+
+/* Mapa Visual de Rutas Doctrinales en Inicio (index.html) */
+.doctrinal-paths-section {
+  padding: 2.25rem 0 0.5rem;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.path-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  transition: all var(--transition);
+  cursor: pointer;
+  text-align: left;
+}
+
+.path-card:hover {
+  border-color: var(--accent-bronze);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.path-step-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  margin-top: 0.25rem;
+}
+
+.path-step-pill {
+  background-color: var(--accent-bronze-light);
+  border: 1px solid var(--accent-bronze-border);
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+}
+
+/* Selector de Vista en Sala de Lectura (estudio.html) */
+.reader-view-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.reader-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.reader-tab-btn.active,
+.reader-tab-btn:hover {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border-color: var(--text-primary);
+}
+
+/* Panel de Infografía Doctrinal (estudio.html) */
+.infographic-section {
+  margin-top: 2.5rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .infographic-section {
+    padding: 1.5rem 1.15rem;
+  }
+}
+
+.infographic-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 2.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.infographic-header h2 {
+  font-size: 1.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Diagrama de Proceso de 3 Pasos */
+.flow-diagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .flow-diagram {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flow-step-card {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem;
+  position: relative;
+}
+
+.flow-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.45rem;
+}
+
+.flow-step-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Tabla Visual de Contraste Teológico (Error vs. Verdad) */
+.contrast-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .contrast-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contrast-col {
+  padding: 1.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.contrast-col.error-col {
+  background-color: #FAF6F5;
+  border-color: #E6D5D2;
+}
+
+.contrast-col.truth-col {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze-border);
+}
+
+.contrast-col-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.error-col .contrast-col-header {
+  color: #7F2D24;
+}
+
+.truth-col .contrast-col-header {
+  color: var(--accent-bronze-dark);
+}
+
+.contrast-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.contrast-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.55;
+}
+
+.contrast-icon {
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.error-col .contrast-icon {
+  color: #9E3B30;
+}
+
+.truth-col .contrast-icon {
+  color: var(--accent-bronze-dark);
+}
+
+/* Tarjetas de Axiomas Teológicos (Citas compartibles) */
+.axioms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.axiom-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-page) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.axiom-quote {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.94rem;
+  color: var(--text-primary);
+  line-height: 1.65;
+}
+
+.axiom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border-subtle);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.btn-copy-axiom {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--accent-bronze-border);
+  border-radius: 3px;
+  background-color: var(--accent-bronze-light);
+  transition: all 0.15s ease;
+}
+
+.btn-copy-axiom:hover {
+  background-color: var(--accent-bronze);
+  color: #FFFFFF;
+}
+
+/* Chips de Conexión con Etymos */
+.etymos-chips-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.etymos-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+
+.etymos-chip:hover {
+  border-color: var(--accent-bronze);
+  background-color: var(--accent-bronze-light);
+  color: var(--accent-bronze-dark);
+}
+
+/* Enlace a Estudio PDF dentro de Tarjetas Etymos y Modal Exegético */
+.lexicon-study-link {
+  margin-top: 0.35rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.lexicon-study-anchor {
+  color: var(--accent-bronze-dark);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.lexicon-study-anchor:hover {
+  text-decoration: underline;
+}
+
+.btn-open-modal {
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-primary);
+  padding: 0.28rem 0.65rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 3px;
+  background-color: var(--bg-page);
+}
+
+.btn-open-modal:hover {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+}
+
+/* Modal Académico para Ficha Visual en Etymos */
+.etymos-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  background: rgba(22, 22, 24, 0.62);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.etymos-modal-backdrop.open {
+  display: flex;
+}
+
+.etymos-modal {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--accent-bronze-border);
+  border-radius: var(--radius-md);
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card-hover);
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  background: var(--bg-page);
+}
+
+.modal-close-btn:hover {
+  background: var(--text-primary);
+  color: #FFFFFF;
+}
+
+/* Diagrama Interactivo de Las 5 Solas y Ordo Salutis (nosotros.html) */
+.solas-interactive-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.solas-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .solas-tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sola-tab-btn {
+  padding: 0.85rem 0.6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-page);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.sola-tab-btn strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
+.sola-tab-btn span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sola-tab-btn.active,
+.sola-tab-btn:hover {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze);
+}
+
+.sola-tab-btn.active strong {
+  color: var(--accent-bronze-dark);
+}
+
+.sola-detail-panel {
+  background-color: var(--bg-page);
+  border: 1px solid var(--accent-bronze-border);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+}
+
+.ordo-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .ordo-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ordo-step {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ordo-step-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-bronze-dark);
+}
+
+.ordo-step h4 {
+  font-size: 1.25rem;
+}
+
+.ordo-step p {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}

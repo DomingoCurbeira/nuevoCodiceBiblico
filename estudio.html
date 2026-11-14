@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lectura de Estudio | Códice Bíblico</title>
+  <meta name="description" content="Sala de lectura teológica de Códice Bíblico.">
+  <link rel="icon" type="image/png" href="assets/sello.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Navegación Clásica Editorial -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/sello.png" alt="Sello Códice Bíblico" class="brand-seal">
+        <div class="brand-text">
+          <span class="brand-name">CÓDICE BÍBLICO</span>
+          <span class="brand-sub">Biblioteca Teológica · Sola Scriptura</span>
+        </div>
+      </a>
+
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">Estudios</a>
+        <a href="etymos.html" class="nav-link">Etymos (Diccionario)</a>
+        <a href="nosotros.html" class="nav-link">Nosotros / Apoyo</a>
+        <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          Apoyar Ministerio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Barra de Retorno al Catálogo -->
+  <div class="reader-breadcrumb">
+    <div class="container breadcrumb-inner">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Volver al catálogo de estudios
+      </a>
+      <span style="font-size: 0.82rem; color: var(--text-muted);" id="breadcrumb-study-title">Sala de Lectura</span>
+    </div>
+  </div>
+
+  <!-- Layout de Lectura (Visor PDF.js Protegido + Infografía Doctrinal + Barra Lateral) -->
+  <main class="container">
+    <div class="reader-layout">
+
+      <div>
+        <!-- Pestañas de Navegación Rápida entre Documento e Infografía -->
+        <div class="reader-view-tabs">
+          <button type="button" class="reader-tab-btn active" id="tab-btn-pdf">
+            📖 Documento Completo (PDF)
+          </button>
+          <button type="button" class="reader-tab-btn" id="tab-btn-infografia">
+            📐 Infografía y Esquema Doctrinal
+          </button>
+          <button type="button" class="reader-tab-btn" id="btn-share-study" style="margin-left: auto;">
+            🔗 Compartir Estudio
+          </button>
+        </div>
+
+        <!-- Columna Principal: Visor PDF.js en <canvas> sin selección ni copia -->
+        <section class="pdf-protected-wrapper" id="pdf-protected-wrapper" aria-label="Visor de documento protegido">
+          <div class="pdf-toolbar">
+            <div class="pdf-toolbar-group">
+              <button type="button" class="pdf-tool-btn" id="pdf-prev-page" title="Página anterior">
+                ← Anterior
+              </button>
+              <span class="pdf-page-indicator" id="pdf-page-indicator">Cargando...</span>
+              <button type="button" class="pdf-tool-btn" id="pdf-next-page" title="Página siguiente">
+                Siguiente →
+              </button>
+            </div>
+
+            <div class="pdf-toolbar-group">
+              <button type="button" class="pdf-tool-btn" id="pdf-zoom-out" title="Reducir zoom">−</button>
+              <span class="pdf-page-indicator" id="pdf-zoom-label">100%</span>
+              <button type="button" class="pdf-tool-btn" id="pdf-zoom-in" title="Aumentar zoom">+</button>
+              <button type="button" class="pdf-tool-btn" id="pdf-fullscreen" title="Pantalla completa">
+                ⛶ Ampliar
+              </button>
+            </div>
+
+            <div class="pdf-security-pill" title="Lectura web protegida contra copia">
+              🔒 Lectura en línea protegida
+            </div>
+          </div>
+
+          <div class="pdf-canvas-stage" id="pdf-canvas-stage">
+            <div style="color: #CFCBC2; padding: 4rem 1rem; text-align: center;">
+              Abriendo pergamino digital en alta definición...
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección de Infografía Doctrinal, Esquema de Contraste y Axiomas -->
+        <section class="infographic-section" id="study-infographic-section" aria-label="Infografía y síntesis doctrinal">
+          <!-- Renderizado dinámico por js/visor-pdf.js -->
+        </section>
+      </div>
+
+      <!-- Columna Lateral: Información del Estudio + CTA "Apoyar el Ministerio" -->
+      <aside class="reader-sidebar">
+        <!-- Ficha Técnica del Estudio -->
+        <div class="study-meta-panel">
+          <span class="eyebrow" id="study-series">Serie Doctrinal</span>
+          <h1 id="study-title">Cargando estudio...</h1>
+          <div class="study-meta-ref" id="study-ref"></div>
+          <p class="study-meta-desc" id="study-desc"></p>
+        </div>
+
+        <!-- Tarjeta de Apoyo al Ministerio -->
+        <div class="official-pdf-card">
+          <div class="official-pdf-badge">
+            ✦ Ministerio Gratuito
+          </div>
+          <h3>Apoyar el Ministerio</h3>
+          <p>
+            «Damos de gracia lo que de gracia recibimos». Todos los estudios y recursos de Códice Bíblico son completamente gratuitos. Si este material ha edificado tu vida, tu ofrenda voluntaria nos ayuda a sostener la plataforma y producir nuevos estudios teológicos.
+          </p>
+          <a
+            href="https://ko-fi.com/codicebiblico"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-bronze"
+            id="btn-official-pdf"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            Apoyar Ministerio
+          </a>
+          <span class="official-note">Ofrenda voluntaria vía Ko-fi</span>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: 0;">
+        <span>&copy; 2026 Códice Bíblico · Domingo Curbeira. Prohibida su reproducción comercial sin autorización.</span>
+        <span class="soli-deo">Soli Deo Gloria</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mozilla PDF.js (Renderizado exclusivo en Canvas) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/visor-pdf.js"></script>
+</body>
+</html>

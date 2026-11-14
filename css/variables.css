@@ -1,0 +1,50 @@
+:root {
+  /* Paleta Editorial Académica (Luz, Papel y Bronce) */
+  --bg-page: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F3EFEA;
+  --bg-viewer: #232220;
+  --bg-viewer-bar: #181716;
+
+  /* Textos (Tinta de Impresión) */
+  --text-primary: #161618;
+  --text-secondary: #4A4A50;
+  --text-muted: #76767E;
+  --text-inverse: #FAF8F5;
+
+  /* Acentos (Bronce Teológico / Dorado Antiguo) */
+  --accent-bronze: #9A7B3E;
+  --accent-bronze-dark: #7A5F2B;
+  --accent-bronze-light: #F7F2E7;
+  --accent-bronze-border: #DECBA4;
+
+  /* Idiomas Bíblicos (Badges sutiles) */
+  --badge-hebrew-bg: #F5EFE6;
+  --badge-hebrew-text: #7C5828;
+  --badge-greek-bg: #EDF2F7;
+  --badge-greek-text: #2B4C6F;
+  --badge-aramaic-bg: #F3E8EE;
+  --badge-aramaic-text: #6B3050;
+
+  /* Bordes y Sombras */
+  --border-subtle: #E6E1D8;
+  --border-strong: #D1C9BC;
+  --shadow-sm: 0 2px 8px rgba(22, 22, 24, 0.04);
+  --shadow-card: 0 8px 24px -4px rgba(22, 22, 24, 0.06), 0 2px 6px -1px rgba(22, 22, 24, 0.04);
+  --shadow-card-hover: 0 18px 36px -6px rgba(22, 22, 24, 0.11), 0 4px 12px -2px rgba(22, 22, 24, 0.06);
+  --shadow-pdf: 0 12px 32px rgba(0, 0, 0, 0.38);
+
+  /* Tipografía */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-reading: 'Lora', Georgia, serif;
+
+  /* Layout */
+  --container-max: 1220px;
+  --container-narrow: 860px;
+  --header-height: 78px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --transition: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}

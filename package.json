@@ -1,0 +1,11 @@
+{
+  "name": "codice-biblico",
+  "version": "2.0.0",
+  "description": "Códice Bíblico — Biblioteca Teológica y Exegética",
+  "main": "netlify.js",
+  "scripts": {
+    "build": "node netlify.js"
+  },
+  "author": "Domingo Curbeira",
+  "license": "ISC"
+}
