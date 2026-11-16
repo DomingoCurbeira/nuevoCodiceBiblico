@@ -291,9 +291,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="infographic-header">
         <span class="eyebrow">Esquema Doctrinal e Infografía</span>
         <h2>${info.tema_central}</h2>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.35rem;">
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.35rem; margin-bottom: 1rem;">
           Síntesis teológica visual basada en ${estudio.referencia}
         </p>
+        <button type="button" class="btn btn-outline" id="btn-download-infographic-only" style="padding: 0.5rem 1.1rem; font-size: 0.8rem;">
+          🖼️ Descargar Lámina de Infografía (Imagen HD)
+        </button>
       </div>
 
       <!-- 1. Flujo / Progresión Teológica -->
@@ -390,7 +393,261 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
-// Lógica del Botón "Descargar PDF" y Modal de Benefactor (estudio.html)
+// ==========================================================================
+// GENERADOR DE LÁMINA DE INFOGRAFÍA HD Y FUSIÓN CON EL PDF DEL ESTUDIO
+// ==========================================================================
+function generarCanvasInfografia(estudio) {
+  const info = estudio.infografia;
+  const W = 1600;
+  const H = 2260;
+  const canvas = document.createElement('canvas');
+  canvas.width = W;
+  canvas.height = H;
+  const ctx = canvas.getContext('2d');
+
+  // Helper para texto multilínea
+  function drawWrappedText(text, x, y, maxWidth, lineHeight, font, color, align = 'left') {
+    ctx.font = font;
+    ctx.fillStyle = color;
+    ctx.textAlign = align;
+    const words = String(text || '').split(' ');
+    let line = '';
+    let curY = y;
+    for (let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      if (ctx.measureText(testLine).width > maxWidth && n > 0) {
+        ctx.fillText(line.trim(), x, curY);
+        line = words[n] + ' ';
+        curY += lineHeight;
+      } else {
+        line = testLine;
+      }
+    }
+    if (line.trim()) {
+      ctx.fillText(line.trim(), x, curY);
+      curY += lineHeight;
+    }
+    return curY;
+  }
+
+  // 1. Fondo Pergamino Editorial y Marco Doble en Bronce
+  ctx.fillStyle = '#FAF8F5';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.strokeStyle = '#9A7B3E';
+  ctx.lineWidth = 4;
+  ctx.strokeRect(48, 48, W - 96, H - 96);
+
+  ctx.strokeStyle = '#DECBA4';
+  ctx.lineWidth = 1.5;
+  ctx.strokeRect(62, 62, W - 124, H - 124);
+
+  // 2. Cabecera Editorial
+  ctx.fillStyle = '#9A7B3E';
+  ctx.font = 'bold 22px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('CÓDICE BÍBLICO  ·  ESQUEMA DOCTRINAL E INFOGRAFÍA', W / 2, 130);
+
+  let nextY = drawWrappedText(
+    estudio.titulo,
+    W / 2,
+    190,
+    W - 260,
+    52,
+    'bold 44px Georgia, serif',
+    '#161618',
+    'center'
+  );
+
+  nextY = drawWrappedText(
+    info.tema_central,
+    W / 2,
+    nextY + 10,
+    W - 300,
+    38,
+    'italic 28px Georgia, serif',
+    '#7A5F2B',
+    'center'
+  );
+
+  ctx.font = '500 22px Inter, sans-serif';
+  ctx.fillStyle = '#686870';
+  ctx.fillText(`Pasajes Base: ${estudio.referencia}`, W / 2, nextY + 18);
+
+  // Línea divisoria
+  const divY = nextY + 50;
+  ctx.strokeStyle = '#E6E1D8';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(110, divY);
+  ctx.lineTo(W - 110, divY);
+  ctx.stroke();
+
+  // 3. SECCIÓN I: PROGRESIÓN TEOLÓGICA (3 Columnas)
+  let sec1Y = divY + 52;
+  ctx.textAlign = 'left';
+  ctx.font = 'bold 21px Inter, sans-serif';
+  ctx.fillStyle = '#9A7B3E';
+  ctx.fillText('I. PROGRESIÓN TEOLÓGICA DEL PASAJE', 110, sec1Y);
+
+  const boxTop = sec1Y + 25;
+  const boxW = 438;
+  const boxH = 290;
+  const gap = 33;
+
+  info.flujo.slice(0, 3).forEach((f, idx) => {
+    const bx = 110 + idx * (boxW + gap);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(bx, boxTop, boxW, boxH);
+    ctx.strokeStyle = '#DECBA4';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(bx, boxTop, boxW, boxH);
+
+    // Franja superior bronce
+    ctx.fillStyle = '#9A7B3E';
+    ctx.fillRect(bx, boxTop, boxW, 8);
+
+    const ty = drawWrappedText(
+      f.paso,
+      bx + 26,
+      boxTop + 52,
+      boxW - 52,
+      34,
+      'bold 27px Georgia, serif',
+      '#161618',
+      'left'
+    );
+
+    drawWrappedText(
+      f.detalle,
+      bx + 26,
+      ty + 14,
+      boxW - 52,
+      32,
+      '400 22px Inter, sans-serif',
+      '#4A4A50',
+      'left'
+    );
+  });
+
+  // 4. SECCIÓN II: CONTRASTE DOCTRINAL (2 Columnas)
+  const sec2Y = boxTop + boxH + 65;
+  ctx.textAlign = 'left';
+  ctx.font = 'bold 21px Inter, sans-serif';
+  ctx.fillStyle = '#9A7B3E';
+  ctx.fillText('II. CONTRASTE DOCTRINAL (ERROR RELIGIOSO VS. VERDAD DEL EVANGELIO)', 110, sec2Y);
+
+  const colTop = sec2Y + 25;
+  const colW = 670;
+  const colH = 560;
+
+  // Columna Izquierda: Error
+  ctx.fillStyle = '#FAF5F4';
+  ctx.fillRect(110, colTop, colW, colH);
+  ctx.strokeStyle = '#E3C9C5';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(110, colTop, colW, colH);
+
+  let errY = drawWrappedText(
+    `✕  ${info.contraste.error_titulo}`,
+    142,
+    colTop + 52,
+    colW - 64,
+    36,
+    'bold 28px Georgia, serif',
+    '#7F2D24',
+    'left'
+  );
+  errY += 18;
+  info.contraste.error_puntos.forEach(pt => {
+    errY = drawWrappedText(
+      `•  ${pt}`,
+      142,
+      errY,
+      colW - 64,
+      33,
+      '400 22px Inter, sans-serif',
+      '#4A4A50',
+      'left'
+    );
+    errY += 20;
+  });
+
+  // Columna Derecha: Verdad
+  const rightX = 110 + colW + 40;
+  ctx.fillStyle = '#F7F2E7';
+  ctx.fillRect(rightX, colTop, colW, colH);
+  ctx.strokeStyle = '#DECBA4';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(rightX, colTop, colW, colH);
+
+  let trY = drawWrappedText(
+    `✦  ${info.contraste.verdad_titulo}`,
+    rightX + 32,
+    colTop + 52,
+    colW - 64,
+    36,
+    'bold 28px Georgia, serif',
+    '#7A5F2B',
+    'left'
+  );
+  trY += 18;
+  info.contraste.verdad_puntos.forEach(pt => {
+    trY = drawWrappedText(
+      `✓  ${pt}`,
+      rightX + 32,
+      trY,
+      colW - 64,
+      33,
+      '400 22px Inter, sans-serif',
+      '#2B2B30',
+      'left'
+    );
+    trY += 20;
+  });
+
+  // 5. SECCIÓN III: AXIOMAS DE VIANDA SÓLIDA
+  const sec3Y = colTop + colH + 65;
+  ctx.textAlign = 'left';
+  ctx.font = 'bold 21px Inter, sans-serif';
+  ctx.fillStyle = '#9A7B3E';
+  ctx.fillText('III. AXIOMAS TEOLÓGICOS DE «VIANDA SÓLIDA»', 110, sec3Y);
+
+  let axY = sec3Y + 25;
+  info.axiomas.slice(0, 3).forEach((ax, idx) => {
+    const cardH = 148;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(110, axY, W - 220, cardH);
+    ctx.strokeStyle = '#D1C9BC';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(110, axY, W - 220, cardH);
+
+    ctx.fillStyle = '#9A7B3E';
+    ctx.fillRect(110, axY, 8, cardH);
+
+    drawWrappedText(
+      `Axioma ${idx + 1}:  ${ax}`,
+      142,
+      axY + 52,
+      W - 284,
+      34,
+      'italic 24px Georgia, serif',
+      '#161618',
+      'left'
+    );
+    axY += cardH + 22;
+  });
+
+  // 6. Pie de Lámina
+  ctx.textAlign = 'center';
+  ctx.font = 'italic 26px Georgia, serif';
+  ctx.fillStyle = '#7A5F2B';
+  ctx.fillText('Códice Bíblico  ·  Soli Deo Gloria  ·  codicebiblico.netlify.app', W / 2, H - 85);
+
+  return canvas;
+}
+
+// Lógica del Botón "Descargar PDF + Infografía" y Modal de Benefactor (estudio.html)
 document.addEventListener('DOMContentLoaded', async () => {
   const btnDownload = document.getElementById('btn-download-pdf');
   const modalBackdrop = document.getElementById('download-modal-backdrop');
@@ -405,6 +662,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const params = new URLSearchParams(window.location.search);
   const studyId = params.get('id') || 'bautismo';
   let estudioActual = null;
+  let modoDescargaPendiente = 'completo'; // 'completo' | 'lamina'
 
   try {
     const res = await fetch('data/estudios.json');
@@ -416,27 +674,108 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function actualizarEstadoBoton() {
     if (window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado()) {
-      btnDownload.innerHTML = '📥 Descargar PDF (Habilitado)';
+      btnDownload.innerHTML = '📥 Descargar PDF + Infografía (Habilitado)';
       btnDownload.style.borderColor = 'var(--accent-bronze)';
       btnDownload.style.color = 'var(--accent-bronze-dark)';
     }
   }
 
-  function dispararDescargaDirecta() {
-    if (!estudioActual || !estudioActual.pdfUrl) return;
+  async function descargarLaminaInfografia() {
+    if (!estudioActual || !estudioActual.infografia) return;
+    const canvas = generarCanvasInfografia(estudioActual);
+    const dataUrl = canvas.toDataURL('image/png');
     const a = document.createElement('a');
-    a.href = estudioActual.pdfUrl;
-    a.download = `Codice-Biblico-${estudioActual.id}.pdf`;
+    a.href = dataUrl;
+    a.download = `Infografia-Codice-Biblico-${estudioActual.id}.png`;
     document.body.appendChild(a);
     a.click();
     a.remove();
   }
 
+  async function dispararDescargaCompleta() {
+    if (!estudioActual || !estudioActual.pdfUrl) return;
+    const prevLabel = btnDownload.innerHTML;
+    btnDownload.innerHTML = '⏳ Preparando PDF + Infografía...';
+    btnDownload.disabled = true;
+
+    try {
+      if (window.PDFLib && estudioActual.infografia) {
+        const pdfBytes = await fetch(estudioActual.pdfUrl).then(r => r.arrayBuffer());
+        const pdfDoc = await window.PDFLib.PDFDocument.load(pdfBytes);
+
+        // Generar la lámina de infografía y añadirla como última página del PDF
+        const canvas = generarCanvasInfografia(estudioActual);
+        const pngDataUrl = canvas.toDataURL('image/png');
+        const pngImage = await pdfDoc.embedPng(pngDataUrl);
+
+        // Usar el mismo ancho que la primera página del PDF para consistencia visual
+        const firstPage = pdfDoc.getPages()[0];
+        const { width: refW } = firstPage ? firstPage.getSize() : { width: 595.28 };
+        const infoHeight = (refW * canvas.height) / canvas.width;
+
+        const infoPage = pdfDoc.addPage([refW, infoHeight]);
+        infoPage.drawImage(pngImage, {
+          x: 0,
+          y: 0,
+          width: refW,
+          height: infoHeight
+        });
+
+        const mergedBytes = await pdfDoc.save();
+        const blob = new Blob([mergedBytes], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Codice-Biblico-${estudioActual.id}-con-Infografia.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 5000);
+      } else {
+        const a = document.createElement('a');
+        a.href = estudioActual.pdfUrl;
+        a.download = `Codice-Biblico-${estudioActual.id}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      }
+    } catch (err) {
+      console.error('Error fusionando PDF e infografía:', err);
+      const a = document.createElement('a');
+      a.href = estudioActual.pdfUrl;
+      a.download = `Codice-Biblico-${estudioActual.id}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } finally {
+      btnDownload.disabled = false;
+      actualizarEstadoBoton();
+      if (!(window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado())) {
+        btnDownload.innerHTML = prevLabel;
+      }
+    }
+  }
+
   actualizarEstadoBoton();
 
   btnDownload.addEventListener('click', () => {
+    modoDescargaPendiente = 'completo';
     if (window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado()) {
-      dispararDescargaDirecta();
+      dispararDescargaCompleta();
+    } else if (modalBackdrop) {
+      if (errorMsg) errorMsg.style.display = 'none';
+      modalBackdrop.classList.add('open');
+    }
+  });
+
+  // Delegación para el botón "Descargar Lámina de Infografía (Imagen HD)"
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('#btn-download-infographic-only');
+    if (!target) return;
+    modoDescargaPendiente = 'lamina';
+    if (window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado()) {
+      descargarLaminaInfografia();
     } else if (modalBackdrop) {
       if (errorMsg) errorMsg.style.display = 'none';
       modalBackdrop.classList.add('open');
@@ -463,7 +802,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (errorMsg) errorMsg.style.display = 'none';
         if (modalBackdrop) modalBackdrop.classList.remove('open');
         actualizarEstadoBoton();
-        dispararDescargaDirecta();
+        if (modoDescargaPendiente === 'lamina') {
+          await descargarLaminaInfografia();
+        } else {
+          await dispararDescargaCompleta();
+        }
       } else if (errorMsg) {
         errorMsg.style.display = 'block';
       }
