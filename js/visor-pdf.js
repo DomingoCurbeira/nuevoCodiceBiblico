@@ -388,3 +388,85 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Error cargando infografía:', err);
   }
 });
+
+
+// Lógica del Botón "Descargar PDF" y Modal de Benefactor (estudio.html)
+document.addEventListener('DOMContentLoaded', async () => {
+  const btnDownload = document.getElementById('btn-download-pdf');
+  const modalBackdrop = document.getElementById('download-modal-backdrop');
+  const modalClose = document.getElementById('download-modal-close');
+  const unlockForm = document.getElementById('benefactor-unlock-form');
+  const emailInput = document.getElementById('benefactor-email');
+  const codeInput = document.getElementById('benefactor-code');
+  const errorMsg = document.getElementById('benefactor-error');
+
+  if (!btnDownload) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const studyId = params.get('id') || 'bautismo';
+  let estudioActual = null;
+
+  try {
+    const res = await fetch('data/estudios.json');
+    const estudios = await res.json();
+    estudioActual = estudios.find(s => s.id === studyId || s.slug === studyId) || estudios[0];
+  } catch (e) {
+    console.error(e);
+  }
+
+  function actualizarEstadoBoton() {
+    if (window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado()) {
+      btnDownload.innerHTML = '📥 Descargar PDF (Habilitado)';
+      btnDownload.style.borderColor = 'var(--accent-bronze)';
+      btnDownload.style.color = 'var(--accent-bronze-dark)';
+    }
+  }
+
+  function dispararDescargaDirecta() {
+    if (!estudioActual || !estudioActual.pdfUrl) return;
+    const a = document.createElement('a');
+    a.href = estudioActual.pdfUrl;
+    a.download = `Codice-Biblico-${estudioActual.id}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  actualizarEstadoBoton();
+
+  btnDownload.addEventListener('click', () => {
+    if (window.CodiceBenefactor && window.CodiceBenefactor.estaDesbloqueado()) {
+      dispararDescargaDirecta();
+    } else if (modalBackdrop) {
+      if (errorMsg) errorMsg.style.display = 'none';
+      modalBackdrop.classList.add('open');
+    }
+  });
+
+  if (modalClose && modalBackdrop) {
+    modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+    });
+  }
+
+  if (unlockForm) {
+    unlockForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = emailInput ? emailInput.value : '';
+      const code = codeInput ? codeInput.value : '';
+
+      const valido =
+        window.CodiceBenefactor && (await window.CodiceBenefactor.validarClave(code, email));
+
+      if (valido) {
+        if (errorMsg) errorMsg.style.display = 'none';
+        if (modalBackdrop) modalBackdrop.classList.remove('open');
+        actualizarEstadoBoton();
+        dispararDescargaDirecta();
+      } else if (errorMsg) {
+        errorMsg.style.display = 'block';
+      }
+    });
+  }
+});

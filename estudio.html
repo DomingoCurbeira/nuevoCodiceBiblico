@@ -66,7 +66,7 @@
     <div class="reader-layout">
 
       <div>
-        <!-- Pestañas de Navegación Rápida entre Documento e Infografía -->
+        <!-- Pestañas de Navegación Rápida entre Documento, Infografía y Descarga PDF -->
         <div class="reader-view-tabs">
           <button type="button" class="reader-tab-btn active" id="tab-btn-pdf">
             📖 Documento Completo (PDF)
@@ -74,8 +74,11 @@
           <button type="button" class="reader-tab-btn" id="tab-btn-infografia">
             📐 Infografía y Esquema Doctrinal
           </button>
+          <button type="button" class="reader-tab-btn" id="btn-download-pdf">
+            📥 Descargar PDF
+          </button>
           <button type="button" class="reader-tab-btn" id="btn-share-study" style="margin-left: auto;">
-            🔗 Compartir Estudio
+            🔗 Compartir
           </button>
         </div>
 
@@ -154,6 +157,59 @@
         </div>
       </aside>
 
+    </div>
+
+    <!-- Modal de Desbloqueo de Descarga PDF para Benefactores (Ko-fi) -->
+    <div class="etymos-modal-backdrop" id="download-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="download-modal-title">
+      <div class="etymos-modal" style="max-width: 560px;">
+        <button type="button" class="modal-close-btn" id="download-modal-close" aria-label="Cerrar ventana">✕</button>
+        <span class="eyebrow">Edición de Imprenta · Benefactores</span>
+        <h2 id="download-modal-title" style="font-size: 1.85rem; margin-bottom: 0.65rem;">
+          Descargar Estudio en PDF
+        </h2>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+          La lectura en línea de toda nuestra biblioteca es y será siempre <strong>100% gratuita</strong>. Como agradecimiento a quienes sostienen este ministerio con una donación voluntaria en <strong>Ko-fi</strong>, habilitamos la descarga directa de todos los estudios en formato PDF de alta resolución para imprimir.
+        </p>
+
+        <div style="background: var(--accent-bronze-light); border: 1px solid var(--accent-bronze-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.5rem; text-align: center;">
+          <p style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.85rem; font-weight: 500;">
+            Paso 1: Realiza tu aporte voluntario en Ko-fi y recibirás al instante en pantalla tu <strong>Clave de Benefactor</strong>:
+          </p>
+          <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="btn btn-bronze" style="width: 100%;">
+            ☕ Apoyar en Ko-fi y Obtener Clave
+          </a>
+        </div>
+
+        <form id="benefactor-unlock-form" style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+          <div class="lexicon-field-label" style="margin-bottom: 0.65rem;">
+            ¿Ya apoyaste el ministerio? Desbloquea todas las descargas aquí:
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <input
+              type="email"
+              id="benefactor-email"
+              class="search-input"
+              style="padding-left: 0.9rem;"
+              placeholder="Tu correo electrónico (con el que apoyaste)"
+              required
+            >
+            <input
+              type="text"
+              id="benefactor-code"
+              class="search-input"
+              style="padding-left: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em;"
+              placeholder="Clave de Benefactor entregada en Ko-fi"
+              required
+            >
+            <p id="benefactor-error" style="display: none; font-size: 0.82rem; color: #9E3B30; font-weight: 500;">
+              La clave introducida no es válida. Verifica el mensaje de agradecimiento en Ko-fi.
+            </p>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              🔓 Desbloquear y Descargar PDF Ahora
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 

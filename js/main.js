@@ -97,3 +97,71 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// ==========================================================================
+// SISTEMA DE DESBLOQUEO DE DESCARGAS PDF PARA BENEFACTORES (Ko-fi)
+// ==========================================================================
+(function () {
+  const VALID_HASHES = new Set([
+    'd19c084ce3b3e697e2ea77a8f7da37741a926bcf632951383e3aa2aa637a55ae',
+    '5ce8a6ddec72870d6a68223721578b49c265693a736616a3d7d046de3ae82b4d',
+    '09d3803af37b24e61602cb08250611db12d16a284c70801cc2dd9cd0a243c0ea',
+    '0033e940e15009a87e071fc3b8333fa8f31e39e95bc5d8d31dccd0cfa5476fb2'
+  ]);
+
+  const STORAGE_KEY = 'cb_benefactor_unlocked_v1';
+  const STORAGE_EMAIL = 'cb_benefactor_email_v1';
+
+  async function sha256Hex(str) {
+    const clean = (str || '').toUpperCase().replace(/[\s\-_]/g, '');
+    const buf = new TextEncoder().encode(clean);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', buf);
+    return Array.from(new Uint8Array(hashBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+  }
+
+  async function validarClave(code, email) {
+    const hex = await sha256Hex(code);
+    if (VALID_HASHES.has(hex)) {
+      localStorage.setItem(STORAGE_KEY, 'true');
+      if (email) localStorage.setItem(STORAGE_EMAIL, email.trim());
+      return true;
+    }
+    return false;
+  }
+
+  function estaDesbloqueado() {
+    return localStorage.getItem(STORAGE_KEY) === 'true';
+  }
+
+  window.CodiceBenefactor = {
+    validarClave,
+    estaDesbloqueado,
+    obtenerEmail: () => localStorage.getItem(STORAGE_EMAIL) || ''
+  };
+
+  // Detectar desbloqueo automático por enlace de retorno de Ko-fi (?acceso=...)
+  document.addEventListener('DOMContentLoaded', async () => {
+    const params = new URLSearchParams(window.location.search);
+    const accesoParam = params.get('acceso');
+    if (accesoParam) {
+      const ok = await validarClave(accesoParam, 'Donante Ko-fi');
+      if (ok) {
+        // Limpiar el parámetro de la barra de direcciones para que no se copie por accidente
+        params.delete('acceso');
+        const newQuery = params.toString();
+        const cleanUrl = window.location.pathname + (newQuery ? `?${newQuery}` : '');
+        window.history.replaceState({}, '', cleanUrl);
+
+        const banner = document.createElement('div');
+        banner.style.cssText =
+          'background:#9A7B3E;color:#fff;text-align:center;padding:0.75rem 1rem;font-size:0.88rem;font-weight:600;';
+        banner.textContent =
+          '✦ ¡Gracias por apoyar a Códice Bíblico! La descarga directa de todos los estudios en PDF ha quedado habilitada en tu navegador.';
+        document.body.prepend(banner);
+      }
+    }
+  });
+})();
