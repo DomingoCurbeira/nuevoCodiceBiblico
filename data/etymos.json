@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "poneros-ojo-gr",
+      "termino": "Ponērós (Ojo Malo / Estrabismo Avaro)",
+      "original": "πονηρός",
+      "transliteracion": "ponērós",
+      "strong": "G4190",
+      "idioma": "Griego",
+      "raiz": "En el modismo semítico («ayin raah»), describe un ojo enfermo, envidioso, codicioso y espiritualmente dividido.",
+      "significado_exegetico": "En Mateo 6:23, el «ojo malo» (ponēros) es lo opuesto al ojo sencillo (haplous): intenta mirar a Dios para la eternidad mientras busca su seguridad y paz en los tesoros terrenales, llenando el alma de ansiedad y tinieblas.",
+      "cita": "Mateo 6:23",
+      "versiculo": "Pero si tu ojo es maligno [ponēros], todo tu cuerpo estará en tinieblas.",
+      "cristologia": "Solo la luz del Evangelio de Cristo sana nuestra ceguera y codicia, liberándonos del miedo a perder el control material.",
+      "estudio_relacionado": {
+        "id": "mamon",
+        "titulo": "El Ojo Sano y el Dios Mamón"
+      }
+    },
+    {
+      "id": "opheiletes-gr",
+      "termino": "Opheilétēs (Deudor Perdonado)",
+      "original": "ὀφειλέτης",
+      "transliteracion": "opheilétēs",
+      "strong": "G3781",
+      "idioma": "Griego",
+      "raiz": "De \"opheilō\" (deber legalmente una suma impagable, estar en bancarrota ante un acreedor).",
+      "significado_exegetico": "En la parábola de Lucas 7:41–47, ambos deudores estaban en bancarrota total («no tenían con qué pagar»). El amor genuino hacia Cristo nace de la conciencia aguda de la gigantesca deuda que Él nos perdonó gratuitamente.",
+      "cita": "Lucas 7:41–47",
+      "versiculo": "Un acreedor tenía dos deudores [opheiletai]... y no teniendo ellos con qué pagar, perdonó a ambos.",
+      "cristologia": "Cristo es el Acreedor soberano que absorbió nuestra deuda infinita en la cruz, transformando nuestro quebranto en adoración ferviente.",
+      "estudio_relacionado": {
+        "id": "reflector",
+        "titulo": "El Reflector de la Santificación"
+      }
+    },
+    {
+      "id": "sarx-romanos-gr",
+      "termino": "Sarx (La Carne / Naturaleza Caída)",
+      "original": "σάρξ",
+      "transliteracion": "sárx",
+      "strong": "G4561",
+      "idioma": "Griego",
+      "raiz": "Originalmente el cuerpo físico, pero en la teología paulina designa la naturaleza humana caída, egocéntrica e incapaz de justificarse.",
+      "significado_exegetico": "En Romanos 7:18, Pablo confiesa en la cumbre de su madurez: «Y yo sé que en mí, esto es, en mi carne [sarx], no mora el bien». Reconocer la bancarrota de nuestra carne destruye el síndrome del fariseo.",
+      "cita": "Romanos 7:18",
+      "versiculo": "Y yo sé que en mí, esto es, en mi carne [sarx], no mora el bien; porque el querer el bien está en mí, pero no el hacerlo.",
+      "cristologia": "Dios envió a Su Hijo en semejanza de carne de pecado (Rom. 8:3) para condenar al pecado en la carne y librarnos de toda confianza en nuestra propia rectitud.",
+      "estudio_relacionado": {
+        "id": "reflector",
+        "titulo": "El Reflector de la Santificación"
+      }
+    },
+    {
+      "id": "hagiasmos-reflector-gr",
+      "termino": "Hagiasmós (Santificación / Luz que Expone)",
+      "original": "ἁγιασμός",
+      "transliteracion": "hagiasmós",
+      "strong": "G38",
+      "idioma": "Griego",
+      "raiz": "De \"hagiazō\" (apartar como sagrado, purificar). Proceso continuo del Espíritu Santo.",
+      "significado_exegetico": "No es una escalera de superioridad moral donde el creyente se siente sin defectos, sino el reflector de la santidad de Dios que expone el polvo oculto de nuestro ego para llevarnos a depender desesperadamente de la cruz.",
+      "cita": "1 Corintios 1:30 / Romanos 6:22",
+      "versiculo": "Mas por él estáis vosotros en Cristo Jesús, el cual nos ha sido hecho por Dios sabiduría, justificación, santificación [hagiasmós] y redención.",
+      "cristologia": "Cristo no solo nos imparte santificación; Él mismo es nuestra santificación. Mientras más nos acercamos a Su luz, más colapsa nuestra auto-justificación y más crece nuestro amor por Su gracia.",
+      "estudio_relacionado": {
+        "id": "reflector",
+        "titulo": "El Reflector de la Santificación"
+      }
+    },
+    {
       "id": "mamon-aram",
       "termino": "Mamón (Riqueza Deificada)",
       "original": "מָמוֹן / μαμωνᾶς",
