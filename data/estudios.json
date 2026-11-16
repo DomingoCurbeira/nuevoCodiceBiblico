@@ -1,5 +1,63 @@
 [
   {
+    "id": "reflector",
+    "slug": "el-reflector-de-la-santificacion-la-toma-de-conciencia-y-el-colapso-del-ego-religioso",
+    "titulo": "El Reflector de la Santificación: La Toma de Conciencia y el Colapso del Ego Religioso",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es comprender que la verdadera santificación bíblica no produce un sentimiento de superioridad moral ni de perfección personal, sino una toma de conciencia brutal de nuestra naturaleza caída, diseñada para destruir nuestra auto-justificación y llevarnos a una dependencia absoluta y un amor genuino por la gracia de Dios.",
+    "categoria": "LA TRILOGÍA DE LA SALVACIÓN",
+    "serie": "Trilogía de la Salvación",
+    "referencia": "Lucas 7:36–47; 1 Juan 1:8–10; Romanos 7:18–24",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 4",
+    "fecha": "16 de noviembre de 2026",
+    "portada": "assets/covers/reflector.webp",
+    "pdfUrl": "assets/pdfs/reflector.pdf",
+    "palabras": 977,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "La Metáfora del Reflector Divino y el Colapso de la Auto-Justificación",
+      "contraste": {
+        "error_titulo": "El Mito de la Escalera Moral (Síndrome del Fariseo)",
+        "error_puntos": [
+          "Ve la santificación como una escalera de méritos donde el creyente se siente cada vez más puro y superior.",
+          "Se compara con otros seres humanos caídos en lugar de mirarse ante la luz de la santidad de Dios.",
+          "Sustituye la gracia por cosmética conductual y juzga con desprecio al pecador (como Simón en Lucas 7)."
+        ],
+        "verdad_titulo": "El Reflector del Espíritu Santo (Lucas 7:47; Rom. 7:18)",
+        "verdad_puntos": [
+          "La luz de Dios no crea el polvo en la habitación: hace visible la corrupción que siempre estuvo en la carne.",
+          "A mayor cercanía a Cristo, mayor conciencia de nuestra bancarrota espiritual y de la necesidad diaria de la cruz.",
+          "Produce un amor apasionado y humilde: «Al que mucho se le perdona, mucho ama» (Lucas 7:47)."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Iluminación del Reflector",
+          "detalle": "El Espíritu Santo expone el egoísmo sutil y las motivaciones carnales aun en nuestras «buenas obras»."
+        },
+        {
+          "paso": "2. Colapso del Ego Religioso",
+          "detalle": "Dios nos acorrala frente a nuestra incapacidad para demoler toda confianza en nuestra propia justicia."
+        },
+        {
+          "paso": "3. Dependencia y Amor Genuino",
+          "detalle": "Conscientes de la enorme deuda perdonada, nos aferramos a la cruz con gratitud ferviente."
+        }
+      ],
+      "axiomas": [
+        "«El reflector de alta potencia no crea el polvo en la habitación; simplemente hace visible la suciedad que siempre estuvo flotando en el aire.»",
+        "«La verdadera santificación no te hace más independiente de la cruz, sino maravillosamente dependiente de la gracia diaria de Cristo.»",
+        "«La magnitud de tu amor por el Señor es directamente proporcional a tu conciencia del tamaño de la deuda que Él te ha perdonado.»"
+      ],
+      "terminos_etymos": [
+        "Qadosh",
+        "Gracia",
+        "Justificar",
+        "Jésed"
+      ]
+    }
+  },
+  {
     "id": "bautismo",
     "slug": "el-bautismo-biblico-el-funeral-publico-del-ego-y-la-falacia-del-bano-magico",
     "titulo": "El Bautismo Bíblico: El Funeral Público del Ego y la Falacia del Baño Mágico",
