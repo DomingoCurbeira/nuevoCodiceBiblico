@@ -1,5 +1,63 @@
 [
   {
+    "id": "mamon",
+    "slug": "el-ojo-sano-y-el-dios-mamon-la-guerra-por-la-lealtad-de-tu-corazon",
+    "titulo": "El Ojo Sano y el Dios Mamón: La Guerra por la Lealtad de tu Corazón",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es comprender que la advertencia de Cristo sobre los tesoros terrenales no es un consejo de finanzas personales, sino una confrontación directa contra el ídolo de la autosuficiencia. Jesús expone cómo la necesidad humana de seguridad material compite directamente con el señorío de Dios, exigiendo una lealtad absoluta de nuestro corazón.",
+    "categoria": "EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 6:19–24; Proverbios 11:28; 1 Timoteo 6:9–10",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 21",
+    "fecha": "16 de noviembre de 2026",
+    "portada": "assets/covers/mamon.webp",
+    "pdfUrl": "assets/pdfs/mamon.pdf",
+    "palabras": 864,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Del Estrabismo Espiritual al Ojo Sencillo (Haplous) y el Señorío Único",
+      "contraste": {
+        "error_titulo": "El Ojo Dividido y el Culto a Mamón (Ponēros)",
+        "error_puntos": [
+          "Sufre de estrabismo espiritual: mira al trono de Dios el domingo pero mide su paz por su cuenta bancaria el lunes.",
+          "Usa los recursos materiales como una fortaleza psicológica para no depender desesperadamente de Dios.",
+          "Cae en los dos extremos religiosos: satanizar el dinero o usarlo para manipular ofrendas."
+        ],
+        "verdad_titulo": "El Ojo Sencillo y el Único Kurios (Mateo 6:19–24)",
+        "verdad_puntos": [
+          "Tiene un ojo «haplous» (sencillo, indiviso, de un solo enfoque) fijo en la suficiencia y provisión del Padre.",
+          "Comprende que Dios exige exclusividad absoluta como Señor (Kurios): es imposible servir a dos dueños.",
+          "Deposita su tesoro supremo en Cristo, donde ni la polilla ni el colapso terrenal pueden robar su paz."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Diagnóstico del Tesoro",
+          "detalle": "Tu corazón sigue inevitablemente a tu inversión máxima: donde está tu refugio, allí está tu dios."
+        },
+        {
+          "paso": "2. Sanidad del Ojo (Haplous)",
+          "detalle": "Renunciamos a la doble mirada (cielo y autosuficiencia) para enfocar toda nuestra confianza en la gracia."
+        },
+        {
+          "paso": "3. Lealtad a un Solo Señor",
+          "detalle": "Destronamos al ídolo Mamón y descansamos bajo la propiedad y el cuidado soberano de nuestro Padre."
+        }
+      ],
+      "axiomas": [
+        "«El \"ojo malo\" sufre de estrabismo espiritual: intenta poner un ojo en el trono de Dios para su salvación y el otro en sus recursos para su seguridad.»",
+        "«Tratar de servir a Dios y a Mamón no es un problema de administración financiera; es adulterio espiritual contra tu único Señor.»",
+        "«Cuando sobreviene la crisis, aquello que sostiene tu paz revela quién es tu verdadero Kurios.»"
+      ],
+      "terminos_etymos": [
+        "Haplous",
+        "Mamón",
+        "Adonai",
+        "Shalom"
+      ]
+    }
+  },
+  {
     "id": "reflector",
     "slug": "el-reflector-de-la-santificacion-la-toma-de-conciencia-y-el-colapso-del-ego-religioso",
     "titulo": "El Reflector de la Santificación: La Toma de Conciencia y el Colapso del Ego Religioso",

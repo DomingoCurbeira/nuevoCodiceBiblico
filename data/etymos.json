@@ -1,6 +1,40 @@
 {
   "palabras": [
     {
+      "id": "mamon-aram",
+      "termino": "Mamón (Riqueza Deificada)",
+      "original": "מָמוֹן / μαμωνᾶς",
+      "transliteracion": "mamōnâs",
+      "strong": "G3126",
+      "idioma": "Arameo",
+      "raiz": "Relacionado con la raíz semítica \"aman\" (aquello en lo que uno deposita su confianza o seguridad).",
+      "significado_exegetico": "Más que el dinero físico, Mamón es la personificación espiritual de la riqueza y la autosuficiencia como un falso señor (Kurios) que promete identidad, paz y refugio aparte de Dios.",
+      "cita": "Mateo 6:24",
+      "versiculo": "Ninguno puede servir a dos señores... No podéis servir a Dios y a las riquezas [Mamón].",
+      "cristologia": "Jesucristo, siendo rico, se hizo pobre por nosotros en la cruz para quebrantar la esclavitud de Mamón y constituirse en nuestro único Tesoro eterno.",
+      "estudio_relacionado": {
+        "id": "mamon",
+        "titulo": "El Ojo Sano y el Dios Mamón"
+      }
+    },
+    {
+      "id": "haplous-gr",
+      "termino": "Haplous (Ojo Sencillo / Indiviso)",
+      "original": "ἁπλοῦς",
+      "transliteracion": "haploûs",
+      "strong": "G573",
+      "idioma": "Griego",
+      "raiz": "De \"a-\" (uno) y \"pleko\" (plegar): doblado una sola vez, sin dobleces, de un único enfoque.",
+      "significado_exegetico": "Describe una visión espiritual íntegra y sin estrabismo. En Mateo 6:22, el «ojo bueno» (haplous) es aquel que no divide su lealtad entre Dios y la seguridad material, sino que mira con absoluta sencillez y dependencia a la provisión del Padre.",
+      "cita": "Mateo 6:22",
+      "versiculo": "La lámpara del cuerpo es el ojo; así que, si tu ojo es bueno [haplous], todo tu cuerpo estará lleno de luz.",
+      "cristologia": "Cristo tuvo el ojo perfectamente sencillo (haplous), orientado únicamente a la voluntad y gloria del Padre sin ceder jamás a los reinos de este mundo.",
+      "estudio_relacionado": {
+        "id": "mamon",
+        "titulo": "El Ojo Sano y el Dios Mamón"
+      }
+    },
+    {
       "id": "gijon-manantial-heb",
       "termino": "Gihón (גִּיחוֹן)",
       "original": "גִּיחוֹן",
