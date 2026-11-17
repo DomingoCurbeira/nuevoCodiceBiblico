@@ -1,5 +1,63 @@
 [
   {
+    "id": "descanso",
+    "slug": "el-afan-y-la-providencia-de-dios-el-fin-de-la-autosuficiencia-y-la-diligencia-que-descansa",
+    "titulo": "El Afán y la Providencia de Dios: El Fin de la Autosuficiencia y la Diligencia que Descansa",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es comprender que la enseñanza de Cristo sobre las aves y los lirios no es un llamado a la pasividad irresponsable ni una excusa espiritual para no trabajar. Es una confrontación directa y radical contra el ídolo del control. Jesús expone cómo nuestra ansiedad por el mañana es, en realidad, un intento arrogante de ser los arquitectos infalibles de nuestro propio destino, y nos invita a trasladar nuestra seguridad desde nuestras propias capacidades hacia el carácter inquebrantable del Padre.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 6:25–34; Filipenses 4:6–7; 1 Pedro 5:7",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 22",
+    "fecha": "17 de noviembre de 2026",
+    "portada": "assets/covers/descanso.webp",
+    "pdfUrl": "assets/pdfs/descanso.pdf",
+    "palabras": 999,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "De la Ambición que Asfixia a la «Diligencia que Descansa» en la Providencia",
+      "contraste": {
+        "error_titulo": "Los Dos Extremos: Pasividad o Control Ansioso (Merimnáō)",
+        "error_puntos": [
+          "Cae en un fatalismo perezoso («como Dios provee, no planifico ni me esfuerzo»).",
+          "O vive bajo la ambición que asfixia: intenta ocupar el puesto de Gerente General del universo.",
+          "Ata su identidad y su paz al éxito financiero o a poder garantizar el resultado del mañana."
+        ],
+        "verdad_titulo": "La Diligencia que Descansa en el Padre (Mateo 6:25–34)",
+        "verdad_puntos": [
+          "Observa a las aves: trabajan con excelencia desde el amanecer, pero no viven aterrorizadas por el futuro.",
+          "Reconoce su impotencia para añadir un solo codo a su estatura y suelta la ilusión de control.",
+          "Busca primero el gobierno (Reino) de Dios, trabajando hoy con el corazón desapegado del resultado."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Renuncia al Cargo de Gerente",
+          "detalle": "Reconocemos que el afán (merimnáō) es el intento arrogante de la carne de escribir el guion del mañana."
+        },
+        {
+          "paso": "2. Excelencia en el Hoy",
+          "detalle": "Como las aves, cumplimos nuestra vocación con diligencia diaria, sin la asfixia de controlar el futuro."
+        },
+        {
+          "paso": "3. Desapego del Resultado",
+          "detalle": "Si hay abundancia es gracia; si el plan cambia, nuestra identidad sigue segura en las manos del Padre."
+        }
+      ],
+      "axiomas": [
+        "«Las aves no se quedan inmóviles esperando que el alimento caiga en su pico: trabajan duro hoy, pero sin el terror de acumular garantías para mañana.»",
+        "«La gracia de Cristo no anula el esfuerzo ni la excelencia; anula el terror al fracaso, llevándonos a la \"diligencia que descansa\".»",
+        "«El afán no es una preocupación inocente: es la evidencia de que tu carne intenta ocupar el puesto de Gerente General del universo.»"
+      ],
+      "terminos_etymos": [
+        "Merimnáō",
+        "Epiríptō",
+        "Basileía",
+        "Shalom"
+      ]
+    }
+  },
+  {
     "id": "redencion",
     "slug": "que-significa-realmente-llevarlo-a-la-cruz-el-colapso-de-tu-autosuficiencia-y-el-inicio-de-la-gracia",
     "titulo": "¿Qué Significa Realmente «Llevarlo a la Cruz»?: El Colapso de tu Autosuficiencia y el Inicio de la Gracia",

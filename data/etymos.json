@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "basileia-reino-gr",
+      "termino": "Basileía (El Reino / Gobierno Soberano)",
+      "original": "βασιλεία",
+      "transliteracion": "basileía",
+      "strong": "G932",
+      "idioma": "Griego",
+      "raiz": "De \"basileús\" (Rey legítimo). Más que un territorio geográfico, denota el señorío, la autoridad real y el gobierno activo de Dios.",
+      "significado_exegetico": "En Mateo 6:33, «buscar primeramente el reino [basileía] de Dios» no es encerrarse en un monasterio, sino someter cada área de nuestra vida, trabajo y familia a Su gobierno soberano, renunciando a ser los pequeños reyes de nuestro destino.",
+      "cita": "Mateo 6:33",
+      "versiculo": "Mas buscad primeramente el reino [basileía] de Dios y su justicia, y todas estas cosas os serán añadidas.",
+      "cristologia": "Cristo es el Rey (Basileús) cuyo Reino es incommovible; cuando Él gobierna el corazón, la provisión terrenal deja de ser un ídolo y se vuelve una añadidura de Su gracia.",
+      "estudio_relacionado": {
+        "id": "descanso",
+        "titulo": "El Afán y la Providencia de Dios"
+      }
+    },
+    {
+      "id": "epiripto-gr",
+      "termino": "Epiríptō (Arrojar / Descargar el Peso)",
+      "original": "ἐπιρίπτω",
+      "transliteracion": "epiríptō",
+      "strong": "G1977",
+      "idioma": "Griego",
+      "raiz": "De \"epí\" (sobre) y \"rhiptō\" (lanzar con decisión, colocar una carga pesada sobre otro para no volver a cargarla).",
+      "significado_exegetico": "Es el mismo verbo usado en Lucas 19:35 cuando los discípulos «echaron» sus mantos sobre el pollino. En 1 Pedro 5:7 nos ordena transferir de una vez por todas el peso aplastante de nuestra ansiedad sobre los hombros soberanos del Señor.",
+      "cita": "1 Pedro 5:7",
+      "versiculo": "Echando [epiríptō] toda vuestra ansiedad sobre él, porque él tiene cuidado de vosotros.",
+      "cristologia": "Jesucristo es el único cuyos hombros sostienen el gobierno del universo; descargar nuestro futuro en Él es el acto supremo de humildad y fe.",
+      "estudio_relacionado": {
+        "id": "descanso",
+        "titulo": "El Afán y la Providencia de Dios"
+      }
+    },
+    {
+      "id": "merimnao-gr",
+      "termino": "Merimnáō (Afanarse / Mente Dividida)",
+      "original": "μεριμνάω",
+      "transliteracion": "merimnáō",
+      "strong": "G3309",
+      "idioma": "Griego",
+      "raiz": "De \"merizō\" (dividir, partir en pedazos) y \"nous\" (mente): tener el alma fragmentada y tironeada en direcciones opuestas.",
+      "significado_exegetico": "En Mateo 6:25–34, Jesús usa este verbo seis veces. No describe la planificación responsable ni el trabajo diligente, sino la ansiedad paralizante de quien intenta garantizar su propio mañana asumiendo un control que solo pertenece a Dios.",
+      "cita": "Mateo 6:25, 27",
+      "versiculo": "¿Y quién de vosotros podrá, por mucho que se afane [merimnáō], añadir a su estatura un codo?",
+      "cristologia": "Cristo llevó sobre Sí toda nuestra incertidumbre y orfandad en la cruz, sanando nuestra mente dividida para que descansemos bajo la providencia del Padre.",
+      "estudio_relacionado": {
+        "id": "descanso",
+        "titulo": "El Afán y la Providencia de Dios"
+      }
+    },
+    {
       "id": "astheneia-gr",
       "termino": "Asthéneia (Debilidad / Bancarrota de Fuerzas)",
       "original": "ἀσθένεια",
