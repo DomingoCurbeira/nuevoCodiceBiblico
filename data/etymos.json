@@ -1,6 +1,125 @@
 {
   "palabras": [
     {
+      "id": "eirenopoios-gr",
+      "termino": "Eirēnopoiós (Pacificador / Constructor de Paz)",
+      "original": "εἰρηνοποιός",
+      "transliteracion": "eirēnopoiós",
+      "strong": "G1518",
+      "idioma": "Griego",
+      "raiz": "Compuesto de \"eirḗnē\" (paz integral, equivalente al Shalom hebreo) y \"poiéō\" (hacer, fabricar, edificar activamente).",
+      "significado_exegetico": "Aparece una sola vez en el Nuevo Testamento (Mateo 5:9; y su verbo en Colosenses 1:20 para la obra de Cristo en la cruz). Define a quien no solo ama la paz, sino que trabaja activamente para reconciliar a los hombres con Dios y entre sí.",
+      "cita": "Mateo 5:9 / Colosenses 1:20",
+      "versiculo": "Bienaventurados los pacificadores [eirēnopoioí], porque ellos serán llamados hijos de Dios.",
+      "cristologia": "Cristo es el supremo Eirēnopoiós: «Él es nuestra paz» (Ef. 2:14), quien derribó la pared intermedia de separación haciendo la paz mediante la sangre de Su cruz.",
+      "estudio_relacionado": {
+        "id": "pacificadores",
+        "titulo": "Los Constructores de la Reconciliación"
+      }
+    },
+    {
+      "id": "katharos-limpio-gr",
+      "termino": "Katharós (Limpio / Puro sin Mezcla)",
+      "original": "καθαρός",
+      "transliteracion": "katharós",
+      "strong": "G2513",
+      "idioma": "Griego",
+      "raiz": "Usado en la antigüedad para el oro refinado sin escoria, el trigo aventado sin paja, el agua cristalina sin lodo o un ejército libre de traidores.",
+      "significado_exegetico": "En Mateo 5:8, un corazón «katharós» es aquel que ha sido lavado de su culpa por la sangre de Cristo (1 Juan 1:7) y librado de la hipocresía o lealtad dividida, amando a Dios con sinceridad íntegra.",
+      "cita": "Mateo 5:8 / Juan 15:3",
+      "versiculo": "Bienaventurados los de limpio corazón [katharoì tē kardía], porque ellos verán a Dios.",
+      "cristologia": "Solo Jesucristo poseyó desde Su nacimiento un corazón infinitamente puro (katharós), y por Su sacrificio en la cruz purifica nuestras conciencias de obras muertas para ver al Padre.",
+      "estudio_relacionado": {
+        "id": "limpios-de-corazon",
+        "titulo": "La Mirada que Nace del Interior"
+      }
+    },
+    {
+      "id": "eleemon-gr",
+      "termino": "Eleḗmōn (Misericordioso / Compasivo Activo)",
+      "original": "ἐλεήμων",
+      "transliteracion": "eleḗmōn",
+      "strong": "G1655",
+      "idioma": "Griego",
+      "raiz": "De \"éleos\" (compasión activa que socorre al miserable, equivalente griego del hebreo \"Jésed\"). En el Nuevo Testamento solo se aplica a los hijos del Reino (Mat. 5:7) y a Cristo como Sumo Sacerdote (Heb. 2:17).",
+      "significado_exegetico": "No es un mero sentimiento de pena desde la distancia, sino el carácter de quien, habiendo recibido el perdón soberano de Dios, extiende socorro práctico y perdón sincero al quebrantado.",
+      "cita": "Mateo 5:7 / Hebreos 2:17",
+      "versiculo": "Bienaventurados los misericordiosos [eleḗmones], porque ellos alcanzarán misericordia.",
+      "cristologia": "Cristo se hizo en todo semejante a Sus hermanos para venir a ser un Sumo Sacerdote misericordioso (eleḗmōn) y fiel en el trono de la gracia.",
+      "estudio_relacionado": {
+        "id": "misericordia",
+        "titulo": "El Reflejo de la Gracia Recibida"
+      }
+    },
+    {
+      "id": "chortazo-saciar-gr",
+      "termino": "Chortázō (Saciar hasta la Plenitud)",
+      "original": "χορτάζω",
+      "transliteracion": "chortázō",
+      "strong": "G5526",
+      "idioma": "Griego",
+      "raiz": "De \"chórtos\" (pasto abundante): alimentar y nutrir generosamente hasta que no quede rastro alguno de hambre ni escasez.",
+      "significado_exegetico": "En Mateo 5:6 está en voz pasiva divina («serán saciados»): el hombre no puede saciarse a sí mismo con obras; es Dios quien llena el alma hambrienta con la justicia perfecta de Cristo.",
+      "cita": "Mateo 5:6",
+      "versiculo": "Bienaventurados los que tienen hambre y sed de justicia, porque ellos serán saciados [chortasthēsontai].",
+      "cristologia": "Jesucristo es el verdadero Pan de Vida y nuestra Justicia (1 Cor. 1:30): «El que a mí viene nunca tendrá hambre, y el que en mí cree no tendrá sed jamás» (Juan 6:35).",
+      "estudio_relacionado": {
+        "id": "hambre-de-justicia",
+        "titulo": "El Hambre que Transforma el Alma"
+      }
+    },
+    {
+      "id": "prays-manso-gr",
+      "termino": "Praÿs (Manso / Fuerza Bajo Control)",
+      "original": "πραΰς",
+      "transliteracion": "praÿs",
+      "strong": "G4239",
+      "idioma": "Griego",
+      "raiz": "Usado en el griego clásico para una medicina que calma la fiebre, una brisa suave o un potro salvaje cuya enorme energía ha sido domada para obedecer la mínima señal de su amo.",
+      "significado_exegetico": "En Mateo 5:5 y 11:29, «praÿs» es el punto medio divino entre la ira descontrolada y la apatía cobarde: es la fortaleza interior de quien ha rendido sus derechos a la soberanía de Dios.",
+      "cita": "Mateo 5:5 / Mateo 11:29",
+      "versiculo": "Bienaventurados los mansos [praeîs], porque ellos recibirán la tierra por heredad.",
+      "cristologia": "Cristo es el Rey manso (Mateo 21:5) que gobernó la tormenta con Su voz pero lavó los pies de Sus discípulos y fue llevado al matadero sin abrir Su boca.",
+      "estudio_relacionado": {
+        "id": "mansedumbre",
+        "titulo": "La Tercera Bienaventuranza: El Poder Bajo Control"
+      }
+    },
+    {
+      "id": "pentheo-gr",
+      "termino": "Penthéō (Llorar con Luto Profundo)",
+      "original": "πενθέω",
+      "transliteracion": "penthéō",
+      "strong": "G3996",
+      "idioma": "Griego",
+      "raiz": "El verbo más intenso en griego para el duelo: el lamento desgarrador que se hace por la muerte de un ser amado.",
+      "significado_exegetico": "En Mateo 5:4 no describe un mal humor pasajero, sino el dolor profundo del creyente al contemplar su propio pecado y las consecuencias de la caída, que lo lleva directamente al consuelo (paraklēthēsontai) del Espíritu Santo.",
+      "cita": "Mateo 5:4",
+      "versiculo": "Bienaventurados los que lloran [penthoûntes], porque ellos recibirán consolación.",
+      "cristologia": "Varón de dolores y experimentado en quebranto, Jesús lloró y llevó nuestro luto en la cruz para convertirse en nuestra eterna consolación.",
+      "estudio_relacionado": {
+        "id": "consuelo",
+        "titulo": "La Segunda Bienaventuranza: El Llanto que Conoce el Consuelo"
+      }
+    },
+    {
+      "id": "ptochos-gr",
+      "termino": "Ptōchós (Mendigo en Bancarrota)",
+      "original": "πτωχός",
+      "transliteracion": "ptōchós",
+      "strong": "G4434",
+      "idioma": "Griego",
+      "raiz": "De \"ptōssō\" (agacharse, acurrucarse en indigencia total). A diferencia de \"penēs\" (quien trabaja para subsistir), el \"ptōchós\" no tiene absolutamente nada y sobrevive solo por la dádiva ajena.",
+      "significado_exegetico": "En Mateo 5:3, ser «pobre en espíritu» (ptōchós tō pneumati) es la conciencia lúcida de nuestra bancarrota moral ante Dios: saber que no tenemos ni una moneda de mérito propio para ofrecer al Juez.",
+      "cita": "Mateo 5:3",
+      "versiculo": "Bienaventurados los pobres en espíritu [ptōchoi tō pneumati], porque de ellos es el reino de los cielos.",
+      "cristologia": "Cristo, siendo rico, se hizo pobre (ptōcheuō, 2 Cor. 8:9) hasta la cruz para enriquecer con Su justicia a los mendigos espirituales.",
+      "estudio_relacionado": {
+        "id": "bancarrota-del-espiritu",
+        "titulo": "La Primera Bienaventuranza: La Bancarrota del Espíritu"
+      }
+    },
+    {
       "id": "mesites-gr",
       "termino": "Mesítēs (Mediador / Garante del Pacto)",
       "original": "μεσίτης",
