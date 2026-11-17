@@ -1,5 +1,63 @@
 [
   {
+    "id": "sinai",
+    "slug": "el-nuevo-sinai-el-rostro-de-la-gracia-y-el-fin-del-terror",
+    "titulo": "El Nuevo Sinaí: El Rostro de la Gracia y el Fin del Terror",
+    "subtitulo": "De la hendidura de la peña a la ladera abierta: el Dios que se sienta a hablar cara a cara. La revelación de Mateo 5:1–2 a la luz de Éxodo 33:18–23 y Éxodo 19: de la barrera de fuego y la inaccesibilidad de la Ley a la cercanía del Dios encarnado que graba Su pacto en el corazón.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Éxodo 33:18–23; Éxodo 19:12–19; Mateo 5:1–2; Juan 1:14–18; Hebreos 12:18–24; 2 Corintios 3:3",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 1",
+    "fecha": "17 de noviembre de 2026",
+    "portada": "assets/covers/sinai.webp",
+    "pdfUrl": "assets/pdfs/sinai.pdf",
+    "palabras": 2217,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "De la Hendidura de la Peña y el Terror del Sinaí al Rostro Abierto de Cristo",
+      "contraste": {
+        "error_titulo": "El Terror del Antiguo Sinaí (Éxodo 19 y 33; Heb. 12:18)",
+        "error_puntos": [
+          "La santidad de Dios exigía barreras de fuego, humo y límites de muerte para que el pecador no pereciera.",
+          "Incluso Moisés tuvo que esconderse en la hendidura de la peña y solo pudo ver las espaldas de la gloria.",
+          "La religión legalista sigue tratando a Dios como un tirano distante al que hay que apaciguar con miedo."
+        ],
+        "verdad_titulo": "El Nuevo Sinaí de la Gracia (Mateo 5:1–2; Juan 1:17–18)",
+        "verdad_puntos": [
+          "El Dios eterno se viste de carne, sube al monte, toma asiento sobre la hierba y llama a los pecadores a acercarse.",
+          "Ya no vemos Sus espaldas desde una grieta: contemplamos la gloria de Dios en la faz de Jesucristo.",
+          "No escribe en tablas frías de piedra para condenar, sino que graba Su ley por el Espíritu en corazones de carne."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. La Hendidura (Sinaí)",
+          "detalle": "Bajo la Ley, ningún hombre podía ver el rostro de Dios y vivir; la pureza divina mantenía distancia."
+        },
+        {
+          "paso": "2. Dios Toma Asiento (Galilea)",
+          "detalle": "En Mateo 5:1–2, el Verbo encarnado se sienta como Rabí y Padre accesible, hablando cara a cara."
+        },
+        {
+          "paso": "3. El Monte de Sion (Gracia)",
+          "detalle": "Consumado el sacrificio en el Calvario, nos acercamos sin terror servil al Mediador del Nuevo Pacto."
+        }
+      ],
+      "axiomas": [
+        "«En el Sinaí, Dios puso límites para que el pueblo no subiera y muriera; en el Sermón del Monte, Dios se sentó en la hierba para que los rotos se acercaran y vivieran.»",
+        "«Se terminó la necesidad de esconderse en hendiduras por espanto al juicio: el rostro de Dios ya no está vedado, se ha revelado en Jesucristo.»",
+        "«El Sermón del Monte no es una escalera legalista para ganar el cielo; es el retrato del corazón transformado por la gracia del Nuevo Pacto.»"
+      ],
+      "terminos_etymos": [
+        "Paním",
+        "Exēgéomai",
+        "Mesítēs",
+        "Kabod"
+      ]
+    }
+  },
+  {
     "id": "descanso",
     "slug": "el-afan-y-la-providencia-de-dios-el-fin-de-la-autosuficiencia-y-la-diligencia-que-descansa",
     "titulo": "El Afán y la Providencia de Dios: El Fin de la Autosuficiencia y la Diligencia que Descansa",

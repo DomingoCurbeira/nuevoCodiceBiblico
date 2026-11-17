@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "mesites-gr",
+      "termino": "Mesítēs (Mediador / Garante del Pacto)",
+      "original": "μεσίτης",
+      "transliteracion": "mesítēs",
+      "strong": "G3316",
+      "idioma": "Griego",
+      "raiz": "De \"mésos\" (en el medio): aquel que se interpone legalmente entre dos partes para reconciliarlas y garantizar un pacto.",
+      "significado_exegetico": "En Hebreos 12:24 contrasta el terror de Moisés en el Sinaí con Jesús, el Mediador (mesítēs) del Nuevo Pacto en el Monte de Sion, cuya sangre habla mejor que la de Abel, proclamando perdón en lugar de venganza.",
+      "cita": "Hebreos 12:24",
+      "versiculo": "A Jesús el Mediador [mesítēs] del nuevo pacto, y a la sangre rociada que habla mejor que la de Abel.",
+      "cristologia": "Como nuestro único Mesítēs, Cristo absorbió el fuego del Sinaí en la cruz para que hoy nos acerquemos al trono de la gracia con plena certidumbre de fe.",
+      "estudio_relacionado": {
+        "id": "sinai",
+        "titulo": "El Nuevo Sinaí: El Rostro de la Gracia"
+      }
+    },
+    {
+      "id": "exegeomai-gr",
+      "termino": "Exēgéomai (Dar a Conocer / Hacer Exégesis)",
+      "original": "ἐξηγέομαι",
+      "transliteracion": "exēgéomai",
+      "strong": "G1834",
+      "idioma": "Griego",
+      "raiz": "De \"ek\" (hacia afuera) y \"hēgéomai\" (guiar, conducir): sacar a la luz, explicar exhaustivamente, revelar un misterio oculto.",
+      "significado_exegetico": "De este verbo proviene nuestra palabra «exégesis». En Juan 1:18 declara que aunque nadie vio jamás a Dios, el Hijo unigénito «lo ha dado a conocer» (exēgēsato): Cristo es la exégesis viviente y audible del Padre.",
+      "cita": "Juan 1:18",
+      "versiculo": "A Dios nadie le vio jamás; el unigénito Hijo, que está en el seno del Padre, él le ha dado a conocer [exēgéomai].",
+      "cristologia": "Cuando Jesús abre Su boca en Mateo 5:2 para enseñar, está haciendo visible y comprensible el carácter de gracia del Padre eterno.",
+      "estudio_relacionado": {
+        "id": "sinai",
+        "titulo": "El Nuevo Sinaí: El Rostro de la Gracia"
+      }
+    },
+    {
+      "id": "panim-rostro-heb",
+      "termino": "Paním (El Rostro / Presencia Directa)",
+      "original": "פָּנִים",
+      "transliteracion": "pānîm",
+      "strong": "H6440",
+      "idioma": "Hebreo",
+      "raiz": "Sustantivo siempre en plural intensivo de la raíz \"panah\" (volverse hacia alguien, mirar de frente con atención total).",
+      "significado_exegetico": "En Éxodo 33:20, el rostro (paním) de Dios representa la plenitud descubierta de Su santidad, inaccesible para el hombre caído en el Sinaí. En el Nuevo Pacto, esa presencia plena brilla sin velo en la faz de Jesucristo (2 Cor. 4:6).",
+      "cita": "Éxodo 33:20 / 2 Corintios 4:6",
+      "versiculo": "No podrás ver mi rostro [paním]; porque no me verá hombre, y vivirá... para iluminación del conocimiento de la gloria de Dios en la faz de Jesucristo.",
+      "cristologia": "Cristo es el Paním visible del Padre invisible: quien se sienta a Sus pies en el monte contempla cara a cara el corazón de Dios sin ser consumido.",
+      "estudio_relacionado": {
+        "id": "sinai",
+        "titulo": "El Nuevo Sinaí: El Rostro de la Gracia"
+      }
+    },
+    {
       "id": "basileia-reino-gr",
       "termino": "Basileía (El Reino / Gobierno Soberano)",
       "original": "βασιλεία",
