@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "astheneia-gr",
+      "termino": "Asthéneia (Debilidad / Bancarrota de Fuerzas)",
+      "original": "ἀσθένεια",
+      "transliteracion": "asthéneia",
+      "strong": "G769",
+      "idioma": "Griego",
+      "raiz": "De \"a-\" (sin) y \"sthenos\" (fuerza, vigor, capacidad propia): carencia total de recursos.",
+      "significado_exegetico": "En 2 Corintios 12:9, la debilidad (asthéneia) no es un obstáculo para la gracia de Dios, sino el escenario exacto donde Su poder (dynamis) se perfecciona y exhibe sin competencia humana.",
+      "cita": "2 Corintios 12:9",
+      "versiculo": "Bástate mi gracia; porque mi poder se perfecciona en la debilidad [asthéneia].",
+      "cristologia": "Cristo fue crucificado en debilidad pero vive por el poder de Dios (2 Cor. 13:4), convirtiendo nuestra fragilidad en el tabernáculo de Su gracia.",
+      "estudio_relacionado": {
+        "id": "redencion",
+        "titulo": "¿Qué Significa Realmente «Llevarlo a la Cruz»?"
+      }
+    },
+    {
+      "id": "aparneomai-gr",
+      "termino": "Aparnéomai (Negarse por Completo a Sí Mismo)",
+      "original": "ἀπαρνέομαι",
+      "transliteracion": "aparnéomai",
+      "strong": "G533",
+      "idioma": "Griego",
+      "raiz": "De \"apó\" (totalmente, desde la raíz) y \"arnéomai\" (repudiar, desconocer, renunciar a todo reclamo).",
+      "significado_exegetico": "En Mateo 16:24, negarse a sí mismo no es privarse de un gusto externo, sino abdicar del trono de la propia vida, reconociendo que ya no nos pertenecemos y que nuestras estrategias humanas han colapsado.",
+      "cita": "Mateo 16:24",
+      "versiculo": "Si alguno quiere venir en pos de mí, niéguese a sí mismo [aparnéomai], tome su cruz, y sígame.",
+      "cristologia": "Cristo tomó la cruz del Calvario por nosotros para que hoy podamos soltar nuestra falsa corona de control y descansar bajo Su gobierno.",
+      "estudio_relacionado": {
+        "id": "redencion",
+        "titulo": "¿Qué Significa Realmente «Llevarlo a la Cruz»?"
+      }
+    },
+    {
+      "id": "systauroo-gr",
+      "termino": "Systauróō (Juntamente Crucificado)",
+      "original": "συσταυρόω",
+      "transliteracion": "systauróō",
+      "strong": "G4957",
+      "idioma": "Griego",
+      "raiz": "De \"syn\" (junto con, en unión íntima) y \"stauroō\" (clavar en el madero de ejecución).",
+      "significado_exegetico": "En Gálatas 2:20 está en tiempo perfecto pasivo: un decreto legal ejecutado en el pasado cuyos efectos permanecen hoy. Nuestro «yo» autosuficiente que pretendía controlar su propio destino fue ejecutado juntamente con Cristo.",
+      "cita": "Gálatas 2:20",
+      "versiculo": "Con Cristo estoy juntamente crucificado [systauróō], y ya no vivo yo, mas vive Cristo en mí.",
+      "cristologia": "La cruz de Cristo no solo canceló nuestra culpa; puso fin a la tiranía de nuestro ego para que la vida resucitada del Hijo nos sostenga.",
+      "estudio_relacionado": {
+        "id": "redencion",
+        "titulo": "¿Qué Significa Realmente «Llevarlo a la Cruz»?"
+      }
+    },
+    {
       "id": "poneros-ojo-gr",
       "termino": "Ponērós (Ojo Malo / Estrabismo Avaro)",
       "original": "πονηρός",

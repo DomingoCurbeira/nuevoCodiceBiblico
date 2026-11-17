@@ -1,5 +1,63 @@
 [
   {
+    "id": "redencion",
+    "slug": "que-significa-realmente-llevarlo-a-la-cruz-el-colapso-de-tu-autosuficiencia-y-el-inicio-de-la-gracia",
+    "titulo": "¿Qué Significa Realmente «Llevarlo a la Cruz»?: El Colapso de tu Autosuficiencia y el Inicio de la Gracia",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es comprender que la frase «llévalo a la cruz» no es una fórmula evangélica para anestesiar el dolor ni un truco místico para dejar de sentir miedo. Es una confrontación directa contra nuestro ego y nuestra necesidad de control. Busca revelar que la cruz no es un buzón de quejas, sino el lugar donde nuestra autosuficiencia muere para que podamos descansar enteramente en la obra y la provisión perfecta de Cristo, incluso cuando nuestras circunstancias tiemblan.",
+    "categoria": "DESMONTANDO LA RELIGIÓN",
+    "serie": "Teología Reformada",
+    "referencia": "Gálatas 2:20; Mateo 16:24; 2 Corintios 12:9",
+    "autor": "Códice Bíblico",
+    "edicion": "Tema Especial",
+    "fecha": "17 de noviembre de 2026",
+    "portada": "assets/covers/redencion.webp",
+    "pdfUrl": "assets/pdfs/redencion.pdf",
+    "palabras": 951,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "De la Fórmula Mística del Cliché a la Ejecución de la Autosuficiencia",
+      "contraste": {
+        "error_titulo": "El Cliché Religioso («Buzón Místico»)",
+        "error_puntos": [
+          "Trata la cruz como un truco mental o una oración ruidosa para apagar el dolor o la ansiedad al instante.",
+          "Acusa al creyente de «falta de fe» cuando las pruebas o el temor no desaparecen mágicamente.",
+          "Exige que finjas ser un superhéroe espiritual intocable mientras sigues intentando controlar tu vida."
+        ],
+        "verdad_titulo": "La Cruz Bíblica: El Final de Ti Mismo (Gál. 2:20; 2 Cor. 12:9)",
+        "verdad_puntos": [
+          "Es un lugar de ejecución donde muere la ilusión de que puedes sostener tu destino con tus propios recursos.",
+          "No te exige dejar de temblar para ser amado: el poder de Cristo se perfecciona en tu mayor debilidad.",
+          "Nos devuelve a nuestra verdadera posición: niños pequeños y quebrantados aferrados a las piernas del Padre."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Fin de los Recursos",
+          "detalle": "Las redes de seguridad humanas se rompen para exponer que nuestra autosuficiencia era una ilusión."
+        },
+        {
+          "paso": "2. Ejecución del Control",
+          "detalle": "Con Cristo estamos juntamente crucificados (Gál. 2:20): soltamos el derecho de gobernar nuestro mañana."
+        },
+        {
+          "paso": "3. Refugio en Su Gracia",
+          "detalle": "Nos presentamos temblando pero rendidos ante el Padre, cuya gracia basta en nuestra fragilidad."
+        }
+      ],
+      "axiomas": [
+        "«La cruz no es una píldora mística para anestesiar tus circunstancias temporales; es el lugar de ejecución donde muere tu autosuficiencia.»",
+        "«El Evangelio no te exige que dejes de temblar para poder ser amado; cuando el pánico te ahogue, ir a la cruz es presentarte exactamente con ese terror.»",
+        "«El verdadero descanso no está en ser un creyente \"fuerte\" al que todos admiran, sino en ser un niño pequeño aferrado a las piernas de su Padre.»"
+      ],
+      "terminos_etymos": [
+        "Systauróō",
+        "Aparnéomai",
+        "Asthéneia",
+        "Gracia"
+      ]
+    }
+  },
+  {
     "id": "mamon",
     "slug": "el-ojo-sano-y-el-dios-mamon-la-guerra-por-la-lealtad-de-tu-corazon",
     "titulo": "El Ojo Sano y el Dios Mamón: La Guerra por la Lealtad de tu Corazón",
