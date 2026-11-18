@@ -1,6 +1,125 @@
 {
   "palabras": [
     {
+      "id": "aggareuo-milla-gr",
+      "termino": "Aggareúō (Obligar a Cargar / La Milla Impuesta)",
+      "original": "ἀγγαρεύω",
+      "transliteracion": "aggareúō",
+      "strong": "G29",
+      "idioma": "Griego",
+      "raiz": "Préstamo del persa antiguo (\"ángaros\", mensajero real): el derecho militar que tenían los soldados del Imperio de requisar a cualquier civil en la calle para cargar su equipaje durante una milla romana (mil pasos).",
+      "significado_exegetico": "En Mateo 5:41, Jesús toma la humillación más odiada por los judíos bajo ocupación romana (aggareúō) y la transforma en el escenario de la gracia: caminar voluntariamente la segunda milla demuestra que el creyente no actúa por coacción externa, sino por la libertad soberana del amor de Cristo.",
+      "cita": "Mateo 5:41 / Mateo 27:32",
+      "versiculo": "Y a cualquiera que te obligue a llevar carga [aggareúsei] por una milla, ve con él dos.",
+      "cristologia": "El mismo verbo (aggareúō) se usa en Mateo 27:32 cuando obligaron a Simón de Cirene a llevar la cruz de Jesús, mientras Cristo caminaba voluntariamente la milla eterna de nuestra redención.",
+      "estudio_relacionado": {
+        "id": "segunda-milla",
+        "titulo": "La Segunda Milla y la Renuncia a la Venganza"
+      }
+    },
+    {
+      "id": "horkos-juramento-gr",
+      "termino": "Horkós / Naí (Juramento vs. el «Sí» Íntegro)",
+      "original": "ὅρκος / ναί",
+      "transliteracion": "hórkos / naí",
+      "strong": "G3727 / G3483",
+      "idioma": "Griego",
+      "raiz": "\"Hórkos\" (valla o cerco sagrado con que se ata una promesa) y \"Naí\" (afirmación sencilla, veraz y sin doblez: «Sí»).",
+      "significado_exegetico": "En Mateo 5:33–37, Jesús desenmascara el abuso farisaico de los juramentos evasivos y establece la ética verbal del Reino: una transparencia tan cristalina que un simple «Sí, sí» (naì naí) o «No, no» basta como garantía absoluta.",
+      "cita": "Mateo 5:37",
+      "versiculo": "Pero sea vuestro hablar: Sí, sí [naì naí]; No, no; porque lo que es más de esto, de mal procede.",
+      "cristologia": "En Jesucristo nunca hubo «Sí» y «No», porque todas las promesas de Dios son en Él «Sí», y en Él «Amén» (2 Corintios 1:19–20).",
+      "estudio_relacionado": {
+        "id": "integridad-de-la-palabra",
+        "titulo": "La Integridad de la Palabra: Que Tu Sí Sea Sí"
+      }
+    },
+    {
+      "id": "epithymeo-codiciar-gr",
+      "termino": "Epithyméō (Codiciar / Desear Ardientemente)",
+      "original": "ἐπιθυμέω",
+      "transliteracion": "epithyméō",
+      "strong": "G1937",
+      "idioma": "Griego",
+      "raiz": "De \"epí\" (sobre, enfocado hacia) y \"thymós\" (pasión ardiente, impulso del alma): fijar el deseo apasionado sobre algo prohibido para apropiárselo interiormente.",
+      "significado_exegetico": "En Mateo 5:28, la construcción griega «pròs tò epithymēsai» expresa propósito deliberado: no es notar la existencia de alguien, sino mirar con la intención específica de despertar y alimentar la codicia en el corazón.",
+      "cita": "Mateo 5:28",
+      "versiculo": "Pero yo os digo que cualquiera que mira a una mujer para codiciarla [pròs tò epithymēsai autēn], ya adulteró con ella en su corazón.",
+      "cristologia": "Solo un afecto superior puede expulsar a uno inferior: cuando el corazón contempla la hermosura y pureza de Cristo, las ofertas engañosas de la lujuria pierden su brillo.",
+      "estudio_relacionado": {
+        "id": "pureza-radical",
+        "titulo": "El Adulterio del Alma y la Pureza Radical"
+      }
+    },
+    {
+      "id": "rhaka-orgizo-gr",
+      "termino": "Orgízō / Rhaká (Ira Incubada y Desprecio)",
+      "original": "ὀργίζω / ῥακά",
+      "transliteracion": "orgízō / rhaká",
+      "strong": "G3710 / G4469",
+      "idioma": "Griego",
+      "raiz": "\"Orgízō\" denota una ira que se alimenta y guarda lentamente como brasa; \"Rhaká\" (del arameo \"reqá\") significa cabeza hueca, inútil, despreciable, reduciendo al prójimo a la nada.",
+      "significado_exegetico": "En Mateo 5:22, Jesús muestra la anatomía del homicidio interior: comienza con el resentimiento incubado (orgizomenos), pasa al desprecio de la dignidad del otro (rhaká) y culmina en la condena de su carácter (mōré), haciéndonos culpables ante el tribunal divino.",
+      "cita": "Mateo 5:22",
+      "versiculo": "Pero yo os digo que cualquiera que se enoje [orgizómenos] contra su hermano, será culpable de juicio; y cualquiera que diga: Necio [Rhaká], a su hermano, será culpable ante el concilio.",
+      "cristologia": "Cristo sufrió los insultos, escupitajos y el desprecio en la cruz sin responder con maldición, muriendo por Sus propios enemigos para sanar nuestro corazón homicida.",
+      "estudio_relacionado": {
+        "id": "homicidio-del-corazon",
+        "titulo": "El Homicidio del Corazón y la Ira"
+      }
+    },
+    {
+      "id": "pleroo-cumplir-gr",
+      "termino": "Plēróō (Cumplir / Llevar a su Plenitud)",
+      "original": "πληρόω",
+      "transliteracion": "plēróō",
+      "strong": "G4137",
+      "idioma": "Griego",
+      "raiz": "De \"plḗrēs\" (lleno hasta el borde): colmar una vasija, consumar una profecía, llevar un diseño a su realización perfecta y definitiva.",
+      "significado_exegetico": "En Mateo 5:17, Jesús declara que no vino a derribar (katalýō) la Ley o los Profetas, sino a llenarlos de su verdadero sentido y consumarlos (plērōsai): Él es la sustancia de toda sombra ceremonial, el cumplimiento de toda profecía y el único que satisfizo toda demanda moral y penal de la Ley.",
+      "cita": "Mateo 5:17",
+      "versiculo": "No penséis que he venido para abrogar la ley o los profetas; no he venido para abrogar, sino para cumplir [plērōsai].",
+      "cristologia": "Porque el fin (télos: meta y consumación) de la ley es Cristo, para justicia a todo aquel que cree (Romanos 10:4).",
+      "estudio_relacionado": {
+        "id": "cristo-y-la-ley",
+        "titulo": "Cristo, la Ley y el Corazón: El Cumplimiento de la Ley"
+      }
+    },
+    {
+      "id": "halas-sal-gr",
+      "termino": "Hálas / Phōs (Sal Preservadora y Luz del Mundo)",
+      "original": "ἅλας / φῶς",
+      "transliteracion": "hálas / phōs",
+      "strong": "G217 / G5457",
+      "idioma": "Griego",
+      "raiz": "\"Hálas\" (sal mineral que conserva la carne de la putrefacción y sella pactos) y \"Phōs\" (luz radiante que expone la verdad y guía en las tinieblas).",
+      "significado_exegetico": "En Mateo 5:13–14, el pronombre griego «Hymeîs» (Vosotros — y nadie más) es enfático: la Iglesia regenerada es el único agente preservador y la única lumbrera reflectora de la verdad de Dios en medio de un mundo en descomposición.",
+      "cita": "Mateo 5:13–14",
+      "versiculo": "Vosotros sois la sal [hálas] de la tierra... Vosotros sois la luz [phōs] del mundo.",
+      "cristologia": "Cristo es la Luz verdadera del mundo (Juan 8:12); nosotros brillamos únicamente como la luna que refleja la luz del Sol de Justicia.",
+      "estudio_relacionado": {
+        "id": "sal-y-luz",
+        "titulo": "Sal de la Tierra y Luz del Mundo"
+      }
+    },
+    {
+      "id": "dioko-perseguir-gr",
+      "termino": "Diōkō (Perseguir / Acosar sin Tregua)",
+      "original": "διώκω",
+      "transliteracion": "diōkō",
+      "strong": "G1377",
+      "idioma": "Griego",
+      "raiz": "Originalmente término de caza: correr tras una presa para darle alcance, hostigar, poner en fuga o acosar judicialmente.",
+      "significado_exegetico": "En Mateo 5:10–12 describe la hostilidad activa que el mundo caído desata contra quienes viven bajo la justicia de Cristo. Lejos de ser señal de abandono divino, el ser perseguido por causa de Cristo confirma nuestra ciudadanía celestial.",
+      "cita": "Mateo 5:10–11",
+      "versiculo": "Bienaventurados los que padecen persecución [dediōgménoi] por causa de la justicia, porque de ellos es el reino de los cielos.",
+      "cristologia": "Cristo fue perseguido hasta la muerte de cruz («Si a mí me han perseguido, también a vosotros os perseguirán», Juan 15:20), y desde el trono se identifica con Su iglesia sufriente («Saulo, ¿por qué me persigues?»).",
+      "estudio_relacionado": {
+        "id": "perseguidos",
+        "titulo": "Los Perseguidos por Causa de la Justicia"
+      }
+    },
+    {
       "id": "katartizo-restaurar-gr",
       "termino": "Katartízō (Restaurar / Encajar un Hueso)",
       "original": "καταρτίζω",
