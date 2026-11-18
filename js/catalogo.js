@@ -1,6 +1,7 @@
 /**
  * js/catalogo.js
  * Renderiza el catálogo de estudios teológicos en formato Grid Editorial
+ * Ordena automáticamente los estudios por número de Episodio (1, 2, 3...)
  */
 document.addEventListener('DOMContentLoaded', async () => {
   const gridEl = document.getElementById('studies-grid');
@@ -14,11 +15,44 @@ document.addEventListener('DOMContentLoaded', async () => {
   let serieActiva = 'Todos';
   let busqueda = '';
 
+  const ORDEN_SERIES = [
+    'El Sermón del Monte',
+    'Trilogía de la Salvación',
+    'La Gracia Soberana',
+    'Teología Reformada'
+  ];
+
   const normalizar = (str) =>
     (str || '')
       .toLowerCase()
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '');
+
+  // Extrae el número de episodio (ej. "Episodio 1" -> 1). Si es "Edición Especial", lo coloca al final (999).
+  function obtenerNumeroEpisodio(edicionStr) {
+    const match = String(edicionStr || '').match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : 999;
+  }
+
+  function ordenarEstudios(lista) {
+    return [...lista].sort((a, b) => {
+      // Si estamos en "Todos", agrupar primero por el orden curricular de series y luego por episodio 1, 2, 3...
+      if (serieActiva === 'Todos') {
+        const idxSerieA = ORDEN_SERIES.indexOf(a.serie);
+        const idxSerieB = ORDEN_SERIES.indexOf(b.serie);
+        const sA = idxSerieA === -1 ? 99 : idxSerieA;
+        const sB = idxSerieB === -1 ? 99 : idxSerieB;
+        if (sA !== sB) return sA - sB;
+      }
+
+      // Dentro de cada serie, ordenar por número de episodio ascendente (Episodio 1, 2, 3, 4...)
+      const epA = obtenerNumeroEpisodio(a.edicion);
+      const epB = obtenerNumeroEpisodio(b.edicion);
+      if (epA !== epB) return epA - epB;
+
+      return (a.titulo || '').localeCompare(b.titulo || '', 'es');
+    });
+  }
 
   try {
     const res = await fetch('data/estudios.json');
@@ -37,7 +71,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function inicializarFiltros() {
     if (!filtersEl) return;
-    const series = ['Todos', ...new Set(estudios.map(e => e.serie).filter(Boolean))];
+    const seriesPresentes = [...new Set(estudios.map(e => e.serie).filter(Boolean))];
+    seriesPresentes.sort((a, b) => {
+      const ia = ORDEN_SERIES.indexOf(a);
+      const ib = ORDEN_SERIES.indexOf(b);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
+
+    const series = ['Todos', ...seriesPresentes];
     filtersEl.innerHTML = series
       .map(
         serie => `
@@ -87,16 +128,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!q) return true;
 
       const texto = normalizar(
-        `${item.titulo} ${item.subtitulo} ${item.referencia} ${item.categoria} ${item.serie}`
+        `${item.titulo} ${item.subtitulo} ${item.referencia} ${item.categoria} ${item.serie} ${item.edicion}`
       );
       return texto.includes(q);
     });
 
+    const ordenados = ordenarEstudios(filtrados);
+
     if (countEl) {
-      countEl.textContent = `${filtrados.length} ${filtrados.length === 1 ? 'estudio disponible' : 'estudios disponibles'}`;
+      countEl.textContent = `${ordenados.length} ${ordenados.length === 1 ? 'estudio disponible' : 'estudios disponibles'}`;
     }
 
-    if (filtrados.length === 0) {
+    if (ordenados.length === 0) {
       gridEl.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3.5rem 1rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
           <p class="serif-title" style="font-size: 1.4rem; margin-bottom: 0.4rem;">Sin resultados para tu búsqueda</p>
@@ -106,7 +149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
-    gridEl.innerHTML = filtrados
+    gridEl.innerHTML = ordenados
       .map(
         estudio => `
         <article class="study-card">
