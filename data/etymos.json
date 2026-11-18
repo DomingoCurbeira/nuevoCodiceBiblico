@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "krazo-clamar-gr",
+      "termino": "Krázō (Clamar con Voz de Decreto Real)",
+      "original": "κράζω",
+      "transliteracion": "krázō",
+      "strong": "G2896",
+      "idioma": "Griego",
+      "raiz": "Clamar a gran voz con autoridad imperativa e irresistible que rompe el silencio.",
+      "significado_exegetico": "En Juan 11:43, Jesús «clamó a gran voz [ekraxen phōnē megalē]: ¡Lázaro, ven fuera!». Ilustra el llamado eficaz del Evangelio: la Palabra soberana del Rey que penetra los oídos de un muerto y produce instantáneamente la obediencia de la fe.",
+      "cita": "Juan 11:43",
+      "versiculo": "Y habiendo dicho esto, clamó [ekraxen] a gran voz: ¡Lázaro, ven fuera!",
+      "cristologia": "El mismo Cristo que gritó frente a la cueva de Betania clamó a gran voz en la cruz «¡Consumado es!» para abrir nuestros sepulcros eternamente.",
+      "estudio_relacionado": {
+        "id": "lazaro",
+        "titulo": "La Cuenta de los Cuatro Días (Lázaro)"
+      }
+    },
+    {
+      "id": "nekros-muerto-gr",
+      "termino": "Nekrós (Cadáver / Espiritualmente Muerto)",
+      "original": "νεκρός",
+      "transliteracion": "nekrós",
+      "strong": "G3498",
+      "idioma": "Griego",
+      "raiz": "De \"nekys\" (cuerpo sin vida, cadáver privado de toda capacidad de respuesta o movimiento).",
+      "significado_exegetico": "En Efesios 2:1 y 5, Pablo declara que sin Cristo no estábamos debilitados o enfermos, sino muertos (nekroùs) en delitos y pecados, tal como Lázaro en su cuarto día de sepulcro.",
+      "cita": "Efesios 2:1, 5",
+      "versiculo": "Aun estando nosotros muertos [nekroùs] en pecados, nos dio vida juntamente con Cristo (por gracia sois salvos).",
+      "cristologia": "Solo Aquel que es la Resurrección y la Vida (Juan 11:25) puede hablarle a un nekrós y comunicarle vida eterna por Su Espíritu.",
+      "estudio_relacionado": {
+        "id": "lazaro",
+        "titulo": "La Cuenta de los Cuatro Días (Lázaro)"
+      }
+    },
+    {
+      "id": "embrimaomai-gr",
+      "termino": "Embrimáomai (Estremecerse con Santa Indignación)",
+      "original": "ἐμβριμάομαι",
+      "transliteracion": "embrimáomai",
+      "strong": "G1690",
+      "idioma": "Griego",
+      "raiz": "Originalmente el resoplido de furia de un caballo de guerra al entrar en combate; denota una indignación profunda y visceral en el espíritu.",
+      "significado_exegetico": "En Juan 11:33 y 38, cuando Jesús se acerca al sepulcro de Lázaro, no siente una tristeza pasiva o impotente, sino una santa ira de Guerrero contra la tiranía del pecado y la muerte que destruyen a los Suyos.",
+      "cita": "Juan 11:33, 38",
+      "versiculo": "Jesús entonces, al verla llorando... se estremeció en espíritu [enebrimēsato tō pneumati] y se conmovió.",
+      "cristologia": "Cristo es el Campeón divino que no permanece indiferente ante nuestra tumba: Su indignación contra la muerte lo llevó a destruirla con Su propia muerte en el Calvario.",
+      "estudio_relacionado": {
+        "id": "lazaro",
+        "titulo": "La Cuenta de los Cuatro Días (Lázaro)"
+      }
+    },
+    {
       "id": "eirenopoios-gr",
       "termino": "Eirēnopoiós (Pacificador / Constructor de Paz)",
       "original": "εἰρηνοποιός",

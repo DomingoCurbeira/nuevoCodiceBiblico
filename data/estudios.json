@@ -1,5 +1,63 @@
 [
   {
+    "id": "lazaro",
+    "slug": "la-cuenta-de-los-cuatro-dias-cuando-dios-llega-cuando-ya-no-hay-esperanza",
+    "titulo": "La Cuenta de los Cuatro Días: Cuando Dios Llega Cuando Ya No Hay Esperanza",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es comprender que la demora de Jesús ante la enfermedad y muerte de Lázaro no fue indiferencia ni falta de urgencia, sino un acto deliberado de amor soberano. Cristo confronta nuestra adicción carnal a querer soluciones rápidas que nos permitan conservar el control, y nos lleva intencionalmente hasta el punto de bancarrota total —el cuarto día— para demostrar que nuestra salvación y nuestra vida nueva no dependen en absoluto del esfuerzo humano, sino exclusivamente de Su voz que resucita a los muertos.",
+    "categoria": "ESTUDIO ESPECIAL",
+    "serie": "La Gracia Soberana",
+    "referencia": "Juan 11:1–53; Efesios 2:1–5; Ezequiel 37:1–10",
+    "autor": "Códice Bíblico",
+    "edicion": "Edición Especial",
+    "fecha": "18 de noviembre de 2026",
+    "portada": "assets/covers/lazaro.webp",
+    "pdfUrl": "assets/pdfs/lazaro.pdf",
+    "palabras": 1135,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "De la Exigencia del «Primer Día» a la Voz que Resucita en el «Cuarto Día»",
+      "contraste": {
+        "error_titulo": "La Religión del «Primer Día» (Sinergismo y Control)",
+        "error_puntos": [
+          "Mide el amor de Dios por Su rapidez para resolver nuestras crisis cuando aún conservamos el control.",
+          "Cree que el pecador está solo «enfermo» o desmayado y puede cooperar con su propia salvación.",
+          "Intenta maquillar el sepulcro con moralidad en lugar de confesar: «Señor, ya hiede»."
+        ],
+        "verdad_titulo": "La Gracia Soberana del «Cuarto Día» (Juan 11:5–6, 39–44)",
+        "verdad_puntos": [
+          "Jesús se queda dos días más precisamente porque los ama: espera a que todo recurso humano muera.",
+          "Al cuarto día queda destruido todo mérito o explicación humana: un cadáver no coopera para revivir.",
+          "La voz de Cristo («¡Lázaro, ven fuera!») crea la vida que ordena, pagando con Su propia muerte en la cruz."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. La Demora de Amor",
+          "detalle": "Dios retiene Su intervención inmediata para agotar nuestra ilusión de ser nuestros propios salvadores."
+        },
+        {
+          "paso": "2. Bancarrota del 4.º Día",
+          "detalle": "«Señor, hiede ya»: se derrumba toda esperanza en la carne para que ningún hombre pueda jactarse."
+        },
+        {
+          "paso": "3. El Llamado Eficaz",
+          "detalle": "Cristo se indigna contra la muerte, clama a gran voz, imparte vida al muerto y toma su lugar hacia la cruz."
+        }
+      ],
+      "axiomas": [
+        "«Jesús amaba a Marta, a María y a Lázaro, y precisamente por eso esperó dos días más: Su amor es demasiado grande para conformarse con parchar tu autosuficiencia.»",
+        "«Un cadáver de cuatro días no toma la decisión de levantarse ni colabora con Dios; es la voz soberana de Cristo la que crea la vida que exige.»",
+        "«Para que Lázaro pudiera salir vivo de su cueva en el cuarto día, Jesús firmó Su propia sentencia para entrar en la tumba y resucitar al tercer día.»"
+      ],
+      "terminos_etymos": [
+        "Embrimáomai",
+        "Nekrós",
+        "Krázō",
+        "Gracia"
+      ]
+    }
+  },
+  {
     "id": "pacificadores",
     "slug": "los-constructores-de-la-reconciliacion",
     "titulo": "Los Constructores de la Reconciliación",
