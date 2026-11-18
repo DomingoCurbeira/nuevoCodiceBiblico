@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "aphtharsia-gr",
+      "termino": "Aphtharsía (Incorrupción / Inmortalidad Gloriosa)",
+      "original": "ἀφθαρσία",
+      "transliteracion": "aphtharsía",
+      "strong": "G861",
+      "idioma": "Griego",
+      "raiz": "De \"a-\" (sin) y \"phtheirō\" (corromper, marchitar, descomponer): estado de pureza y vida imperecedera incapaz de decaer o pecar.",
+      "significado_exegetico": "En 1 Corintios 15:53–54 describe el resultado de la segunda resurrección (nuestra glorificación corporal): cuando este cuerpo mortal se vista de incorrupción (aphtharsía) y termine para siempre la guerra contra la carne.",
+      "cita": "1 Corintios 15:53",
+      "versiculo": "Porque es necesario que esto corruptible se vista de incorrupción [aphtharsían], y esto mortal se vista de inmortalidad.",
+      "cristologia": "Cristo Jesús quitó la muerte y sacó a luz la vida y la inmortalidad (aphtharsía) por el Evangelio (2 Tim. 1:10), garantizando la redención total de nuestro cuerpo.",
+      "estudio_relacionado": {
+        "id": "resurreccion",
+        "titulo": "Las Dos Resurrecciones: Espiritual y Corporal"
+      }
+    },
+    {
+      "id": "syzoopoieo-gr",
+      "termino": "Syzoopoiéō (Dar Vida Juntamente con Cristo)",
+      "original": "συζωοποιέω",
+      "transliteracion": "syzōopoiéō",
+      "strong": "G4806",
+      "idioma": "Griego",
+      "raiz": "Compuesto triple de \"syn\" (junto con), \"zōós\" (vivo) y \"poiéō\" (hacer): infundir vida de resurrección en unión inseparable con otro.",
+      "significado_exegetico": "Define la primera resurrección (espiritual) ocurrida en nuestra regeneración y justificación (Efesios 2:5; Colosenses 2:13): aun estando muertos en delitos, Dios resucitó nuestro espíritu juntamente con Cristo.",
+      "cita": "Efesios 2:5",
+      "versiculo": "Aun estando nosotros muertos en pecados, nos dio vida juntamente con Cristo [synezōopoiēsen tō Christō].",
+      "cristologia": "Nuestra vida espiritual no es una chispa humana mejorada; es la misma vida de resurrección de Jesucristo implantada en nuestro hombre interior.",
+      "estudio_relacionado": {
+        "id": "resurreccion",
+        "titulo": "Las Dos Resurrecciones: Espiritual y Corporal"
+      }
+    },
+    {
+      "id": "qalal-vil-heb",
+      "termino": "Qalál (Hacerse Vil / Estimarse Pequeño)",
+      "original": "קָלַל",
+      "transliteracion": "qālal",
+      "strong": "H7043",
+      "idioma": "Hebreo",
+      "raiz": "Ser ligero, de poco peso, rebajarse voluntariamente renunciando al peso artificial del honor humano (opuesto a \"Kabód\" propio).",
+      "significado_exegetico": "En 2 Samuel 6:22, David responde al desprecio de Mical diciendo: «Y aun me haré más vil [niqallōtî] que esta vez, y seré bajo a mis propios ojos». Es la libertad gloriosa de quien muere al qué dirán para que solo Dios sea pesado (Kabód).",
+      "cita": "2 Samuel 6:22",
+      "versiculo": "Y aun me haré más vil [qalál] que esta vez, y seré bajo a mis propios ojos.",
+      "cristologia": "Cristo, existiendo en forma de Dios, se despojó y se humilló a Sí mismo hasta la muerte de cruz (Fil. 2:7–8), despreciando el oprobio por amor a nosotros.",
+      "estudio_relacionado": {
+        "id": "verdad",
+        "titulo": "Adorar en Espíritu y en Verdad: Haciéndome Vil"
+      }
+    },
+    {
+      "id": "proskyneo-gr",
+      "termino": "Proskynéō (Adorar / Postrarse ante el Rey)",
+      "original": "προσκυνέω",
+      "transliteracion": "proskynéō",
+      "strong": "G4352",
+      "idioma": "Griego",
+      "raiz": "De \"prós\" (hacia) y \"kynéō\" (besar): el acto de caer rostro en tierra para besar los pies o el borde del manto de un soberano en rendición absoluta.",
+      "significado_exegetico": "En Juan 4:23–24, Jesús enseña que la verdadera adoración (proskynéō) no es un espectáculo musical ni depende de un templo físico, sino la postración sincera de un espíritu regenerado ante la verdad de Cristo.",
+      "cita": "Juan 4:23–24",
+      "versiculo": "Mas la hora viene, y ahora es, cuando los verdaderos adoradores adorarán [proskynēsousin] al Padre en espíritu y en verdad.",
+      "cristologia": "Jesucristo es el verdadero Templo donde habita toda la plenitud de la Deidad; solo en Él tenemos acceso directo al Padre sin velos ni geografías sagradas.",
+      "estudio_relacionado": {
+        "id": "verdad",
+        "titulo": "Adorar en Espíritu y en Verdad: Haciéndome Vil"
+      }
+    },
+    {
       "id": "krazo-clamar-gr",
       "termino": "Krázō (Clamar con Voz de Decreto Real)",
       "original": "κράζω",
