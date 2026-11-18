@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "katartizo-restaurar-gr",
+      "termino": "Katartízō (Restaurar / Encajar un Hueso)",
+      "original": "καταρτίζω",
+      "transliteracion": "katartízō",
+      "strong": "G2675",
+      "idioma": "Griego",
+      "raiz": "Término médico y marítimo que significa volver a colocar en su lugar un hueso dislocado o remendar redes rotas para que vuelvan a ser útiles.",
+      "significado_exegetico": "En Gálatas 6:1 define el propósito del verdadero juicio cristiano: cuando alguien es sorprendido en alguna falta, quienes han quitado su propia viga lo «restauran» (katartízete) con delicadeza quirúrgica y espíritu de mansedumbre.",
+      "cita": "Gálatas 6:1",
+      "versiculo": "Hermanos, si alguno fuere sorprendido en alguna falta, vosotros que sois espirituales, restauradle [katartízete] con espíritu de mansedumbre.",
+      "cristologia": "Jesucristo es el Médico divino que no quiebra la caña cascada ni apaga el pábilo que humea, sino que restaura nuestras almas dislocadas por el pecado.",
+      "estudio_relacionado": {
+        "id": "viga",
+        "titulo": "El Juicio y la Viga en el Ojo"
+      }
+    },
+    {
+      "id": "dokos-viga-gr",
+      "termino": "Dokós (La Viga Maestra del Orgullo)",
+      "original": "δοκός",
+      "transliteracion": "dokós",
+      "strong": "G1385",
+      "idioma": "Griego",
+      "raiz": "El madero o travesaño principal que sostiene el techo de una casa, en contraste con \"kárphos\" (una diminuta brizna de paja o astilla seca).",
+      "significado_exegetico": "En Mateo 7:3–5, la «viga» (dokós) simboliza la ceguera de la autosuficiencia y la falta de amor: quien se siente moralmente superior tiene un tronco en su propia vista que lo incapacita para ayudar a su hermano.",
+      "cita": "Mateo 7:3–5",
+      "versiculo": "¿Y por qué miras la paja que está en el ojo de tu hermano, y no echas de ver la viga [dokòn] que está en tu propio ojo?",
+      "cristologia": "El madero de la cruz de Cristo es el único que puede extraer de nuestros ojos la viga de la justicia propia, devolviéndonos la vista de la compasión.",
+      "estudio_relacionado": {
+        "id": "viga",
+        "titulo": "El Juicio y la Viga en el Ojo"
+      }
+    },
+    {
+      "id": "krino-juzgar-gr",
+      "termino": "Krínō (Juzgar / Emitir Veredicto)",
+      "original": "κρίνω",
+      "transliteracion": "krínō",
+      "strong": "G2919",
+      "idioma": "Griego",
+      "raiz": "Separar, cribar, distinguir; y en su sentido judicial, sentarse en un tribunal para dictar sentencia condenatoria sobre otro.",
+      "significado_exegetico": "En Mateo 7:1, Jesús no prohíbe evaluar frutos con discernimiento (Mat. 7:15–20), sino el espíritu censor e hipócrita que usurpa el trono de Dios para condenar al prójimo y alimentar la propia superioridad moral.",
+      "cita": "Mateo 7:1–2",
+      "versiculo": "No juzguéis [krínete], para que no seáis juzgados. Porque con el juicio con que juzgáis, seréis juzgados.",
+      "cristologia": "Cristo, el único Juez justo, llevó nuestra sentencia condenatoria en la cruz para que hoy miremos a nuestro hermano desde el tribunal de la gracia y no de la ley.",
+      "estudio_relacionado": {
+        "id": "viga",
+        "titulo": "El Juicio y la Viga en el Ojo"
+      }
+    },
+    {
       "id": "aphtharsia-gr",
       "termino": "Aphtharsía (Incorrupción / Inmortalidad Gloriosa)",
       "original": "ἀφθαρσία",

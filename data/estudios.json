@@ -1,5 +1,63 @@
 [
   {
+    "id": "viga",
+    "slug": "el-juicio-y-la-viga-en-el-ojo-el-fin-de-la-superioridad-moral-entre-la-misericordia-y-el-discernimiento",
+    "titulo": "El Juicio y la Viga en el Ojo: El Fin de la Superioridad Moral, entre la Misericordia y el Discernimiento",
+    "subtitulo": "El propósito de este estudio a la luz del Evangelio es desmantelar los dos extremos que distorsionan las palabras de Jesús sobre el juicio: por un lado, el legalismo religioso que se sienta en el trono de Dios para condenar a otros y sentirse superior; por otro, el relativismo moderno que usa el «no juzgues» como escudo para anular el discernimiento bíblico. Cristo nos confronta con la viga de nuestra propia autosuficiencia para transformarnos en instrumentos de misericordia humilde, sin perder la sabiduría para proteger lo santo.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 7:1–6; Gálatas 6:1; Romanos 2:1–4",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 23",
+    "fecha": "18 de noviembre de 2026",
+    "portada": "assets/covers/viga.webp",
+    "pdfUrl": "assets/pdfs/viga.pdf",
+    "palabras": 954,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Del Tribunal de la Hipocresía y el Relativismo Ciego a la Cirugía de la Gracia",
+      "contraste": {
+        "error_titulo": "Los Dos Extremos: Condena Farisaica o Relativismo Ciego",
+        "error_puntos": [
+          "El legalista usurpa el trono de Dios para condenar la astilla ajena mientras ignora la viga de su propio orgullo.",
+          "El relativista usa «no juzguéis» como excusa para aplaudir el pecado y anular todo discernimiento bíblico.",
+          "Ambos operan desde el ego: uno para sentirse superior y el otro para evitar confrontar su conciencia."
+        ],
+        "verdad_titulo": "Humildad Restauradora y Discernimiento Santo (Mateo 7:1–6; Gál. 6:1)",
+        "verdad_puntos": [
+          "Saca primero la viga (dokós) de su propia autosuficiencia al pie de la cruz antes de tocar el ojo de su hermano.",
+          "Restaura al caído con espíritu de mansedumbre (katartízō), consciente de que él mismo vive por pura misericordia.",
+          "Ejerce discernimiento sabio (Mat. 7:6): no arroja las perlas del Evangelio a quienes las pisotean con cinismo hostil."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Bajar del Tribunal",
+          "detalle": "Renunciamos a ser jueces implacables de otros, recordando la medida de gracia con que Cristo nos perdonó."
+        },
+        {
+          "paso": "2. Extraer Nuestra Viga (Dokós)",
+          "detalle": "El Evangelio demuele nuestro orgullo moral para darnos ojos limpios y manos tiernas que restauran sin herir."
+        },
+        {
+          "paso": "3. Misericordia con Discernimiento",
+          "detalle": "Socorremos con paciencia al quebrantado, pero guardamos las perlas sagradas frente a la burla obstinada."
+        }
+      ],
+      "axiomas": [
+        "«La viga en el ojo casi nunca es un pecado escandaloso distinto al del otro; es el tronco gigantesco de creer que tu debilidad es comprensible y la de tu hermano imperdonable.»",
+        "«Jesús no dice \"ignora la astilla de tu hermano\", sino \"saca primero tu viga para que veas bien\": solo un pecador humillado por la gracia tiene el pulso para hacer cirugía espiritual.»",
+        "«La gracia nos hace mansos, no ingenuos: restauramos con ternura al herido, pero no entregamos las perlas del Reino a quienes solo buscan pisotearlas.»"
+      ],
+      "terminos_etymos": [
+        "Krínō",
+        "Dokós",
+        "Katartízō",
+        "Eleḗmōn"
+      ]
+    }
+  },
+  {
     "id": "verdad",
     "slug": "adorar-en-espiritu-y-en-verdad-haciendome-vil-el-fin-de-la-religion-de-apariencias",
     "titulo": "Adorar en Espíritu y en Verdad: Haciéndome Vil, el Fin de la Religión de Apariencias",
