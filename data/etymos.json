@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "oikodome-nous-gr",
+      "termino": "Noûs / Oikodomḗ (Entendimiento para Edificación)",
+      "original": "νοῦς / οἰκοδομή",
+      "transliteracion": "noûs / oikodomḗ",
+      "strong": "G3563 / G3619",
+      "idioma": "Griego",
+      "raiz": "\"Noûs\" (mente lúcida, facultad de comprender y discernir la verdad) y \"Oikodomḗ\" (de \"oîkos\" [casa] y \"démō\" [construir]: edificación sólida del cuerpo de Cristo).",
+      "significado_exegetico": "En 1 Corintios 14:19 y 26, Pablo establece la regla de oro de toda reunión cristiana: «Hágase todo para edificación [oikodomḗn]», y sin entendimiento claro (tō noí mou) de la Palabra de Dios no hay edificación posible de la iglesia.",
+      "cita": "1 Corintios 14:19, 26",
+      "versiculo": "Pero en la iglesia prefiero hablar cinco palabras con mi entendimiento [tō noí mou], para enseñar también a otros, que diez mil palabras en lengua desconocida.",
+      "cristologia": "Jesucristo es el Logos (la Palabra inteligible y perfecta de Dios) y la Piedra Angular sobre la cual se edifica Su Iglesia con verdad y claridad.",
+      "estudio_relacionado": {
+        "id": "lenguas",
+        "titulo": "Cinco Palabras con Entendimiento: Hablar en Lenguas"
+      }
+    },
+    {
+      "id": "glossa-dialektos-gr",
+      "termino": "Glôssa / Diálektos (Idioma Humano Articulado)",
+      "original": "γλῶσσα / διάλεκτος",
+      "transliteracion": "glôssa / diálektos",
+      "strong": "G1100 / G1258",
+      "idioma": "Griego",
+      "raiz": "\"Glôssa\" (órgano de la lengua o idioma de una nación) y \"Diálektos\" (lenguaje o dialecto natal de un país o región específica).",
+      "significado_exegetico": "En Hechos 2:4–8, Lucas usa ambos términos como sinónimos exactos: las «otras lenguas» (hetérais glōssais, v. 4) son definidas inmediatamente por los oyentes como «nuestra propia lengua en la que hemos nacido» (tē idía dialéktō, v. 6, 8): idiomas extranjeros reales dados milagrosamente para proclamar el Evangelio.",
+      "cita": "Hechos 2:4, 8",
+      "versiculo": "¿Cómo, pues, les oímos nosotros hablar cada uno en nuestra lengua [dialéktō] en la que hemos nacido?",
+      "cristologia": "Cristo derribó los muros de Babel en la cruz para reunir un pueblo de todo linaje, lengua (glôssa), pueblo y nación (Apocalipsis 5:9).",
+      "estudio_relacionado": {
+        "id": "lenguas",
+        "titulo": "Cinco Palabras con Entendimiento: Hablar en Lenguas"
+      }
+    },
+    {
+      "id": "agatha-pneuma-gr",
+      "termino": "Agathá (Las «Cosas Buenas» del Padre)",
+      "original": "ἀγαθά",
+      "transliteracion": "agathá",
+      "strong": "G18",
+      "idioma": "Griego",
+      "raiz": "De \"agathós\" (aquello que es intrínsecamente bueno, benéfico y eterno en su naturaleza, a diferencia de lo meramente placentero).",
+      "significado_exegetico": "En Mateo 7:11, Jesús promete que el Padre dará «cosas buenas» (agathá) a los que le pidan, y en el pasaje paralelo de Lucas 11:13 traduce esas cosas buenas como «el Espíritu Santo»: el mayor regalo de Dios no es dinero ni comodidad, sino Él mismo.",
+      "cita": "Mateo 7:11 / Lucas 11:13",
+      "versiculo": "¿Cuánto más vuestro Padre que está en los cielos dará buenas cosas [agathá / Pneûma Hágion] a los que le pidan?",
+      "cristologia": "El que no escatimó ni a Su propio Hijo, sino que lo entregó por todos nosotros, ¿cómo no nos dará también con Él todas las cosas que cooperan para nuestro bien eterno? (Rom. 8:28–32).",
+      "estudio_relacionado": {
+        "id": "llamad",
+        "titulo": "Pedid, Buscad, Llamad y la Regla de Oro"
+      }
+    },
+    {
+      "id": "aiteo-zeteo-krouo-gr",
+      "termino": "Aitéō / Zētéō / Kroúō (Pedid, Buscad, Llamad)",
+      "original": "αἰτέω / ζητέω / κρούω",
+      "transliteracion": "aitéō / zētéō / kroúō",
+      "strong": "G154 / G2212 / G2925",
+      "idioma": "Griego",
+      "raiz": "Tres imperativos en presente continuo en Mateo 7:7: \"Aitéō\" (pedir con conciencia de necesidad como un inferior a un superior), \"Zētéō\" (buscar con anhelo) y \"Kroúō\" (llamar perseverantemente a la puerta).",
+      "significado_exegetico": "La escala ascendente (pedir → buscar → llamar) no es una técnica para torcer la mano de Dios, sino el latido continuo de un hijo que ha renunciado a su autosuficiencia y vive pegado a la puerta de su Padre.",
+      "cita": "Mateo 7:7",
+      "versiculo": "Pedid [aiteîte], y se os dará; buscad [zēteîte], y hallaréis; llamad [kroúete], y se os abrirá.",
+      "cristologia": "Cristo es tanto el Camino que nos lleva al Padre como la Puerta misma que se abrió para nosotros por Su sangre derramada en la cruz.",
+      "estudio_relacionado": {
+        "id": "llamad",
+        "titulo": "Pedid, Buscad, Llamad y la Regla de Oro"
+      }
+    },
+    {
       "id": "kyrios-kai-theos-gr",
       "termino": "Kýrios kaì Theós («¡Señor mío, y Dios mío!»)",
       "original": "Ὁ Κύριός μου καὶ ὁ Θεός μου",
