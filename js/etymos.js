@@ -1,7 +1,7 @@
 /**
  * js/etymos.js
  * Diccionario Exegético (Hebreo, Griego y Arameo) + Nombres Bíblicos (Diseño y Cambio de Nombre)
- * Incluye Fichas Visuales Expandibles (Modal) y Conexión Directa con Estudios en PDF.
+ * Incluye Fichas Visuales Expandibles (Modal), Conexión con PDFs y Paginador Numérico de 12 tarjetas (4 filas).
  */
 document.addEventListener('DOMContentLoaded', async () => {
   const modeButtons = document.querySelectorAll('.mode-btn');
@@ -11,18 +11,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   const resultsCountEl = document.getElementById('etymos-count');
   const lexiconContainer = document.getElementById('lexicon-results');
   const namesContainer = document.getElementById('names-results');
+  const paginationEl = document.getElementById('etymos-pagination');
   const modalBackdrop = document.getElementById('etymos-modal-backdrop');
   const modalContent = document.getElementById('etymos-modal-content');
 
   if (!lexiconContainer || !namesContainer) return;
 
+  const ITEMS_PER_PAGE = 12; // 4 filas
   let data = { palabras: [], nombres: [] };
   let activeMode = 'lexico'; // 'lexico' | 'nombres'
   let activeIdioma = 'todos';
   let activeNameFilter = 'cambio';
   let searchQuery = '';
+  let paginaActual = 1;
 
-  // Leer parámetro ?q= si viene desde un estudio
   const urlParams = new URLSearchParams(window.location.search);
   const initialQ = urlParams.get('q');
   if (initialQ) {
@@ -46,7 +48,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     lexiconContainer.innerHTML = `<p style="padding:2rem; color:var(--text-muted);">No se pudo cargar el diccionario exegético.</p>`;
   }
 
-  // Cerrar modal
   if (modalBackdrop) {
     modalBackdrop.addEventListener('click', (e) => {
       if (e.target === modalBackdrop) {
@@ -58,10 +59,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Cambiar entre Léxico Exegético y Nombres Bíblicos
   modeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       activeMode = btn.dataset.mode;
+      paginaActual = 1;
       modeButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -90,6 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     langFiltersWrap.querySelectorAll('.filter-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         activeIdioma = btn.dataset.idioma;
+        paginaActual = 1;
         langFiltersWrap.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         render();
@@ -101,6 +103,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     nameFiltersWrap.querySelectorAll('.filter-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         activeNameFilter = btn.dataset.tipo;
+        paginaActual = 1;
         nameFiltersWrap.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         render();
@@ -111,7 +114,76 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value.trim();
+      paginaActual = 1;
       render();
+    });
+  }
+
+  function generarRangoPaginas(actual, total) {
+    if (total <= 7) {
+      return Array.from({ length: total }, (_, i) => i + 1);
+    }
+    const pages = [1];
+    if (actual > 3) pages.push('...');
+    const start = Math.max(2, actual - 1);
+    const end = Math.min(total - 1, actual + 1);
+    for (let i = start; i <= end; i++) pages.push(i);
+    if (actual < total - 2) pages.push('...');
+    pages.push(total);
+    return pages;
+  }
+
+  function renderizarPaginador(totalItems) {
+    if (!paginationEl) return;
+    const totalPaginas = Math.ceil(totalItems / ITEMS_PER_PAGE);
+
+    if (totalPaginas <= 1) {
+      paginationEl.style.display = 'none';
+      paginationEl.innerHTML = '';
+      return;
+    }
+
+    paginationEl.style.display = 'flex';
+    const rango = generarRangoPaginas(paginaActual, totalPaginas);
+
+    const botonesNumeros = rango
+      .map(p => {
+        if (p === '...') {
+          return `<span class="page-ellipsis" aria-hidden="true">…</span>`;
+        }
+        return `
+          <button
+            type="button"
+            class="page-btn ${p === paginaActual ? 'active' : ''}"
+            data-page="${p}"
+            aria-label="Página ${p}"
+            ${p === paginaActual ? 'aria-current="page"' : ''}
+          >
+            ${p}
+          </button>
+        `;
+      })
+      .join('');
+
+    paginationEl.innerHTML = `
+      <button type="button" class="page-btn" data-page="${paginaActual - 1}" ${paginaActual <= 1 ? 'disabled' : ''}>
+        ← Anterior
+      </button>
+      ${botonesNumeros}
+      <button type="button" class="page-btn" data-page="${paginaActual + 1}" ${paginaActual >= totalPaginas ? 'disabled' : ''}>
+        Siguiente →
+      </button>
+    `;
+
+    paginationEl.querySelectorAll('button[data-page]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetPage = parseInt(btn.dataset.page, 10);
+        if (!targetPage || targetPage === paginaActual || targetPage < 1 || targetPage > totalPaginas) return;
+        paginaActual = targetPage;
+        render();
+        const toolbar = document.querySelector('.etymos-toolbar') || lexiconContainer;
+        toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     });
   }
 
@@ -138,21 +210,34 @@ document.addEventListener('DOMContentLoaded', async () => {
       return haystack.includes(q);
     });
 
+    const total = filtradas.length;
+    const totalPaginas = Math.max(1, Math.ceil(total / ITEMS_PER_PAGE));
+    if (paginaActual > totalPaginas) paginaActual = totalPaginas;
+
+    const inicio = (paginaActual - 1) * ITEMS_PER_PAGE;
+    const fin = Math.min(inicio + ITEMS_PER_PAGE, total);
+    const visibles = filtradas.slice(inicio, fin);
+
     if (resultsCountEl) {
-      resultsCountEl.textContent = `${filtradas.length} ${filtradas.length === 1 ? 'término exegético' : 'términos exegéticos'}`;
+      if (total === 0) {
+        resultsCountEl.textContent = '0 términos exegéticos';
+      } else if (total <= ITEMS_PER_PAGE) {
+        resultsCountEl.textContent = `${total} ${total === 1 ? 'término exegético' : 'términos exegéticos'}`;
+      } else {
+        resultsCountEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} términos exegéticos (Página ${paginaActual} de ${totalPaginas})`;
+      }
     }
 
-    if (filtradas.length === 0) {
+    if (total === 0) {
       lexiconContainer.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
           <p class="serif-title" style="font-size: 1.35rem; margin-bottom: 0.35rem;">No se encontraron términos</p>
           <p style="color: var(--text-muted); font-size: 0.9rem;">Prueba buscando por transliteración, raíz o concepto en español.</p>
         </div>
       `;
+      renderizarPaginador(0);
       return;
     }
-
-    const visibles = filtradas.slice(0, 60);
 
     lexiconContainer.innerHTML = visibles
       .map(item => {
@@ -230,6 +315,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (word) abrirModalPalabra(word);
       });
     });
+
+    renderizarPaginador(total);
   }
 
   function renderNombres() {
@@ -247,21 +334,36 @@ document.addEventListener('DOMContentLoaded', async () => {
       return haystack.includes(q);
     });
 
+    const total = filtrados.length;
+    const totalPaginas = Math.max(1, Math.ceil(total / ITEMS_PER_PAGE));
+    if (paginaActual > totalPaginas) paginaActual = totalPaginas;
+
+    const inicio = (paginaActual - 1) * ITEMS_PER_PAGE;
+    const fin = Math.min(inicio + ITEMS_PER_PAGE, total);
+    const visibles = filtrados.slice(inicio, fin);
+
     if (resultsCountEl) {
-      resultsCountEl.textContent = `${filtrados.length} ${filtrados.length === 1 ? 'registro onomástico' : 'registros onomásticos'}`;
+      if (total === 0) {
+        resultsCountEl.textContent = '0 registros onomásticos';
+      } else if (total <= ITEMS_PER_PAGE) {
+        resultsCountEl.textContent = `${total} ${total === 1 ? 'registro onomástico' : 'registros onomásticos'}`;
+      } else {
+        resultsCountEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} registros onomásticos (Página ${paginaActual} de ${totalPaginas})`;
+      }
     }
 
-    if (filtrados.length === 0) {
+    if (total === 0) {
       namesContainer.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
           <p class="serif-title" style="font-size: 1.35rem; margin-bottom: 0.35rem;">No se encontraron nombres bíblicos</p>
           <p style="color: var(--text-muted); font-size: 0.9rem;">Intenta buscar «Jacob», «Israel», «Abram», «Simón» o cambia el filtro a «Todos los Nombres».</p>
         </div>
       `;
+      renderizarPaginador(0);
       return;
     }
 
-    namesContainer.innerHTML = filtrados
+    namesContainer.innerHTML = visibles
       .map(item => {
         const n0 = item.nombre_nacimiento;
         const n1 = item.nombre_nuevo;
@@ -337,6 +439,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
       })
       .join('');
+
+    renderizarPaginador(total);
   }
 
   function abrirModalPalabra(word) {
@@ -354,7 +458,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="lexicon-original" style="font-size:2.75rem;">${word.original}</div>
       </div>
 
-      <!-- Diagrama de 3 Esferas Exegéticas -->
       <div class="flow-diagram" style="margin-bottom:1.5rem;">
         <div class="flow-step-card">
           <div class="lexicon-field-label">1. Raíz Etimológica</div>

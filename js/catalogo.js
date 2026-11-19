@@ -1,19 +1,22 @@
 /**
  * js/catalogo.js
  * Renderiza el catálogo de estudios teológicos en formato Grid Editorial
- * Ordena automáticamente los estudios por número de Episodio (1, 2, 3...)
+ * Ordena automáticamente por Episodio (1, 2, 3...) e incluye Paginador Numérico de 12 estudios (4 filas).
  */
 document.addEventListener('DOMContentLoaded', async () => {
   const gridEl = document.getElementById('studies-grid');
   const filtersEl = document.getElementById('filter-tabs');
   const searchInput = document.getElementById('catalog-search');
   const countEl = document.getElementById('studies-count');
+  const paginationEl = document.getElementById('catalog-pagination');
 
   if (!gridEl) return;
 
+  const ITEMS_PER_PAGE = 12; // 4 filas de 3 columnas
   let estudios = [];
   let serieActiva = 'Todos';
   let busqueda = '';
+  let paginaActual = 1;
 
   const ORDEN_SERIES = [
     'El Sermón del Monte',
@@ -28,7 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '');
 
-  // Extrae el número de episodio (ej. "Episodio 1" -> 1). Si es "Edición Especial", lo coloca al final (999).
   function obtenerNumeroEpisodio(edicionStr) {
     const match = String(edicionStr || '').match(/(\d+)/);
     return match ? parseInt(match[1], 10) : 999;
@@ -36,7 +38,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function ordenarEstudios(lista) {
     return [...lista].sort((a, b) => {
-      // Si estamos en "Todos", agrupar primero por el orden curricular de series y luego por episodio 1, 2, 3...
       if (serieActiva === 'Todos') {
         const idxSerieA = ORDEN_SERIES.indexOf(a.serie);
         const idxSerieB = ORDEN_SERIES.indexOf(b.serie);
@@ -45,7 +46,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (sA !== sB) return sA - sB;
       }
 
-      // Dentro de cada serie, ordenar por número de episodio ascendente (Episodio 1, 2, 3, 4...)
       const epA = obtenerNumeroEpisodio(a.edicion);
       const epB = obtenerNumeroEpisodio(b.edicion);
       if (epA !== epB) return epA - epB;
@@ -92,22 +92,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     filtersEl.querySelectorAll('.filter-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         serieActiva = btn.dataset.serie;
+        paginaActual = 1;
         filtersEl.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         renderizarCatalogo();
       });
     });
 
-    // Conectar las tarjetas de Rutas Doctrinales con el filtro del catálogo
     document.querySelectorAll('[data-select-serie]').forEach(card => {
       card.addEventListener('click', () => {
         const targetSerie = card.dataset.selectSerie;
         serieActiva = targetSerie;
+        paginaActual = 1;
         filtersEl.querySelectorAll('.filter-tab').forEach(b => {
           b.classList.toggle('active', b.dataset.serie === targetSerie);
         });
         renderizarCatalogo();
-        gridEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const controls = document.querySelector('.catalog-controls') || gridEl;
+        controls.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
   }
@@ -115,7 +117,76 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       busqueda = e.target.value.trim();
+      paginaActual = 1;
       renderizarCatalogo();
+    });
+  }
+
+  function generarRangoPaginas(actual, total) {
+    if (total <= 7) {
+      return Array.from({ length: total }, (_, i) => i + 1);
+    }
+    const pages = [1];
+    if (actual > 3) pages.push('...');
+    const start = Math.max(2, actual - 1);
+    const end = Math.min(total - 1, actual + 1);
+    for (let i = start; i <= end; i++) pages.push(i);
+    if (actual < total - 2) pages.push('...');
+    pages.push(total);
+    return pages;
+  }
+
+  function renderizarPaginador(totalItems) {
+    if (!paginationEl) return;
+    const totalPaginas = Math.ceil(totalItems / ITEMS_PER_PAGE);
+
+    if (totalPaginas <= 1) {
+      paginationEl.style.display = 'none';
+      paginationEl.innerHTML = '';
+      return;
+    }
+
+    paginationEl.style.display = 'flex';
+    const rango = generarRangoPaginas(paginaActual, totalPaginas);
+
+    const botonesNumeros = rango
+      .map(p => {
+        if (p === '...') {
+          return `<span class="page-ellipsis" aria-hidden="true">…</span>`;
+        }
+        return `
+          <button
+            type="button"
+            class="page-btn ${p === paginaActual ? 'active' : ''}"
+            data-page="${p}"
+            aria-label="Página ${p}"
+            ${p === paginaActual ? 'aria-current="page"' : ''}
+          >
+            ${p}
+          </button>
+        `;
+      })
+      .join('');
+
+    paginationEl.innerHTML = `
+      <button type="button" class="page-btn" data-page="${paginaActual - 1}" ${paginaActual <= 1 ? 'disabled' : ''}>
+        ← Anterior
+      </button>
+      ${botonesNumeros}
+      <button type="button" class="page-btn" data-page="${paginaActual + 1}" ${paginaActual >= totalPaginas ? 'disabled' : ''}>
+        Siguiente →
+      </button>
+    `;
+
+    paginationEl.querySelectorAll('button[data-page]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetPage = parseInt(btn.dataset.page, 10);
+        if (!targetPage || targetPage === paginaActual || targetPage < 1 || targetPage > totalPaginas) return;
+        paginaActual = targetPage;
+        renderizarCatalogo();
+        const controls = document.querySelector('.catalog-controls') || gridEl;
+        controls.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     });
   }
 
@@ -134,22 +205,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     const ordenados = ordenarEstudios(filtrados);
+    const total = ordenados.length;
+    const totalPaginas = Math.max(1, Math.ceil(total / ITEMS_PER_PAGE));
+    if (paginaActual > totalPaginas) paginaActual = totalPaginas;
+
+    const inicio = (paginaActual - 1) * ITEMS_PER_PAGE;
+    const fin = Math.min(inicio + ITEMS_PER_PAGE, total);
+    const paginados = ordenados.slice(inicio, fin);
 
     if (countEl) {
-      countEl.textContent = `${ordenados.length} ${ordenados.length === 1 ? 'estudio disponible' : 'estudios disponibles'}`;
+      if (total === 0) {
+        countEl.textContent = '0 estudios disponibles';
+      } else if (total <= ITEMS_PER_PAGE) {
+        countEl.textContent = `${total} ${total === 1 ? 'estudio disponible' : 'estudios disponibles'}`;
+      } else {
+        countEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} estudios disponibles (Página ${paginaActual} de ${totalPaginas})`;
+      }
     }
 
-    if (ordenados.length === 0) {
+    if (total === 0) {
       gridEl.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3.5rem 1rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
           <p class="serif-title" style="font-size: 1.4rem; margin-bottom: 0.4rem;">Sin resultados para tu búsqueda</p>
           <p style="color: var(--text-muted); font-size: 0.9rem;">Intenta con otro término doctrinal o selecciona «Todos» en las categorías.</p>
         </div>
       `;
+      renderizarPaginador(0);
       return;
     }
 
-    gridEl.innerHTML = ordenados
+    gridEl.innerHTML = paginados
       .map(
         estudio => `
         <article class="study-card">
@@ -178,5 +263,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       `
       )
       .join('');
+
+    renderizarPaginador(total);
   }
 });
