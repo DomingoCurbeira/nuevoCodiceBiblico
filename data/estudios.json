@@ -1,5 +1,63 @@
 [
   {
+    "id": "tomas",
+    "slug": "el-coraje-del-pesimista-desmontando-el-mito-de-tomas-el-incredulo-a-la-luz-de-la-gracia",
+    "titulo": "El Coraje del Pesimista: Desmontando el Mito de «Tomás el Incrédulo» a la Luz de la Gracia",
+    "subtitulo": "Juan 11:16 — Redescubrir la figura de Tomás más allá de la etiqueta injusta con la que la tradición religiosa lo ha señalado durante siglos, para comprender cómo el Evangelio no descansa sobre nuestra valentía ni sobre un positivismo forzado, sino sobre un Salvador que camina hacia la muerte en nuestro lugar y abraza con ternura nuestra fe imperfecta.",
+    "categoria": "EPISODIO ESPECIAL",
+    "serie": "La Gracia Soberana",
+    "referencia": "Juan 11:1–16; Juan 14:1–6; Juan 20:24–29; Marcos 14:50; 2 Timoteo 2:13",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio Especial",
+    "fecha": "19 de noviembre de 2026",
+    "portada": "assets/covers/tomas.webp",
+    "pdfUrl": "assets/pdfs/tomas.pdf",
+    "palabras": 1505,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Del Positivismo Religioso Forzado a las Cicatrices de Cristo que Sanan la Duda",
+      "contraste": {
+        "error_titulo": "La Caricatura Religiosa y el Positivismo Forzado",
+        "error_puntos": [
+          "Reduce a Tomás a un cínico rebelde ignorando su lealtad valiente en Juan 11:16 («Vamos para que muramos con él»).",
+          "Confunde la fe bíblica con un optimismo superficial que prohíbe hacer preguntas honestas o llorar una herida.",
+          "Cree que nuestra salvación descansa en la firmeza de nuestras promesas de valentía humana."
+        ],
+        "verdad_titulo": "El Salvador que Abraza la Fe Quebrantada (Juan 11:16; 20:27–28)",
+        "verdad_puntos": [
+          "Tomás no dudó por amar poco; levantó una coraza en Juan 20 porque su corazón quedó destrozado tras la cruz.",
+          "En Getsemaní todos huyeron (Mar. 14:50): el Evangelio no es que nosotros morimos por Cristo, sino que Él murió por nosotros.",
+          "Jesús atraviesa las puertas cerradas para ofrecer Sus cicatrices al herido, produciendo la confesión suprema: «¡Señor mío, y Dios mío!»."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Lealtad sin Triunfalismo",
+          "detalle": "En Juan 11:16, Tomás prefiere morir al lado de Cristo en Judea que vivir a salvo lejos de Él."
+        },
+        {
+          "paso": "2. El Colapso de la Promesa",
+          "detalle": "En Getsemaní todos huyen y el corazón de Tomás queda roto: nuestra valentía humana no puede salvarnos."
+        },
+        {
+          "paso": "3. Las Cicatrices de la Gracia",
+          "detalle": "Cristo resucitado busca al herido, le muestra Sus llagas y transforma su dolor en adoración («Señor mío y Dios mío»)."
+        }
+      ],
+      "axiomas": [
+        "«Tomás no dudó porque amara poco a Jesús; dudó porque su corazón había quedado hecho pedazos tras haber amado demasiado.»",
+        "«La ironía gloriosa del Evangelio es que Tomás prometió morir con Jesús, pero en Getsemaní huyó: no nos salvamos por cumplir nuestras promesas de valentía, sino porque Cristo murió solo en nuestro lugar.»",
+        "«La religión castiga al creyente herido por no fingir optimismo; Cristo atraviesa las puertas cerradas y le muestra Sus cicatrices hasta escuchar: \"¡Señor mío, y Dios mío!\".»"
+      ],
+      "terminos_etymos": [
+        "Dídymos",
+        "Synapothnḗskō",
+        "Kýrios kaì Theós",
+        "Gracia"
+      ]
+    }
+  },
+  {
     "id": "perseguidos",
     "slug": "los-perseguidos-por-causa-de-la-justicia-el-costo-del-discipulado-y-el-gozo-en-el-rechazo",
     "titulo": "Los Perseguidos por Causa de la Justicia: El Costo del Discipulado y el Gozo en el Rechazo",

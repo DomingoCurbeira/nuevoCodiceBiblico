@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "kyrios-kai-theos-gr",
+      "termino": "Kýrios kaì Theós («¡Señor mío, y Dios mío!»)",
+      "original": "Ὁ Κύριός μου καὶ ὁ Θεός μου",
+      "transliteracion": "Ho Kýriós mou kaì ho Theós mou",
+      "strong": "G2962 / G2316",
+      "idioma": "Griego",
+      "raiz": "La cumbre teológica del Evangelio de Juan: une el título de soberanía absoluta (\"Kýrios\", equivalente al Adonai/YHWH del AT) con la deidad plena (\"Theós\") y el pronombre posesivo de intimidad (\"mou\": mío).",
+      "significado_exegetico": "En Juan 20:28, el discípulo que había sido apodado «incrédulo» pronuncia la confesión más alta de la deidad de Cristo en los cuatro Evangelios, cerrando el arco que Juan abrió en Juan 1:1 («y el Verbo era Dios»).",
+      "cita": "Juan 20:28",
+      "versiculo": "Entonces Tomás respondió y le dijo: ¡Señor mío, y Dios mío! [Ho Kýriós mou kaì ho Theós mou].",
+      "cristologia": "La verdadera ortodoxia cristológica nace cuando el pecador quebrantado contempla las cicatrices del Crucificado y Resucitado.",
+      "estudio_relacionado": {
+        "id": "tomas",
+        "titulo": "El Coraje del Pesimista (Tomás)"
+      }
+    },
+    {
+      "id": "synapothnesko-gr",
+      "termino": "Synapothnḗskō (Morir Juntamente con Él)",
+      "original": "συναποθνήσκω",
+      "transliteracion": "synapothnḗskō",
+      "strong": "G4880",
+      "idioma": "Griego",
+      "raiz": "Compuesto de \"syn\" (junto con) y \"apothnḗskō\" (morir por completo): compartir el destino final de muerte al lado de otro.",
+      "significado_exegetico": "En Juan 11:16, Tomás usa este verbo para expresar una devoción que prefiere morir con Cristo antes que vivir sin Él. Aunque en Getsemaní su fuerza carnal flaqueó, por la gracia del Evangelio hoy morimos con Cristo al ego para vivir con Él (2 Tim. 2:11).",
+      "cita": "Juan 11:16 / 2 Timoteo 2:11",
+      "versiculo": "Vamos también nosotros, para que muramos con él [synapothánōmen autō].",
+      "cristologia": "Nosotros no pudimos morir por Cristo para redimirlo; Él murió en soledad por nosotros para que nuestra unión con Su muerte nos diera vida eterna.",
+      "estudio_relacionado": {
+        "id": "tomas",
+        "titulo": "El Coraje del Pesimista (Tomás)"
+      }
+    },
+    {
+      "id": "didymos-tomas-gr",
+      "termino": "Dídymos / Tōmâs (El Mellizo)",
+      "original": "Δίδυμος / Θωμᾶς",
+      "transliteracion": "Dídymos / Thōmâs",
+      "strong": "G1324 / G2381",
+      "idioma": "Griego",
+      "raiz": "Traducción griega (\"Dídymos\") del arameo \"Te’oma\" (mellizo o gemelo; de una raíz que denota algo doble).",
+      "significado_exegetico": "Retrata el corazón del creyente honesto que lucha entre dos fuerzas en el territorio de esta vida: una lealtad profunda hacia Cristo (Juan 11:16) y el dolor humano ante las crisis que parecen contradecir la esperanza (Juan 20:25).",
+      "cita": "Juan 11:16 / Juan 20:24",
+      "versiculo": "Dijo entonces Tomás, llamado Dídimo [Dídymos], a sus condiscípulos: Vamos también nosotros, para que muramos con él.",
+      "cristologia": "Cristo no desecha a los «Dídimos» de temperamento sobrio o corazón herido; desciende a su aposento cerrado para darles certeza en Sus llagas.",
+      "estudio_relacionado": {
+        "id": "tomas",
+        "titulo": "El Coraje del Pesimista (Tomás)"
+      }
+    },
+    {
       "id": "aggareuo-milla-gr",
       "termino": "Aggareúō (Obligar a Cargar / La Milla Impuesta)",
       "original": "ἀγγαρεύω",
@@ -6902,8 +6953,8 @@
       },
       "cristologia": "Tomás es el eco de la Iglesia que toca a Cristo a través de la Palabra y la fe.",
       "estudio_relacionado": {
-        "id": "gracia-soberana",
-        "titulo": "La Gracia Soberana y la Iniciativa Divina"
+        "id": "tomas",
+        "titulo": "El Coraje del Pesimista (Tomás)"
       }
     },
     {
