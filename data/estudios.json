@@ -1,5 +1,63 @@
 [
   {
+    "id": "fe-que-camina",
+    "slug": "la-fe-que-camina-soberania-divina-y-diligencia-humana",
+    "titulo": "La Fe que Camina: Soberanía Divina y Diligencia Humana",
+    "subtitulo": "Josué 3:13–17 y Santiago 2:17–18 — Desmontar la falsa espiritualidad que confunde la confianza en la soberanía de Dios con la pereza o la inacción, y comprender el principio bíblico y reformado de que el Señor no solo decreta el milagro, sino también los medios humanos de obediencia y diligencia a través de los cuales Él elige obrar.",
+    "categoria": "TEOLOGÍA REFORMADA",
+    "serie": "Teología Reformada",
+    "referencia": "Josué 3:13–17; Proverbios 10:4; Lucas 17:11–14; Juan 11:38–44; Filipenses 2:12–13; Santiago 2:14–18",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 5",
+    "fecha": "20 de noviembre de 2026",
+    "portada": "assets/covers/fe-que-camina.webp",
+    "pdfUrl": "assets/pdfs/fe-que-camina.pdf",
+    "palabras": 1466,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Del Fatalismo Pasivo a los Pasos de Fe: Dios Decreta Tanto el Milagro Como los Medios de Obediencia",
+      "contraste": {
+        "error_titulo": "El Fatalismo Pasivo («Estoy Esperando en Dios»)",
+        "error_puntos": [
+          "Confunde la confianza en la soberanía de Dios con la pereza, el miedo o la inacción.",
+          "Espera ver el río seco y el milagro terminado antes de dar un solo paso de obediencia.",
+          "Convierte la gracia en una excusa para la negligencia en lugar de un motor de fidelidad."
+        ],
+        "verdad_titulo": "Soberanía Divina y Diligencia Humana (Jos. 3:15; Fil. 2:12–13)",
+        "verdad_puntos": [
+          "Dios es soberano sobre el fin y también ordena los medios humanos de obediencia y diligencia.",
+          "La gracia se opone al mérito, jamás al esfuerzo: actuamos porque creemos Su promesa, no para comprarla.",
+          "Nosotros movemos la piedra y mojamos los pies en el Jordán; solo Cristo resucita al muerto y detiene el río."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. La Promesa de Dios",
+          "detalle": "Dios garantiza Su fidelidad antes del paso y produce en nosotros el querer y el hacer (energéō)."
+        },
+        {
+          "paso": "2. El Paso de Obediencia",
+          "detalle": "Quitamos la piedra, sembramos con diligencia (katergázomai) y mojamos los pies en el Jordán."
+        },
+        {
+          "paso": "3. El Milagro Soberano",
+          "detalle": "En la marcha de la fe viva (érgon), Dios abre las aguas, limpia al leproso y da la victoria."
+        }
+      ],
+      "axiomas": [
+        "«La gracia se opone al mérito, no al esfuerzo: no obedecemos para comprar el milagro, sino porque creemos de verdad en la promesa.»",
+        "«Si los sacerdotes se hubieran quedado quietos en la orilla esperando ver el camino seco, jamás habrían cruzado el Jordán.»",
+        "«Quitar la piedra estaba en manos de los hombres; resucitar a Lázaro correspondía únicamente a Cristo.»"
+      ],
+      "terminos_etymos": [
+        "Energéō",
+        "Katergázomai",
+        "Érgon",
+        "Charis"
+      ]
+    }
+  },
+  {
     "id": "introduccion-sombras",
     "slug": "el-camino-a-emaus-como-ver-a-cristo-en-las-sombras-sin-caer-en-el-moralismo-ni-la-alegoria",
     "titulo": "El Camino a Emaús: Cómo Ver a Cristo en las Sombras sin Caer en el Moralismo ni la Alegoría",

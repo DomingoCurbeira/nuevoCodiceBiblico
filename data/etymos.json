@@ -1,6 +1,57 @@
 {
   "palabras": [
     {
+      "id": "energeo-gr",
+      "termino": "Energéō",
+      "original": "ἐνεργέω",
+      "transliteracion": "energéō",
+      "strong": "G1754",
+      "idioma": "Griego",
+      "raiz": "De en (dentro) + érgon (obra, acción). Obrar eficazmente desde adentro con poder operativo.",
+      "significado_exegetico": "En el Nuevo Testamento, energéō se usa consistentemente para describir la acción sobrenatural, eficaz e irresistible de Dios operando dentro del creyente. En Filipenses 2:13, Pablo explica que Dios es quien «produce» (energéō) tanto el deseo santo («el querer») como la ejecución práctica («el hacer») según Su buena voluntad.",
+      "cita": "Filipenses 2:13",
+      "versiculo": "«Porque Dios es el que en vosotros produce (energéō) así el querer como el hacer, por su buena voluntad.»",
+      "cristologia": "La soberanía divina nunca adormece al creyente; es la energía viva de Cristo por Su Espíritu la que despierta tu voluntad y sostiene tus pasos. No caminas solo hacia el Jordán: Aquel que te ordena mojar los pies es el mismo que energiza tu corazón para obedecer.",
+      "estudio_relacionado": {
+        "id": "fe-que-camina",
+        "titulo": "La Fe que Camina: Soberanía Divina y Diligencia Humana"
+      }
+    },
+    {
+      "id": "katergazomai-gr",
+      "termino": "Katergázomai",
+      "original": "κατεργάζομαι",
+      "transliteracion": "katergázomai",
+      "strong": "G2716",
+      "idioma": "Griego",
+      "raiz": "De katá (completamente, hasta el fin) + ergázomai (trabajar, labrar, llevar a cabo).",
+      "significado_exegetico": "Verbo que significa cultivar, labrar a fondo y llevar hasta su plena expresión aquello que ya ha sido otorgado. En Filipenses 2:12 («ocupaos en vuestra salvación»), Pablo no ordena «ganarse» la salvación por méritos, sino trabajar hacia afuera con diligencia y constancia la vida nueva que Dios ya implantó soberanamente adentro.",
+      "cita": "Filipenses 2:12",
+      "versiculo": "«Ocupaos (katergázomai) en vuestra salvación con temor y temblor.»",
+      "cristologia": "Katergázomai destruye tanto el legalismo como el fatalismo. No labramos la tierra para comprar la herencia en Cristo, sino porque el Padre ya nos dio el campo en pura gracia y nos llama a ser fieles administradores moviendo la piedra que está en nuestras manos.",
+      "estudio_relacionado": {
+        "id": "fe-que-camina",
+        "titulo": "La Fe que Camina: Soberanía Divina y Diligencia Humana"
+      }
+    },
+    {
+      "id": "ergon-gr",
+      "termino": "Érgon",
+      "original": "ἔργον",
+      "transliteracion": "érgon",
+      "strong": "G2041",
+      "idioma": "Griego",
+      "raiz": "Obra, labor, hecho concreto o acción tangible.",
+      "significado_exegetico": "En la epístola de Santiago (2:14–18), érgon designa las acciones concretas de obediencia, misericordia y diligencia que demuestran la autenticidad de la fe salvadora. Mientras Pablo niega que las obras sean la causa meritoria de la justificación ante Dios, Santiago enseña que son el fruto inevitable y la evidencia visible de una fe viva.",
+      "cita": "Santiago 2:17",
+      "versiculo": "«Así también la fe, si no tiene obras (érgon), es muerta en sí misma.»",
+      "cristologia": "La fe verdadera nunca se queda sentada en la orilla teorizando sobre la soberanía de Dios. Así como el árbol vivo da fruto de forma natural, la fe unida al Cristo resucitado se manifiesta en pasos concretos de obediencia que honran al Señor.",
+      "estudio_relacionado": {
+        "id": "fe-que-camina",
+        "titulo": "La Fe que Camina: Soberanía Divina y Diligencia Humana"
+      }
+    },
+    {
       "id": "skia-gr",
       "termino": "Skiá",
       "original": "σκιά",
