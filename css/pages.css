@@ -1286,3 +1286,1472 @@
   color: var(--text-secondary);
   line-height: 1.55;
 }
+
+
+/* ==========================================================================
+   6. MEJORAS DE SALA DE LECTURA: PROGRESO PDF, COMPARTIR Y CONTINUIDAD
+   ========================================================================== */
+
+/* Grupo de Compartir Directo (WhatsApp / Facebook / Copiar) en Barra Superior */
+.reader-share-group {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .reader-share-group {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.share-btn-whatsapp {
+  border-color: #B7DEC5;
+  background-color: #F2FAF5;
+  color: #1A6B3C;
+}
+
+.share-btn-whatsapp:hover {
+  background-color: #1F8A4C;
+  border-color: #1F8A4C;
+  color: #FFFFFF;
+}
+
+.share-btn-facebook {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-color: #C5D5EE;
+  background-color: #F3F7FD;
+  color: #1858A8;
+}
+
+.share-btn-facebook:hover {
+  background-color: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+}
+
+/* Barra de Compartir en la Columna Lateral */
+.sidebar-share-box {
+  margin-top: 1.25rem;
+  padding-top: 1.05rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sidebar-share-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+}
+
+.sidebar-share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.4rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-page);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.sidebar-share-btn.whatsapp {
+  border-color: #B7DEC5;
+  background-color: #F2FAF5;
+  color: #1A6B3C;
+}
+
+.sidebar-share-btn.whatsapp:hover {
+  background-color: #1F8A4C;
+  border-color: #1F8A4C;
+  color: #FFFFFF;
+}
+
+.sidebar-share-btn.facebook {
+  border-color: #C5D5EE;
+  background-color: #F3F7FD;
+  color: #1858A8;
+}
+
+.sidebar-share-btn.facebook:hover {
+  background-color: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+}
+
+.sidebar-share-btn.copy:hover {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+  color: #FFFFFF;
+}
+
+/* Indicador de Progreso Real de Carga PDF (0% ... 100%) */
+.pdf-loader-box {
+  margin: auto;
+  width: 100%;
+  max-width: 440px;
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  background-color: rgba(24, 23, 22, 0.78);
+  border: 1px solid rgba(154, 123, 62, 0.32);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.pdf-loader-eyebrow {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #C9A862;
+  margin-bottom: 0.55rem;
+}
+
+.pdf-loader-title {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #FAF8F5;
+  margin-bottom: 1.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pdf-progress-track {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background-color: #363430;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+}
+
+.pdf-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #9A7B3E 0%, #D4B46A 100%);
+  border-radius: 999px;
+  transition: width 0.2s ease-out;
+}
+
+.pdf-progress-fill.indeterminate {
+  width: 36%;
+  animation: pdfProgressSlide 1.35s ease-in-out infinite;
+}
+
+@keyframes pdfProgressSlide {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(310%);
+  }
+}
+
+.pdf-progress-detail {
+  font-size: 0.82rem;
+  color: #B8B3AA;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Navegación de Continuidad: Episodio Anterior / Siguiente Episodio (Abajo) */
+.episode-nav-section {
+  margin-top: 2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .episode-nav-section {
+    padding: 1.35rem 1.15rem;
+  }
+}
+
+.episode-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.episode-nav-position {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.episode-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 680px) {
+  .episode-nav-grid {
+    grid-template-columns: 1fr;
+  }
+  .episode-nav-card.empty {
+    display: none;
+  }
+}
+
+.episode-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-page);
+  transition: all var(--transition);
+}
+
+.episode-nav-card.next {
+  text-align: right;
+  border-color: var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+}
+
+.episode-nav-card:not(.empty):hover {
+  border-color: var(--accent-bronze);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.episode-nav-card.empty {
+  background: transparent;
+  border-color: transparent;
+  pointer-events: none;
+}
+
+.episode-nav-dir {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-bronze-dark);
+}
+
+.episode-nav-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Continuidad Rápida en la Barra Lateral (estudio.html) */
+.sidebar-episode-nav {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.45rem;
+  box-shadow: var(--shadow-sm);
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sidebar-episode-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-episode-pos {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.sidebar-episode-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sidebar-episode-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-page);
+  transition: all var(--transition);
+}
+
+.sidebar-episode-link.is-next {
+  border-color: var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+}
+
+.sidebar-episode-link:hover {
+  border-color: var(--accent-bronze);
+  transform: translateX(2px);
+}
+
+.sidebar-ep-dir {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent-bronze-dark);
+}
+
+.sidebar-ep-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+
+/* ==========================================================================
+   7. PANORAMA BÍBLICO (LOS 66 LIBROS DE LA ESCRITURA)
+   ========================================================================== */
+.panorama-featured-section {
+  padding: 2.5rem 0 0.75rem;
+}
+
+.panorama-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.panorama-progress-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  background-color: var(--accent-bronze-light);
+  border: 1px solid var(--accent-bronze-border);
+  border-radius: 999px;
+}
+
+.panorama-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .panorama-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panorama-featured-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--accent-bronze-border);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.panorama-featured-card:hover {
+  border-color: var(--accent-bronze);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.panorama-featured-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.panorama-ready-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-bronze-dark);
+  background-color: var(--accent-bronze-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+}
+
+.panorama-featured-card h3 {
+  font-size: 1.7rem;
+  color: var(--text-primary);
+}
+
+.panorama-featured-verse {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.panorama-featured-meta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: var(--accent-bronze-dark);
+}
+
+/* Estantería Canónica (66 Libros por División) */
+.panorama-shelf-section {
+  padding-bottom: 4rem;
+}
+
+.panorama-divisions-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.canon-division-block {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .canon-division-block {
+    padding: 1.25rem 1.05rem;
+  }
+}
+
+.canon-division-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.canon-division-header h3 {
+  font-size: 1.45rem;
+}
+
+.canon-division-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.canon-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 480px) {
+  .canon-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.canon-book-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-page);
+  text-align: left;
+  transition: all var(--transition);
+}
+
+.canon-book-tile.is-ready {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze-border);
+  border-left: 3px solid var(--accent-bronze);
+  cursor: pointer;
+}
+
+.canon-book-tile.is-ready:hover {
+  border-color: var(--accent-bronze);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.canon-book-tile.is-upcoming {
+  opacity: 0.72;
+  cursor: default;
+}
+
+.canon-book-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.canon-book-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+.canon-book-status {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.canon-book-status.ready {
+  color: var(--accent-bronze-dark);
+}
+
+.canon-book-name {
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.canon-book-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+/* Modal Editorial de Infografía Panorámica */
+.panorama-modal {
+  max-width: 960px;
+  padding: 2.5rem;
+}
+
+@media (max-width: 680px) {
+  .panorama-modal {
+    padding: 1.5rem 1.15rem;
+  }
+}
+
+.panorama-modal-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.panorama-modal-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+  padding-right: 2.5rem;
+}
+
+.panorama-cap-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  padding: 0.16rem 0.55rem;
+  border-radius: 3px;
+}
+
+.panorama-book-title {
+  font-size: clamp(2.1rem, 4vw, 2.9rem);
+  margin-bottom: 0.9rem;
+}
+
+.panorama-key-verse {
+  background-color: var(--accent-bronze-light);
+  border-left: 3px solid var(--accent-bronze);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.panorama-key-verse p {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.65;
+  margin-bottom: 0.4rem;
+}
+
+.panorama-key-verse footer {
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-bronze-dark);
+}
+
+.panorama-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.35rem;
+}
+
+.panorama-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 680px) {
+  .panorama-facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panorama-fact-cell {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.05rem;
+}
+
+.panorama-fact-cell p {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+  margin-top: 0.2rem;
+}
+
+.panorama-route-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.3rem;
+}
+
+.panorama-route-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  background-color: var(--accent-bronze-light);
+  border: 1px solid var(--accent-bronze-border);
+  padding: 0.16rem 0.5rem;
+  border-radius: 3px;
+}
+
+.panorama-route-arrow {
+  color: var(--accent-bronze);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.panorama-zone {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.panorama-zone:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.panorama-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+}
+
+@media (max-width: 720px) {
+  .panorama-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panorama-info-card {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem 1.3rem;
+}
+
+.panorama-info-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: 0.35rem;
+}
+
+.panorama-subblock {
+  margin-top: 1.25rem;
+}
+
+.panorama-characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.75rem;
+}
+
+.panorama-char-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.panorama-char-card.has-etymos {
+  border-color: var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+}
+
+.panorama-char-card.has-etymos:hover {
+  border-color: var(--accent-bronze);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.panorama-char-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.panorama-char-card strong {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  color: var(--text-primary);
+}
+
+.panorama-char-etymos {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-bronze-dark);
+}
+
+.panorama-char-card > span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.panorama-structure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  gap: 0.9rem;
+}
+
+.panorama-struct-card {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.panorama-struct-caps {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-bronze-dark);
+}
+
+.panorama-struct-card h4 {
+  font-size: 1.12rem;
+  line-height: 1.25;
+}
+
+.panorama-struct-card p {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.panorama-themes-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.panorama-theme-pill {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.panorama-callout-card {
+  padding: 1.25rem 1.35rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.panorama-callout-card.is-warning {
+  background-color: #FAF6F5;
+  border-color: #E6D5D2;
+}
+
+.panorama-callout-card.is-warning .lexicon-field-label {
+  color: #7F2D24;
+}
+
+.panorama-callout-card.is-christ {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze-border);
+}
+
+.panorama-callout-card.is-christ .lexicon-field-label {
+  color: var(--accent-bronze-dark);
+}
+
+.panorama-callout-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: 0.35rem;
+}
+
+.panorama-studies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.75rem;
+}
+
+.panorama-study-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.panorama-study-pill:hover {
+  border-color: var(--accent-bronze);
+  background-color: var(--accent-bronze-light);
+  transform: translateY(-2px);
+}
+
+.panorama-study-ed {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-bronze-dark);
+}
+
+.panorama-study-pill strong {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.panorama-modal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+
+/* ==========================================================================
+   8. GENEALOGÍA DE JESÚS (MATEO 1 Y LUCAS 3)
+   ========================================================================== */
+.genealogy-main-section {
+  padding: 2.25rem 0 4.5rem;
+}
+
+.genealogy-intro-banner {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.85rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.75rem;
+}
+
+.genealogy-intro-banner h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.genealogy-banner-sub {
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.96rem;
+  color: var(--accent-bronze-dark);
+  margin-bottom: 0.55rem;
+}
+
+.genealogy-banner-focus {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.genealogy-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  margin-top: 1.1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot.key {
+  background-color: var(--accent-bronze);
+}
+
+.legend-dot.woman {
+  background-color: #8E4A5A;
+}
+
+.legend-dot.regular {
+  background-color: var(--border-strong);
+}
+
+.genealogy-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.genealogy-stages-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.genealogy-stage-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.85rem 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .genealogy-stage-card {
+    padding: 1.35rem 1.05rem;
+  }
+}
+
+.genealogy-stage-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.genealogy-stage-header h3 {
+  font-size: 1.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.genealogy-stage-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Línea Vertical Conectada */
+.genealogy-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-left: 1.85rem;
+}
+
+.genealogy-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0.9rem;
+  left: 7px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-bronze-border) 0%, var(--accent-bronze) 50%, var(--accent-bronze-border) 100%);
+}
+
+.genealogy-node-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.genealogy-dot {
+  position: absolute;
+  left: -1.85rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 2.5px solid var(--border-strong);
+  z-index: 2;
+}
+
+.genealogy-dot.key {
+  background-color: var(--accent-bronze);
+  border-color: var(--accent-bronze-light);
+  box-shadow: 0 0 0 2px var(--accent-bronze);
+}
+
+.genealogy-dot.woman {
+  background-color: #8E4A5A;
+  border-color: #F8EEF0;
+  box-shadow: 0 0 0 2px #8E4A5A;
+}
+
+.genealogy-dot.christ {
+  background-color: var(--text-primary);
+  border-color: var(--accent-bronze);
+  box-shadow: 0 0 0 3px var(--accent-bronze-border);
+}
+
+.genealogy-node {
+  width: 100%;
+  padding: 0.75rem 1.05rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-page);
+  text-align: left;
+  transition: all var(--transition);
+}
+
+.genealogy-node.is-key {
+  background-color: var(--accent-bronze-light);
+  border-color: var(--accent-bronze-border);
+  cursor: pointer;
+}
+
+.genealogy-node.is-key:hover {
+  border-color: var(--accent-bronze);
+  box-shadow: var(--shadow-card);
+  transform: translateX(4px);
+}
+
+.genealogy-node.is-woman {
+  background-color: #FAF3F5;
+  border-color: #DFC2CA;
+}
+
+.genealogy-node.is-woman:hover {
+  border-color: #8E4A5A;
+}
+
+.genealogy-node.is-christ {
+  background: linear-gradient(135deg, #FBF6EA 0%, #F2E5C9 100%);
+  border: 1.5px solid var(--accent-bronze);
+  padding: 1.05rem 1.25rem;
+}
+
+.genealogy-node-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.genealogy-node-name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.genealogy-node.is-key .genealogy-node-name {
+  font-size: 1.32rem;
+}
+
+.genealogy-node.is-christ .genealogy-node-name {
+  font-size: 1.5rem;
+}
+
+.genealogy-node-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.genealogy-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+}
+
+.genealogy-pill.key {
+  background-color: rgba(154, 123, 62, 0.14);
+  color: var(--accent-bronze-dark);
+}
+
+.genealogy-pill.woman {
+  background-color: #F3E2E7;
+  color: #7A3345;
+}
+
+.genealogy-pill.christ {
+  background-color: var(--text-primary);
+  color: #FAF8F5;
+}
+
+.genealogy-node-note {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+  line-height: 1.45;
+}
+
+/* Vista Comparativa (Mateo 1 vs. Lucas 3) */
+.compare-diagram-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.75rem;
+}
+
+@media (max-width: 640px) {
+  .compare-diagram-card {
+    padding: 1.35rem 1.05rem;
+  }
+}
+
+.convergence-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.35rem;
+}
+
+.conv-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.15rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-page);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.conv-node.is-shared {
+  border-color: var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+}
+
+.conv-node.is-christ {
+  width: 100%;
+  max-width: 660px;
+  border: 1.5px solid var(--accent-bronze);
+  background: linear-gradient(135deg, #FBF6EA 0%, #F2E5C9 100%);
+  padding: 1.15rem 1.5rem;
+}
+
+.conv-node:hover {
+  border-color: var(--accent-bronze);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.conv-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-bronze-dark);
+}
+
+.conv-node strong {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.conv-node small {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.conv-arrow {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-bronze);
+}
+
+.convergence-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+  margin-bottom: 1.35rem;
+}
+
+@media (max-width: 768px) {
+  .convergence-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.split-branch {
+  padding: 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent-bronze-border);
+  background-color: var(--bg-page);
+}
+
+.split-branch p {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-top: 0.75rem;
+  line-height: 1.55;
+}
+
+.split-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  color: var(--accent-bronze);
+  font-weight: 600;
+}
+
+.split-chip {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  border: 1px solid var(--accent-bronze-border);
+  background-color: var(--accent-bronze-light);
+  color: var(--accent-bronze-dark);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.split-chip:hover {
+  background-color: var(--accent-bronze);
+  color: #FFFFFF;
+}
+
+.split-chip.static {
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+  cursor: default;
+}
+
+.split-chip.static:hover {
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+}
+
+.convergence-culmination {
+  display: flex;
+  justify-content: center;
+}
+
+.compare-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .compare-columns-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compare-col-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-bronze);
+  border-radius: var(--radius-md);
+  padding: 1.65rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-col-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.compare-dl {
+  display: grid;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.compare-dl dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-bronze-dark);
+}
+
+.compare-dl dd {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.compare-dl dd:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.compare-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .compare-insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compare-insight-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.compare-insight-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.55rem;
+}
+
+.compare-insight-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.genealogy-modal-head {
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.genealogy-modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+.share-chip-wa {
+  border-color: #B7DEC5;
+  background-color: #F2FAF5;
+  color: #1A6B3C;
+}
+
+.share-chip-wa:hover {
+  background-color: #1F8A4C;
+  border-color: #1F8A4C;
+  color: #FFFFFF;
+}

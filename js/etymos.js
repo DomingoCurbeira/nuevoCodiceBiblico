@@ -27,9 +27,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const initialQ = urlParams.get('q');
+  const initialModo = urlParams.get('modo');
   if (initialQ) {
     searchQuery = initialQ.trim();
     if (searchInput) searchInput.value = searchQuery;
+  }
+  if (initialModo === 'nombres') {
+    activeMode = 'nombres';
+    activeNameFilter = 'todos';
+    modeButtons.forEach(b => b.classList.toggle('active', b.dataset.mode === 'nombres'));
+    if (langFiltersWrap) langFiltersWrap.style.display = 'none';
+    if (nameFiltersWrap) {
+      nameFiltersWrap.style.display = 'flex';
+      nameFiltersWrap.querySelectorAll('.filter-tab').forEach(b => {
+        b.classList.toggle('active', b.dataset.tipo === 'todos');
+      });
+    }
+    lexiconContainer.style.display = 'none';
+    namesContainer.style.display = 'grid';
+    if (searchInput) {
+      searchInput.placeholder = 'Buscar nombre bíblico (ej. Jacob, Israel, Abram, Abraham, Simón, Pedro, Saulo)...';
+    }
   }
 
   const normalizar = (str) =>

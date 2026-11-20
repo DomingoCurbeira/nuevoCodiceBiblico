@@ -6,9 +6,9 @@ console.log('📦 Empaquetando Códice Bíblico — Biblioteca Teológica Web (E
 const rootDir = __dirname;
 const distPath = path.join(rootDir, 'dist');
 
-const htmlFiles = ['index.html', 'estudio.html', 'etymos.html', 'nosotros.html'];
+const htmlFiles = ['index.html', 'estudio.html', 'panorama.html', 'genealogia.html', 'etymos.html', 'nosotros.html'];
 const foldersToCopy = ['css', 'js', 'assets'];
-const dataFilesToCopy = ['estudios.json', 'etymos.json'];
+const dataFilesToCopy = ['estudios.json', 'etymos.json', 'libros.json', 'genealogia.json'];
 
 try {
   if (fs.existsSync(distPath)) {

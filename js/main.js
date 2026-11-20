@@ -21,6 +21,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Desplegable «Recursos Visuales» (clic accesible en escritorio y acordeón en móvil)
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  dropdowns.forEach(dd => {
+    const btn = dd.querySelector('.nav-dropdown-toggle');
+    if (!btn) return;
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const willOpen = !dd.classList.contains('open');
+      dropdowns.forEach(other => {
+        if (other !== dd) {
+          other.classList.remove('open');
+          const otherBtn = other.querySelector('.nav-dropdown-toggle');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      dd.classList.toggle('open', willOpen);
+      btn.setAttribute('aria-expanded', String(willOpen));
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      dropdowns.forEach(dd => {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.nav-dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(dd => {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.nav-dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   // Limpiar cualquier Service Worker antiguo de la versión anterior de Web App
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations().then(registrations => {

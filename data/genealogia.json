@@ -1,0 +1,508 @@
+{
+  "fichas": {
+    "adan": {
+      "id": "adan",
+      "nombre": "Adán",
+      "subtitulo": "Primer hombre y cabeza federal de la humanidad",
+      "etapa": "Orígenes Universales",
+      "referencia": "Génesis 1:26–3:24; Lucas 3:38; Romanos 5:12–19; 1 Corintios 15:45",
+      "es_mujer": false,
+      "en_mateo": false,
+      "en_lucas": true,
+      "resumen_historia": "Creado directamente por Dios a Su imagen y semejanza en el Edén, Adán representó a toda la raza humana en el pacto de la creación. Al desobedecer el mandato divino, introdujo el pecado, la condenación y la muerte física y espiritual sobre todos sus descendientes.",
+      "plan_redentor": "Lucas remonta la genealogía de Jesús hasta «Adán, hijo de Dios» (Lc. 3:38) para demostrar que Cristo no es solo el Mesías de Israel, sino el «Postrer Adán» (1 Cor. 15:45) que viene a rescatar a toda la humanidad caída y a revertir con Su obediencia perfecta la condenación que el primer Adán trajo.",
+      "etymos_q": "Adán",
+      "panorama_libro": "genesis"
+    },
+    "set": {
+      "id": "set",
+      "nombre": "Set",
+      "subtitulo": "Simiente sustituida tras el asesinato de Abel",
+      "etapa": "Orígenes Universales",
+      "referencia": "Génesis 4:25–26; 5:3–8; Lucas 3:38",
+      "es_mujer": false,
+      "en_mateo": false,
+      "en_lucas": true,
+      "resumen_historia": "Nacido después de que Caín matara al justo Abel, Eva le puso por nombre Set («Concedido / Sustituido»), reconociendo la fidelidad de Dios al preservar un linaje piadoso. En los días de su hijo Enós, los hombres comenzaron a invocar el nombre de Jehová.",
+      "plan_redentor": "Cuando Satanás intentó cortar la promesa de Génesis 3:15 mediante el fratricidio de Caín, Dios levantó soberanamente a Set para mantener intacta la línea mesiánica a través de la cual vendría el Redentor.",
+      "panorama_libro": "genesis"
+    },
+    "enoc": {
+      "id": "enoc",
+      "nombre": "Enoc",
+      "subtitulo": "El hombre que caminó con Dios en una generación impía",
+      "etapa": "Orígenes Universales",
+      "referencia": "Génesis 5:21–24; Lucas 3:37; Hebreos 11:5; Judas 1:14–15",
+      "es_mujer": false,
+      "en_mateo": false,
+      "en_lucas": true,
+      "resumen_historia": "Séptimo desde Adán, Enoc vivió en comunión íntima con Dios durante trescientos años en medio de una humanidad cada vez más corrompida, y Dios se lo llevó sin que viera muerte física.",
+      "plan_redentor": "En medio del estribillo fúnebre de Génesis 5 («y murió… y murió…»), la traslación de Enoc brilla como señal anticipada de que la muerte no tiene la última palabra y que Dios tiene poder para vencerla definitivamente en Cristo.",
+      "panorama_libro": "genesis"
+    },
+    "noe": {
+      "id": "noe",
+      "nombre": "Noé",
+      "subtitulo": "Heredero de la justicia por fe y garante del Pacto de Preservación",
+      "etapa": "Orígenes Universales",
+      "referencia": "Génesis 6:8–9:17; Lucas 3:36; Hebreos 11:7; 1 Pedro 3:20",
+      "es_mujer": false,
+      "en_mateo": false,
+      "en_lucas": true,
+      "resumen_historia": "En una tierra llena de violencia y maldad continua, «Noé halló gracia ante los ojos de Jehová» (Gén. 6:8). Obedeció por fe construyendo el arca durante décadas para salvación de su familia mientras predicaba justicia.",
+      "plan_redentor": "Mediante Noé, Dios preservó a la humanidad del juicio del diluvio y selló un pacto universal que garantiza la estabilidad de la creación hasta el día de la consumación final en Cristo, nuestra verdadera Arca de salvación.",
+      "etymos_q": "Noé",
+      "panorama_libro": "genesis"
+    },
+    "abraham": {
+      "id": "abraham",
+      "nombre": "Abraham",
+      "subtitulo": "Padre de la fe y receptor del Pacto de Promesa",
+      "etapa": "Patriarcas",
+      "referencia": "Génesis 12:1–3; 15:6; 22:1–18; Mateo 1:1–2; Lucas 3:34; Gálatas 3:16",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Llamado soberanamente por Dios desde la idolatría de Ur de los caldeos, Abraham creyó a la promesa imposible de tener descendencia en su vejez y le fue contado por justicia (Gén. 15:6). En el monte Moriah recibió el carnero sustituto en lugar de Isaac.",
+      "plan_redentor": "Mateo abre su evangelio llamando a Jesús «hijo de Abraham» (1:1) porque el Pacto Abrahámico prometía que en su «Simiente» serían benditas todas las familias de la tierra. Pablo confirma que esa Simiente única es Cristo (Gál. 3:16).",
+      "etymos_q": "Abram",
+      "panorama_libro": "genesis"
+    },
+    "isaac": {
+      "id": "isaac",
+      "nombre": "Isaac",
+      "subtitulo": "El hijo sobrenatural de la promesa",
+      "etapa": "Patriarcas",
+      "referencia": "Génesis 21:1–7; 22:1–14; Mateo 1:2; Lucas 3:34; Gálatas 4:28",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Nacido milagrosamente de padres ancianos y estériles, su nombre significa «risa». Fue atado sobre el altar en el monte Moriah y rescatado cuando Dios proveyó un carnero en su lugar.",
+      "plan_redentor": "Isaac demuestra que el pueblo de Dios no nace por esfuerzo carnal (Ismael), sino exclusivamente por el poder sobrenatural de la promesa divina. Su sacrificio sustituido en Moriah prefigura el sacrificio real del Hijo unigénito de Dios en el Calvario.",
+      "etymos_q": "Isaac",
+      "panorama_libro": "genesis"
+    },
+    "jacob": {
+      "id": "jacob",
+      "nombre": "Jacob (Israel)",
+      "subtitulo": "El engañador transformado por la elección soberana",
+      "etapa": "Patriarcas",
+      "referencia": "Génesis 25–35; Mateo 1:2; Lucas 3:34; Romanos 9:10–13",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Hermano mellizo menor de Esaú, cuyo nombre significaba «el que agarra el talón / suplantador». Pese a sus engaños y luchas carnales, Dios lo eligió antes de nacer, lo quebrantó en Peniel y le dio un nuevo nombre: Israel.",
+      "plan_redentor": "Padre de las doce tribus, Jacob es la prueba viviente de Romanos 9:11: la línea del Salvador no se sostiene sobre méritos humanos, sino sobre la elección incondicional y la paciencia transformadora de la gracia soberana.",
+      "etymos_q": "Jacob",
+      "panorama_libro": "genesis"
+    },
+    "juda": {
+      "id": "juda",
+      "nombre": "Judá",
+      "subtitulo": "Tribu real portadora del cetro mesiánico",
+      "etapa": "Patriarcas",
+      "referencia": "Génesis 38; 44:18–34; 49:8–10; Mateo 1:2–3; Lucas 3:33",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Cuarto hijo de Jacob, pasó de proponer vender a su hermano José y caer en inmoralidad e hipocresía (Gén. 38) a arrepentirse genuinamente y ofrecer su propia vida como fiador en lugar de Benjamín (Gén. 44:33).",
+      "plan_redentor": "Jacob profetizó en su lecho de muerte que el cetro real jamás se apartaría de Judá hasta que viniera Siloh (Gén. 49:10). De esta tribu nació David y, finalmente, Jesús, el «León de la tribu de Judá» (Ap. 5:5).",
+      "panorama_libro": "genesis"
+    },
+    "tamar": {
+      "id": "tamar",
+      "nombre": "Tamar",
+      "subtitulo": "Primera mujer en Mateo 1 · Gracia sobre el escándalo familiar",
+      "etapa": "Patriarcas",
+      "referencia": "Génesis 38:6–30; Rut 4:12; Mateo 1:3",
+      "es_mujer": true,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Nuera cananea de Judá, tratada con injusticia y abandonada tras enviudar de dos hijos impíos de Judá. En un episodio crudo y escandaloso (Gén. 38), expuso la hipocresía de Judá, quien confesó: «Más justa es ella que yo». De ella nacieron Fares y Zara.",
+      "plan_redentor": "Que Mateo incluya deliberadamente a Tamar —una extranjera envuelta en un episodio tan oscuro— rompe el orgullo religioso y anuncia desde el primer capítulo del Evangelio que Jesús no se avergüenza de entrar en historias humanas manchadas para redimirlas.",
+      "panorama_libro": "genesis"
+    },
+    "rahab": {
+      "id": "rahab",
+      "nombre": "Rahab",
+      "subtitulo": "Segunda mujer en Mateo 1 · Ramera cananea justificada por fe",
+      "etapa": "Conquista y Jueces",
+      "referencia": "Josué 2:1–21; 6:22–25; Mateo 1:5; Hebreos 11:31; Santiago 2:25",
+      "es_mujer": true,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Mujer gentil y prostituta en la ciudad condenada de Jericó que, al oír de las obras redentoras de Yahvé en el Mar Rojo, confesó fe en el Dios de Israel, escondió a los espías y colgó el cordón de grana en su ventana.",
+      "plan_redentor": "Rescatada del juicio sobre Jericó, Rahab fue injertada en el pueblo del pacto, casó con Salmón y llegó a ser madre de Booz y tatarabuela de David. Es un monumento eterno a la gracia que perdona el pasado más indigno y adopta a los gentiles.",
+      "etymos_q": "Rahab",
+      "panorama_libro": "josue"
+    },
+    "booz": {
+      "id": "booz",
+      "nombre": "Booz",
+      "subtitulo": "El Pariente Redentor (Goel) de Belén",
+      "etapa": "Conquista y Jueces",
+      "referencia": "Rut 2–4; Mateo 1:5; Lucas 3:32",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Hijo de Salmón y Rahab, terrateniente íntegro y compasivo de Belén durante los días oscuros de los Jueces. Conociendo la gracia en su propia madre, extendió misericordia abundante (jésed) a la viuda moabita Rut y pagó el precio legal para redimirla.",
+      "plan_redentor": "Booz encarna la figura del Goel (Pariente Redentor), prefigurando a Jesucristo, quien se hizo nuestro pariente en la carne, pagó voluntariamente nuestra deuda y desposó a Su Iglesia empobrecida para darle herencia eterna.",
+      "panorama_libro": "rut"
+    },
+    "rut": {
+      "id": "rut",
+      "nombre": "Rut",
+      "subtitulo": "Tercera mujer en Mateo 1 · Viuda moabita acogida bajo las alas de Dios",
+      "etapa": "Conquista y Jueces",
+      "referencia": "Rut 1–4; Mateo 1:5",
+      "es_mujer": true,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Extranjera de Moab —pueblo históricamente enemigo de Israel— que tras enviudar eligió dejar a sus dioses paganos y acompañar a su suegra Noemí declarando: «Tu pueblo será mi pueblo, y tu Dios mi Dios».",
+      "plan_redentor": "Redimida por Booz, se convirtió en bisabuela del rey David. Su presencia en Mateo 1 anticipa que el Reino de los Cielos reúne a personas de toda nación cuyo corazón se refugia bajo las alas de la gracia de Dios.",
+      "panorama_libro": "rut"
+    },
+    "david": {
+      "id": "david",
+      "nombre": "David",
+      "subtitulo": "El Rey Ungido y receptor del Pacto del Trono Eterno",
+      "etapa": "La Monarquía",
+      "referencia": "1 Samuel 16; 2 Samuel 7:12–16; Mateo 1:1, 6; Lucas 3:31",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Pastor menor de Belén elegido por Dios, gran salmista y rey que conquistó Jerusalén. Aunque cayó gravemente en adulterio y homicidio, mostró un arrepentimiento quebrantado (Salmo 51) y confió siempre en la misericordia de Dios.",
+      "plan_redentor": "Es el eje central de ambas genealogías: en 2 Samuel 7 Dios juró a David que de su linaje vendría un Rey cuyo trono sería establecido para siempre. Tras David, Mateo sigue la rama real de Salomón y Lucas sigue la rama paralela de Natán hasta converger en Jesús.",
+      "etymos_q": "David",
+      "panorama_libro": "2-samuel"
+    },
+    "betsabe": {
+      "id": "betsabe",
+      "nombre": "Betsabé («la que fue mujer de Urías»)",
+      "subtitulo": "Cuarta mujer en Mateo 1 · Misericordia soberana tras el pecado real",
+      "etapa": "La Monarquía",
+      "referencia": "2 Samuel 11–12; 1 Reyes 1; Mateo 1:6",
+      "es_mujer": true,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Mateo ni siquiera evita la herida histórica: la llama explícitamente «la que fue mujer de Urías» (el fiel soldado heteo asesinado por orden de David). Tras el juicio y el arrepentimiento de David, Dios bendijo a su segundo hijo, Salomón («Yedidyáh — Amado de Jehová»).",
+      "plan_redentor": "El Espíritu Santo no maquilla los pecados más vergonzosos de la familia real de Israel: demuestra que donde abundó el pecado, sobreabundó la gracia soberana de Dios para sostener Su promesa redentora.",
+      "panorama_libro": "2-samuel"
+    },
+    "salomon": {
+      "id": "salomon",
+      "nombre": "Salomón",
+      "subtitulo": "Constructor del Templo y heredero de la línea real legal (Mateo)",
+      "etapa": "La Monarquía",
+      "referencia": "1 Reyes 3–11; Mateo 1:6–7",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Hijo de David y Betsabé, dotado de sabiduría sin igual y encargado de edificar el Templo de Jerusalén. Sin embargo, sus alianzas matrimoniales paganas desviaron su corazón hacia la idolatría y provocaron la división del reino.",
+      "plan_redentor": "A través de Salomón corre la sucesión legal del trono de David registrada en Mateo 1. Su gloria y su fracaso posterior mostraron que Israel necesitaba a Alguien «más grande que Salomón» (Mat. 12:42): un Rey sabio cuyo corazón nunca se divide.",
+      "etymos_q": "Salomón",
+      "panorama_libro": "1-reyes"
+    },
+    "natan": {
+      "id": "natan",
+      "nombre": "Natán (hijo de David)",
+      "subtitulo": "Hijo de David por quien desciende la línea biológica de Lucas 3",
+      "etapa": "Línea Paralela de David",
+      "referencia": "2 Samuel 5:14; 1 Crónicas 3:5; Zacarías 12:12; Lucas 3:31",
+      "es_mujer": false,
+      "en_mateo": false,
+      "en_lucas": true,
+      "resumen_historia": "Otro de los hijos de David y Betsabé nacidos en Jerusalén (distinto del profeta Natán). Aunque nunca ocupó el trono ni tuvo fama política, su familia preservó una rama legítima y sin la maldición de Jeconías dentro de la casa de David.",
+      "plan_redentor": "Natán es clave para entender la armonía entre Mateo y Lucas: mientras el derecho legal al trono bajó por Salomón hasta José, la ascendencia sanguínea de María (y por tanto de Jesús) descendió por Natán, cumpliendo la promesa a David sin heredar la maldición sobre la descendencia física de Jeconías.",
+      "panorama_libro": "lucas"
+    },
+    "ezequias": {
+      "id": "ezequias",
+      "nombre": "Ezequías",
+      "subtitulo": "Rey reformador que confió en Yahvé frente a Asiria",
+      "etapa": "La Monarquía",
+      "referencia": "2 Reyes 18–20; Isaías 36–39; Mateo 1:9–10",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Uno de los reyes más fieles de Judá: destruyó los ídolos, reabrió el Templo, restauró la Pascua y, cuando el poderoso imperio asirio sitió Jerusalén, extendió la carta de amenazas delante del Señor en oración y vio una liberación milagrosa.",
+      "plan_redentor": "Ezequías recuerda que la preservación de Jerusalén y de la línea de David frente al exterminio asirio fue obra directa de la soberanía de Dios «por amor a sí mismo y por amor a David Su siervo».",
+      "panorama_libro": "2-reyes"
+    },
+    "manases": {
+      "id": "manases",
+      "nombre": "Manasés",
+      "subtitulo": "El rey más impío de Judá, rescatado por misericordia en cadenas",
+      "etapa": "La Monarquía",
+      "referencia": "2 Reyes 21; 2 Crónicas 33:1–20; Mateo 1:10",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Hijo del piadoso Ezequías, reinó 55 años llenando Jerusalén de idolatría, hechicería, sacrificios de niños y sangre inocente. Llevado cautivo con garfios y cadenas a Babilonia, se humilló profundamente ante Dios y halló perdón real.",
+      "plan_redentor": "Su presencia en la genealogía de Jesús demuestra que la gracia no se hereda biológicamente (un padre piadoso puede tener un hijo rebelde) y que ningún pecador está demasiado lejos del alcance restaurador de la misericordia divina.",
+      "panorama_libro": "2-cronicas"
+    },
+    "jeconias": {
+      "id": "jeconias",
+      "nombre": "Jeconías (Joaquín)",
+      "subtitulo": "El rey exiliado bajo sentencia profética en Babilonia",
+      "etapa": "El Exilio",
+      "referencia": "2 Reyes 24:8–15; 25:27–30; Jeremías 22:24–30; Mateo 1:11–12",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": false,
+      "resumen_historia": "Deportado joven a Babilonia, Jeremías pronunció sobre él un juicio tremendo: ninguno de sus descendientes biológicos prosperaría jamás sentándose en el trono de David en Judá (Jer. 22:30). Sin embargo, al final de 2 Reyes fue sacado de prisión y sentado a la mesa real.",
+      "plan_redentor": "La maldición de Jeconías creaba un dilema teológico aparentemente insoluble: el Mesías debía tener el derecho legal al trono vía Salomón/Jeconías, pero no podía ser hijo biológico suyo. El nacimiento virginal resolvió el dilema con sabiduría infinita: José (descendiente de Jeconías) le transfirió el título legal por adopción, mientras María (descendiente de Natán) le dio Su verdadera humanidad davídica.",
+      "panorama_libro": "jeremias"
+    },
+    "zorobabel": {
+      "id": "zorobabel",
+      "nombre": "Zorobabel",
+      "subtitulo": "Gobernador del regreso y «anillo de sellar» mesiánico",
+      "etapa": "Retorno y Espera",
+      "referencia": "Esdras 2–6; Hageo 2:23; Mateo 1:12–13; Lucas 3:27",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Nieto de Jeconías (y heredero de ambas ramas tras el exilio), guió el primer retorno del remanente desde Babilonia hacia Jerusalén y lideró la reconstrucción del Segundo Templo pese a intensa oposición.",
+      "plan_redentor": "En Hageo 2:23 Dios declara a Zorobabel Su «anillo de sellar», revirtiendo simbólicamente el juicio del anillo arrancado a Jeconías (Jer. 22:24) y confirmando que la promesa mesiánica seguía viva tras las cenizas del exilio.",
+      "panorama_libro": "hageo"
+    },
+    "jose": {
+      "id": "jose",
+      "nombre": "José de Nazaret",
+      "subtitulo": "Padre legal y adoptivo de Jesús · Hombre justo y obediente",
+      "etapa": "Cumplimiento en Cristo",
+      "referencia": "Mateo 1:16–25; 2:13–23; Lucas 2:4; 3:23",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Carpintero humilde de Nazaret descendiente directo de la casa real de David. Cuando supo del embarazo milagroso de María, actuó con justicia y misericordia; al recibir el mensaje del ángel, obedeció sin vacilar, tomó a María por esposa y protegió al Niño huyendo a Egipto.",
+      "plan_redentor": "Mateo cuida con rigor quirúrgico su gramática en 1:16: no dice «José engendró a Jesús», sino «José, marido de María, de la cual nació Jesús». Al imponerle legalmente el nombre «Jesús» (Mat. 1:25), José lo adoptó oficialmente como primogénito, transmitiéndole el derecho legal indiscutible al trono de David.",
+      "panorama_libro": "mateo"
+    },
+    "maria": {
+      "id": "maria",
+      "nombre": "María de Nazaret",
+      "subtitulo": "Quinta mujer en Mateo 1 · Sierva humilde y madre del Salvador",
+      "etapa": "Cumplimiento en Cristo",
+      "referencia": "Mateo 1:16–23; Lucas 1:26–56; 3:23; Gálatas 4:4",
+      "es_mujer": true,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "Joven virgen y creyente de Galilea, favorecida por pura gracia inmerecida para concebir por obra del Espíritu Santo al Hijo de Dios. Su respuesta —«He aquí la sierva del Señor; hágase conmigo conforme a tu palabra»— y su cántico (Magníficat) rebosan de Escritura y humildad.",
+      "plan_redentor": "Por medio de María (cuya ascendencia davídica vía Natán recoge Lucas 3), el Verbo eterno asumió verdadera naturaleza humana sin pecado original, cumpliendo Génesis 3:15 («la simiente de la mujer») e Isaías 7:14 («la virgen concebirá»).",
+      "panorama_libro": "lucas"
+    },
+    "jesus": {
+      "id": "jesus",
+      "nombre": "Jesucristo (Yeshúa HaMashíaj)",
+      "subtitulo": "El Cristo · Hijo de David · Hijo de Abraham · Hijo de Dios",
+      "etapa": "Cumplimiento de Toda la Escritura",
+      "referencia": "Mateo 1:1, 16, 21–23; Lucas 3:23, 38; Romanos 1:3–4; Gálatas 4:4–5",
+      "es_mujer": false,
+      "en_mateo": true,
+      "en_lucas": true,
+      "resumen_historia": "La meta, el centro y el cumplimiento de cuarenta siglos de historia redentora. Verdadero Dios y verdadero hombre, nacido en Belén, perfecto cumplidor de la Ley, crucificado como sustituto por los pecados de Su pueblo y resucitado en victoria.",
+      "plan_redentor": "En Jesucristo convergen todas las líneas de la Escritura: Él es la Simiente de la mujer (Gén. 3:15), el Postrer Adán (Lc. 3:38), la Simiente de Abraham que bendice a todas las naciones (Mat. 1:1), el Rey eterno en el trono de David (2 Sam. 7:16) y «Emanuel, Dios con nosotros» que salva a Su pueblo de sus pecados (Mat. 1:21–23).",
+      "etymos_q": "Yeshúa",
+      "panorama_libro": "mateo"
+    }
+  },
+  "mateo": {
+    "titulo": "Genealogía según Mateo 1:1–17",
+    "subtitulo": "Línea Real y Legal: desde Abraham y el Rey David (vía Salomón) hasta José y Jesús el Cristo.",
+    "direccion": "Descendente · De Abraham → Jesús (3 series de 14 generaciones)",
+    "enfasis": "Demuestra a una audiencia judía y a las naciones que Jesús posee el título legal indiscutible al trono de David y cumple el Pacto Abrahámico, destacando deliberadamente a 5 mujeres como trofeos de gracia soberana.",
+    "etapas": [
+      {
+        "id": "mat-1",
+        "numero": "Serie I · 14 Generaciones",
+        "titulo": "De Abraham a David (Patriarcas y Jueces)",
+        "referencia": "Mateo 1:2–6a",
+        "descripcion": "Desde el llamado soberano de Abraham hasta el establecimiento del trono real con el rey David.",
+        "nodos": [
+          { "nombre": "Abraham", "nota": "Receptor del Pacto Universal", "ficha_id": "abraham" },
+          { "nombre": "Isaac", "nota": "Hijo de la promesa", "ficha_id": "isaac" },
+          { "nombre": "Jacob (Israel)", "nota": "Padre de las doce tribus", "ficha_id": "jacob" },
+          { "nombre": "Judá", "nota": "Tribu del cetro real (Gén. 49:10)", "ficha_id": "juda" },
+          { "nombre": "Tamar", "nota": "1.ª mujer en Mateo 1 · Madre de Fares", "ficha_id": "tamar", "es_mujer": true },
+          { "nombre": "Fares", "nota": "Hijo de Judá y Tamar" },
+          { "nombre": "Esrom", "nota": "Descendiente en Egipto" },
+          { "nombre": "Aram", "nota": "Período de la estancia en Egipto" },
+          { "nombre": "Aminadab", "nota": "Suegro del sumo sacerdote Aarón (Éx. 6:23)" },
+          { "nombre": "Naasón", "nota": "Príncipe de la tribu de Judá en el desierto (Núm. 1:7)" },
+          { "nombre": "Salmón", "nota": "Generación de la conquista con Josué" },
+          { "nombre": "Rahab", "nota": "2.ª mujer en Mateo 1 · Rescatada en Jericó", "ficha_id": "rahab", "es_mujer": true },
+          { "nombre": "Booz", "nota": "Pariente Redentor (Goel) en Belén", "ficha_id": "booz" },
+          { "nombre": "Rut", "nota": "3.ª mujer en Mateo 1 · Moabita fiel", "ficha_id": "rut", "es_mujer": true },
+          { "nombre": "Obed", "nota": "Hijo de Booz y Rut, abuelo de David" },
+          { "nombre": "Isaí", "nota": "Padre de David en Belén (Isa. 11:1)" },
+          { "nombre": "Rey David", "nota": "Eje del Pacto del Trono Eterno (2 Sam. 7)", "ficha_id": "david" }
+        ]
+      },
+      {
+        "id": "mat-2",
+        "numero": "Serie II · 14 Generaciones",
+        "titulo": "De David al Exilio en Babilonia (La Monarquía)",
+        "referencia": "Mateo 1:6b–11",
+        "descripcion": "Los reyes de Judá: una mezcla brutalmente honesta de reformadores fieles y monarcas rebeldes que desembocó en el cautiverio babilónico.",
+        "nodos": [
+          { "nombre": "Betsabé (mujer de Urías)", "nota": "4.ª mujer en Mateo 1 · Gracia sobre el pecado", "ficha_id": "betsabe", "es_mujer": true },
+          { "nombre": "Salomón", "nota": "Constructor del Templo · Rama real legal", "ficha_id": "salomon" },
+          { "nombre": "Roboam", "nota": "Rey bajo quien se dividió el reino" },
+          { "nombre": "Abías", "nota": "Rey de Judá" },
+          { "nombre": "Asa", "nota": "Rey reformador que quitó los ídolos" },
+          { "nombre": "Josafat", "nota": "Rey fiel que enseñó la Ley en Judá" },
+          { "nombre": "Joram", "nota": "Casado con Atalía, hija de Acab" },
+          { "nombre": "Uzías (Azarías)", "nota": "Reinó 52 años; herido por orgullo en el Templo" },
+          { "nombre": "Jotam", "nota": "Rey recto de Judá" },
+          { "nombre": "Acaz", "nota": "Rey incrédulo que recibió la profecía de Emanuel (Isa. 7:14)" },
+          { "nombre": "Ezequías", "nota": "Gran reformador y hombre de oración", "ficha_id": "ezequias" },
+          { "nombre": "Manasés", "nota": "El más impío, perdonado en su arrepentimiento", "ficha_id": "manases" },
+          { "nombre": "Amón", "nota": "Reinado breve e idólatra" },
+          { "nombre": "Josías", "nota": "Último gran rey reformador que halló la Ley" },
+          { "nombre": "Jeconías (Joaquín)", "nota": "Deportado a Babilonia (597 a. C.)", "ficha_id": "jeconias" }
+        ]
+      },
+      {
+        "id": "mat-3",
+        "numero": "Serie III · 14 Generaciones",
+        "titulo": "Del Exilio hasta Cristo (Retorno y Espera)",
+        "referencia": "Mateo 1:12–16",
+        "descripcion": "Cuatro siglos de aparente anonimato y silencio en los que la casa de David perdió su trono terrenal, hasta la llegada del Rey verdadero.",
+        "nodos": [
+          { "nombre": "Salatiel", "nota": "Nacido durante el exilio en Babilonia" },
+          { "nombre": "Zorobabel", "nota": "Gobernador del retorno y constructor del 2.º Templo", "ficha_id": "zorobabel" },
+          { "nombre": "Abiud", "nota": "Heredero posexílico" },
+          { "nombre": "Eliaquim", "nota": "Línea preservada en silencio" },
+          { "nombre": "Azor", "nota": "Período intertestamentario" },
+          { "nombre": "Sadoc", "nota": "Período intertestamentario" },
+          { "nombre": "Aquim", "nota": "Período intertestamentario" },
+          { "nombre": "Eliud", "nota": "Período intertestamentario" },
+          { "nombre": "Eleazar", "nota": "Período intertestamentario" },
+          { "nombre": "Matán", "nota": "Abuelo paterno de José" },
+          { "nombre": "Jacob", "nota": "Padre de José de Nazaret" },
+          { "nombre": "José", "nota": "Marido de María · Padre legal y adoptivo", "ficha_id": "jose" },
+          { "nombre": "María", "nota": "5.ª mujer en Mateo 1 · «De la cual nació Jesús»", "ficha_id": "maria", "es_mujer": true },
+          { "nombre": "JESÚS, llamado el Cristo", "nota": "Cumplimiento del Pacto Abrahámico y Davídico", "ficha_id": "jesus", "es_cristo": true }
+        ]
+      }
+    ]
+  },
+  "lucas": {
+    "titulo": "Genealogía según Lucas 3:23–38",
+    "subtitulo": "Línea Biológica y Universal: conectando a Jesús (vía María y Natán) hasta Adán, hijo de Dios.",
+    "direccion": "Presentada en orden cronológico de Adán → Jesús (en Lucas 3:23–38 se recita en sentido inverso, subiendo de Jesús hasta Dios)",
+    "enfasis": "Demuestra a lectores de todas las naciones que Jesús es el verdadero «Postrer Adán» y el Salvador universal de toda la humanidad, descendiente biológico de David a través de Su hijo Natán.",
+    "etapas": [
+      {
+        "id": "luc-1",
+        "numero": "Etapa I · Orígenes Universales",
+        "titulo": "De Dios y Adán hasta Abraham",
+        "referencia": "Lucas 3:34b–38",
+        "descripcion": "Veinte generaciones antes de Abraham que unen a Jesús con toda la raza humana creada por Dios.",
+        "nodos": [
+          { "nombre": "Adán (hijo de Dios)", "nota": "Cabeza de la creación y la humanidad", "ficha_id": "adan" },
+          { "nombre": "Set", "nota": "Linaje sustituido tras Abel", "ficha_id": "set" },
+          { "nombre": "Enós", "nota": "Comienzo de invocar el nombre de Jehová" },
+          { "nombre": "Cainán", "nota": "Patriarca antediluviano" },
+          { "nombre": "Mahalaleel", "nota": "Patriarca antediluviano" },
+          { "nombre": "Jared", "nota": "Padre de Enoc" },
+          { "nombre": "Enoc", "nota": "Caminó con Dios y fue traspuesto", "ficha_id": "enoc" },
+          { "nombre": "Matusalén", "nota": "El hombre más longevo (969 años)" },
+          { "nombre": "Lamec", "nota": "Padre de Noé" },
+          { "nombre": "Noé", "nota": "Pacto de preservación tras el diluvio", "ficha_id": "noe" },
+          { "nombre": "Sem", "nota": "Hijo bendecido de Noé (Gén. 9:26)" },
+          { "nombre": "Arfaxad · Cainán · Sala · Heber", "nota": "Generaciones tras el diluvio (origen del nombre «hebreo»)" },
+          { "nombre": "Peleg · Ragau · Serug · Nacor · Taré", "nota": "De la dispersión de Babel hasta Ur de los caldeos" }
+        ]
+      },
+      {
+        "id": "luc-2",
+        "numero": "Etapa II · Convergencia Pactal",
+        "titulo": "De Abraham hasta el Rey David",
+        "referencia": "Lucas 3:31b–34a",
+        "descripcion": "Tramo completamente idéntico entre Mateo 1 y Lucas 3: la promesa de Abraham se estrecha hacia Judá y culmina en David.",
+        "nodos": [
+          { "nombre": "Abraham", "nota": "Convergencia con Mateo 1", "ficha_id": "abraham" },
+          { "nombre": "Isaac", "nota": "Hijo de la promesa", "ficha_id": "isaac" },
+          { "nombre": "Jacob (Israel)", "nota": "Padre de las doce tribus", "ficha_id": "jacob" },
+          { "nombre": "Judá", "nota": "Tribu real prometida", "ficha_id": "juda" },
+          { "nombre": "Fares · Esrom · Aram · Aminadab · Naasón · Salmón", "nota": "De Egipto al Sinaí y la entrada a Canaán" },
+          { "nombre": "Booz", "nota": "Pariente Redentor en Belén", "ficha_id": "booz" },
+          { "nombre": "Obed · Isaí", "nota": "Abuelo y padre de David en Belén" },
+          { "nombre": "Rey David", "nota": "Punto de bifurcación entre Salomón (Mat.) y Natán (Lc.)", "ficha_id": "david" }
+        ]
+      },
+      {
+        "id": "luc-3",
+        "numero": "Etapa III · Rama de Natán",
+        "titulo": "De Natán hasta el Exilio",
+        "referencia": "Lucas 3:27b–31a",
+        "descripcion": "Una rama humilde y no reinante de la casa de David que corre paralela a los reyes de Judá, preservada libre de la maldición sobre la descendencia física de Jeconías.",
+        "nodos": [
+          { "nombre": "Natán", "nota": "Hijo de David y Betsabé · Rama de María", "ficha_id": "natan" },
+          { "nombre": "Matata · Mainán · Melea · Eliaquim · Jonán", "nota": "Descendientes de Natán en Judá" },
+          { "nombre": "José · Judá · Simeón · Leví · Matat", "nota": "Línea preservada durante la monarquía dividida" },
+          { "nombre": "Jorim · Eliezer · Josué · Er · Elmodam", "nota": "Fidelidad silenciosa en la casa de David" },
+          { "nombre": "Cosam · Adi · Melqui · Neri", "nota": "Vísperas del exilio babilónico" }
+        ]
+      },
+      {
+        "id": "luc-4",
+        "numero": "Etapa IV · Del Exilio al Salvador",
+        "titulo": "De Zorobabel y María hasta Jesús",
+        "referencia": "Lucas 3:23–27a",
+        "descripcion": "Tras el breve cruce en Salatiel y Zorobabel, la línea desciende discretamente por Elí hasta María y el nacimiento del Hijo de Dios.",
+        "nodos": [
+          { "nombre": "Salatiel", "nota": "Convergencia posexílica" },
+          { "nombre": "Zorobabel", "nota": "Gobernador del retorno a Jerusalén", "ficha_id": "zorobabel" },
+          { "nombre": "Resa · Joana · Judá · José · Semei", "nota": "Generaciones tras la reconstrucción del Templo" },
+          { "nombre": "Matatías · Maat · Nagai · Esli · Nahum · Amós", "nota": "Siglos de silencio profético" },
+          { "nombre": "Matatías · José · Jana · Melqui · Leví · Matat", "nota": "Remanente fiel esperando la consolación de Israel" },
+          { "nombre": "Elí (padre de María)", "nota": "Suegro de José («hijo de Elí» por matrimonio)" },
+          { "nombre": "María (y José, «según se creía»)", "nota": "Ascendencia biológica davídica de Jesús", "ficha_id": "maria", "es_mujer": true },
+          { "nombre": "JESÚS, el Hijo de Dios", "nota": "El Postrer Adán y Salvador de toda la humanidad", "ficha_id": "jesus", "es_cristo": true }
+        ]
+      }
+    ]
+  },
+  "comparativa": {
+    "intro": "A primera vista, muchos lectores se sorprenden al notar que los nombres entre David y José son distintos en Mateo 1 y Lucas 3. Lejos de ser una contradicción, ambas genealogías encajan como dos piezas maestras que juntas prueban tanto el derecho legal al trono como la verdadera descendencia biológica de Cristo.",
+    "mateo_resumen": {
+      "titulo": "Mateo 1:1–17",
+      "etiqueta": "Línea Real / Legal (vía José)",
+      "puntos": [
+        { "clave": "Inicio y dirección", "valor": "Desciende desde Abraham → David → Jesús." },
+        { "clave": "Rama desde David", "valor": "Baja por Salomón y los reyes oficiales de Judá." },
+        { "clave": "Audiencia y foco", "valor": "Audiencia judía: prueba que Jesús es el Mesías Rey heredero legal del trono." },
+        { "clave": "Sello único", "valor": "Estructura didáctica de 3 × 14 generaciones e incluye a 5 mujeres inesperadas." }
+      ]
+    },
+    "lucas_resumen": {
+      "titulo": "Lucas 3:23–38",
+      "etiqueta": "Línea Biológica / Universal (vía María)",
+      "puntos": [
+        { "clave": "Inicio y dirección", "valor": "Sube desde Jesús → David → Abraham → Adán, hijo de Dios." },
+        { "clave": "Rama desde David", "valor": "Baja por Natán, otro hijo de David que nunca reinó." },
+        { "clave": "Audiencia y foco", "valor": "Audiencia universal/gentil: prueba que Jesús es el «Postrer Adán» y Salvador de toda la humanidad." },
+        { "clave": "Sello único", "valor": "Aclara «hijo, según se creía, de José, hijo de Elí» (yerno de Elí, padre de María)." }
+      ]
+    },
+    "claves_teologicas": [
+      {
+        "titulo": "1. ¿Por qué difieren los nombres después de David?",
+        "texto": "Mateo traza la sucesión legal del trono (que pasaba por el padre adoptivo José a través de los reyes descendientes de Salomón), mientras que Lucas traza la ascendencia sanguínea real a través de María —nombrando a José en la fórmula jurídica judía como «hijo [yerno] de Elí»— por medio de Natán, otro hijo de David."
+      },
+      {
+        "titulo": "2. El milagro que resolvió la maldición de Jeconías",
+        "texto": "En Jeremías 22:30, Dios sentenció que ningún descendiente biológico del rey Jeconías se sentaría jamás en el trono de David. Si Jesús hubiera sido hijo biológico de José, habría caído bajo esa maldición; si José no lo hubiera adoptado legalmente, no habría tenido el título legal del trono. El nacimiento virginal cumplió ambas profecías a la perfección."
+      },
+      {
+        "titulo": "3. Las 5 mujeres de Mateo 1: Evangelio en miniatura",
+        "texto": "En las genealogías judías antiguas rara vez se nombraba a mujeres. Sin embargo, Mateo incluye a propósito a Tamar (cananea), Rahab (ramera de Jericó), Rut (moabita), Betsabé (recordando el pecado de David) y María: un anuncio inequívoco de que la gracia soberana rescata a extranjeros, pecadores y quebrantados."
+      }
+    ]
+  }
+}

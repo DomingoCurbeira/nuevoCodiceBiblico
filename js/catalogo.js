@@ -1,7 +1,8 @@
 /**
  * js/catalogo.js
- * Renderiza el catálogo de estudios teológicos en formato Grid Editorial
- * Ordena automáticamente por Episodio (1, 2, 3...) e incluye Paginador Numérico de 12 estudios (4 filas).
+ * Renderiza el catálogo de estudios teológicos en formato Grid Editorial.
+ * En «Todos» muestra los estudios más recientes primero; al filtrar una serie,
+ * ordena estrictamente por Episodio (1, 2, 3...) con Paginador Numérico de 12 estudios (4 filas).
  */
 document.addEventListener('DOMContentLoaded', async () => {
   const gridEl = document.getElementById('studies-grid');
@@ -37,15 +38,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function ordenarEstudios(lista) {
-    return [...lista].sort((a, b) => {
-      if (serieActiva === 'Todos') {
-        const idxSerieA = ORDEN_SERIES.indexOf(a.serie);
-        const idxSerieB = ORDEN_SERIES.indexOf(b.serie);
-        const sA = idxSerieA === -1 ? 99 : idxSerieA;
-        const sB = idxSerieB === -1 ? 99 : idxSerieB;
-        if (sA !== sB) return sA - sB;
-      }
+    // En la vista «Todos», conservar el orden cronológico inverso de publicación (más recientes primero)
+    if (serieActiva === 'Todos') {
+      return [...lista];
+    }
 
+    // Dentro de una serie específica, ordenar estrictamente del Episodio 1 al último
+    return [...lista].sort((a, b) => {
       const epA = obtenerNumeroEpisodio(a.edicion);
       const epB = obtenerNumeroEpisodio(b.edicion);
       if (epA !== epB) return epA - epB;
@@ -214,12 +213,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     const paginados = ordenados.slice(inicio, fin);
 
     if (countEl) {
+      const ordenLabel = serieActiva === 'Todos' ? 'Más recientes primero' : 'Ordenados por episodio';
       if (total === 0) {
         countEl.textContent = '0 estudios disponibles';
       } else if (total <= ITEMS_PER_PAGE) {
-        countEl.textContent = `${total} ${total === 1 ? 'estudio disponible' : 'estudios disponibles'}`;
+        countEl.textContent = `${total} ${total === 1 ? 'estudio disponible' : 'estudios disponibles'} · ${ordenLabel}`;
       } else {
-        countEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} estudios disponibles (Página ${paginaActual} de ${totalPaginas})`;
+        countEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} estudios · ${ordenLabel} (Página ${paginaActual} de ${totalPaginas})`;
       }
     }
 

@@ -49,10 +49,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // 2. Cargar metadatos del estudio
+  let estudios = [];
   let estudio = null;
   try {
     const res = await fetch('data/estudios.json');
-    const estudios = await res.json();
+    estudios = await res.json();
     estudio = estudios.find(s => s.id === studyId || s.slug === studyId) || estudios[0];
   } catch (err) {
     console.error('Error cargando metadatos del estudio:', err);
@@ -63,6 +64,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       stageEl.innerHTML = `<p style="color:#E4E2DD; padding:3rem;">Estudio no encontrado.</p>`;
     }
     return;
+  }
+
+  const escapeHtml = (str) =>
+    String(str || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+
+  function obtenerNumeroEpisodio(edicionStr) {
+    const match = String(edicionStr || '').match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : 999;
   }
 
   // Poblar ficha técnica e información del estudio
@@ -76,7 +89,146 @@ document.addEventListener('DOMContentLoaded', async () => {
     downloadBtnEl.href = estudio.apoyoUrl;
   }
 
-  // 3. Configurar PDF.js y renderizar todas las páginas en <canvas>
+  // 2b. Configurar botones directos de Compartir (WhatsApp, Facebook y Copiar enlace)
+  (function inicializarCompartir() {
+    const shareUrl = window.location.href;
+    const mensajeWhatsApp =
+      `📖 *${estudio.titulo}*\n` +
+      `${estudio.serie} · ${estudio.edicion || 'Estudio Bíblico'}\n` +
+      `Pasajes: ${estudio.referencia}\n\n` +
+      `Léelo gratis en Códice Bíblico:\n${shareUrl}`;
+
+    const waHref = `https://wa.me/?text=${encodeURIComponent(mensajeWhatsApp)}`;
+    const fbHref = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(estudio.titulo)}`;
+
+    ['btn-share-whatsapp', 'sidebar-share-whatsapp'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = waHref;
+    });
+
+    ['btn-share-facebook', 'sidebar-share-facebook'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = fbHref;
+    });
+
+    const copiarEnlace = async (btn) => {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(shareUrl);
+        } else {
+          const temp = document.createElement('input');
+          temp.value = shareUrl;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          temp.remove();
+        }
+        const prev = btn.textContent;
+        btn.textContent = '✓ Enlace copiado';
+        setTimeout(() => {
+          btn.textContent = prev;
+        }, 2000);
+      } catch (err) {
+        console.error('No se pudo copiar el enlace:', err);
+      }
+    };
+
+    ['btn-share-study', 'sidebar-share-copy'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.addEventListener('click', () => copiarEnlace(btn));
+    });
+  })();
+
+  // 2c. Renderizar navegación de continuidad (Episodio Anterior / Siguiente Episodio)
+  (function renderizarNavegacionEpisodios() {
+    const bottomNavEl = document.getElementById('episode-nav-bottom');
+    const sidebarNavEl = document.getElementById('episode-nav-sidebar');
+    if (!estudios.length || (!bottomNavEl && !sidebarNavEl)) return;
+
+    const serieEstudios = estudios
+      .filter(s => s.serie === estudio.serie)
+      .sort((a, b) => {
+        const epA = obtenerNumeroEpisodio(a.edicion);
+        const epB = obtenerNumeroEpisodio(b.edicion);
+        if (epA !== epB) return epA - epB;
+        return (a.titulo || '').localeCompare(b.titulo || '', 'es');
+      });
+
+    const currentIdx = serieEstudios.findIndex(s => s.id === estudio.id);
+    if (currentIdx === -1 || serieEstudios.length <= 1) return;
+
+    const prevEstudio = currentIdx > 0 ? serieEstudios[currentIdx - 1] : null;
+    const nextEstudio = currentIdx < serieEstudios.length - 1 ? serieEstudios[currentIdx + 1] : null;
+
+    if (!prevEstudio && !nextEstudio) return;
+
+    const acortarTitulo = (t) => {
+      const idx = t.indexOf(':');
+      if (idx > 14 && idx < 56) return t.slice(0, idx);
+      return t.length > 64 ? `${t.slice(0, 61)}…` : t;
+    };
+
+    if (bottomNavEl) {
+      bottomNavEl.style.display = 'block';
+      bottomNavEl.innerHTML = `
+        <div class="episode-nav-header">
+          <span class="eyebrow" style="margin-bottom: 0;">Continuar en la serie · ${escapeHtml(estudio.serie)}</span>
+          <span class="episode-nav-position">Estudio ${currentIdx + 1} de ${serieEstudios.length}</span>
+        </div>
+        <div class="episode-nav-grid">
+          ${
+            prevEstudio
+              ? `<a href="estudio.html?id=${encodeURIComponent(prevEstudio.id)}" class="episode-nav-card prev">
+                  <span class="episode-nav-dir">← Episodio Anterior · ${escapeHtml(prevEstudio.edicion || 'Estudio')}</span>
+                  <span class="episode-nav-title">${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
+                </a>`
+              : `<div class="episode-nav-card empty" aria-hidden="true"></div>`
+          }
+          ${
+            nextEstudio
+              ? `<a href="estudio.html?id=${encodeURIComponent(nextEstudio.id)}" class="episode-nav-card next">
+                  <span class="episode-nav-dir">Siguiente Episodio · ${escapeHtml(nextEstudio.edicion || 'Estudio')} →</span>
+                  <span class="episode-nav-title">${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
+                </a>`
+              : `<a href="index.html" class="episode-nav-card next">
+                  <span class="episode-nav-dir">Fin de esta serie →</span>
+                  <span class="episode-nav-title">Explorar todo el catálogo de estudios</span>
+                </a>`
+          }
+        </div>
+      `;
+    }
+
+    if (sidebarNavEl) {
+      sidebarNavEl.style.display = 'flex';
+      sidebarNavEl.innerHTML = `
+        <div class="sidebar-episode-header">
+          <span class="lexicon-field-label" style="margin-bottom: 0;">Continuidad de la Serie</span>
+          <span class="sidebar-episode-pos">${currentIdx + 1} / ${serieEstudios.length}</span>
+        </div>
+        <div class="sidebar-episode-links">
+          ${
+            prevEstudio
+              ? `<a href="estudio.html?id=${encodeURIComponent(prevEstudio.id)}" class="sidebar-episode-link">
+                  <span class="sidebar-ep-dir">← Anterior (${escapeHtml(prevEstudio.edicion || 'Estudio')})</span>
+                  <span class="sidebar-ep-title">${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
+                </a>`
+              : ''
+          }
+          ${
+            nextEstudio
+              ? `<a href="estudio.html?id=${encodeURIComponent(nextEstudio.id)}" class="sidebar-episode-link is-next">
+                  <span class="sidebar-ep-dir">Siguiente (${escapeHtml(nextEstudio.edicion || 'Estudio')}) →</span>
+                  <span class="sidebar-ep-title">${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
+                </a>`
+              : ''
+          }
+        </div>
+      `;
+    }
+  })();
+
+  // 3. Configurar PDF.js y renderizar todas las páginas en <canvas> con barra de progreso real
   if (!window.pdfjsLib) {
     stageEl.innerHTML = `<p style="color:#E4E2DD; padding:3rem;">Cargando motor de lectura protegido...</p>`;
     return;
@@ -91,6 +243,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   let totalPages = 0;
   let isRendering = false;
 
+  const progressBarEl = document.getElementById('pdf-progress-bar');
+  const progressTextEl = document.getElementById('pdf-progress-text');
+  const progressDetailEl = document.getElementById('pdf-progress-detail');
+
   try {
     const loadingTask = window.pdfjsLib.getDocument({
       url: estudio.pdfUrl,
@@ -98,8 +254,54 @@ document.addEventListener('DOMContentLoaded', async () => {
       disableStream: false
     });
 
+    loadingTask.onProgress = (progressData) => {
+      if (!progressData) return;
+      const loaded = progressData.loaded || 0;
+      const total = progressData.total || 0;
+
+      if (total > 0) {
+        const pct = Math.min(100, Math.round((loaded / total) * 100));
+        const loadedMb = (loaded / (1024 * 1024)).toFixed(1);
+        const totalMb = (total / (1024 * 1024)).toFixed(1);
+
+        if (progressBarEl) {
+          progressBarEl.classList.remove('indeterminate');
+          progressBarEl.style.width = `${pct}%`;
+        }
+        if (progressTextEl) {
+          progressTextEl.textContent = `Cargando estudio: ${pct}%`;
+        }
+        if (progressDetailEl) {
+          progressDetailEl.textContent = `${loadedMb} MB de ${totalMb} MB · Optimizando pergamino digital...`;
+        }
+        if (pageIndicatorEl) {
+          pageIndicatorEl.textContent = `Cargando ${pct}%...`;
+        }
+      } else if (loaded > 0) {
+        const loadedMb = (loaded / (1024 * 1024)).toFixed(1);
+        if (progressTextEl) {
+          progressTextEl.textContent = `Descargando estudio (${loadedMb} MB)...`;
+        }
+        if (pageIndicatorEl) {
+          pageIndicatorEl.textContent = `Cargando (${loadedMb} MB)...`;
+        }
+      }
+    };
+
     pdfDoc = await loadingTask.promise;
     totalPages = pdfDoc.numPages;
+
+    if (progressBarEl) {
+      progressBarEl.classList.remove('indeterminate');
+      progressBarEl.style.width = '100%';
+    }
+    if (progressTextEl) {
+      progressTextEl.textContent = 'Cargando estudio: 100%';
+    }
+    if (progressDetailEl) {
+      progressDetailEl.textContent = `Documento listo (${totalPages} páginas). Dibujando en alta definición...`;
+    }
+
     actualizarControles();
     await renderizarTodasLasPaginas();
   } catch (err) {
@@ -247,7 +449,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const infoSection = document.getElementById('study-infographic-section');
   const tabPdf = document.getElementById('tab-btn-pdf');
   const tabInfo = document.getElementById('tab-btn-infografia');
-  const btnShare = document.getElementById('btn-share-study');
   const pdfWrapper = document.getElementById('pdf-protected-wrapper');
 
   if (tabPdf && tabInfo && pdfWrapper && infoSection) {
@@ -261,19 +462,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       tabInfo.classList.add('active');
       tabPdf.classList.remove('active');
       infoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }
-
-  if (btnShare) {
-    btnShare.addEventListener('click', () => {
-      const shareUrl = window.location.href;
-      navigator.clipboard.writeText(shareUrl).then(() => {
-        const prev = btnShare.textContent;
-        btnShare.textContent = '✓ Enlace copiado';
-        setTimeout(() => {
-          btnShare.textContent = prev;
-        }, 2000);
-      });
     });
   }
 

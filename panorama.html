@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EN4P6WTVWE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EN4P6WTVWE');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panorama Bíblico · Los 66 Libros de la Escritura | Códice Bíblico</title>
+  <meta name="description" content="Infografías panorámicas de los 66 libros de la Biblia: autor, fecha, contexto histórico, personajes, geografía, estructura, historia redentora y Cristo en cada libro.">
+  <meta property="og:title" content="Panorama Bíblico · Los 66 Libros | Códice Bíblico">
+  <meta property="og:description" content="Infografías canónicas de la Escritura con rigor histórico-gramatical y enfoque cristocéntrico.">
+  <meta property="og:image" content="https://codicebiblico.netlify.app/assets/sello.png">
+  <link rel="icon" type="image/png" href="assets/sello.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Navegación Clásica Editorial -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/sello.png" alt="Sello Códice Bíblico" class="brand-seal">
+        <div class="brand-text">
+          <span class="brand-name">CÓDICE BÍBLICO</span>
+          <span class="brand-sub">Biblioteca Teológica · Sola Scriptura</span>
+        </div>
+      </a>
+
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link">Estudios</a>
+
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+            Recursos Visuales
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="panorama.html" class="nav-dropdown-item active" role="menuitem">
+              <strong>Panorama Bíblico</strong>
+              <span>Infografías de los 66 libros de la Escritura</span>
+            </a>
+            <a href="genealogia.html" class="nav-dropdown-item" role="menuitem">
+              <strong>Genealogía de Jesús</strong>
+              <span>Línea redentora interactiva (Mateo 1 y Lucas 3)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="etymos.html" class="nav-link">Etymos (Diccionario)</a>
+        <a href="nosotros.html" class="nav-link">Nosotros / Apoyo</a>
+        <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          Apoyar Ministerio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Panorama Bíblico -->
+    <section class="hero-editorial">
+      <div class="container">
+        <span class="eyebrow">Los 66 Libros de la Escritura · Atlas Canónico</span>
+        <h1>Panorama Bíblico</h1>
+        <p class="hero-lead">
+          Contempla el mapa completo de la revelación: quién escribió cada libro, qué estaba sucediendo en la historia, sus personajes y escenarios clave, su estructura y cómo cada página señala a Jesucristo.
+        </p>
+        <div class="hero-pillars">
+          <span>39 Antiguo Testamento</span>
+          <span>27 Nuevo Testamento</span>
+          <span>Enfoque Cristocéntrico (Lc. 24:27)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destacados del Canon (Puertas de Entrada Recomendadas) -->
+    <section class="container panorama-featured-section" id="panorama-featured-section" aria-label="Puertas de entrada recomendadas">
+      <div class="panorama-section-head">
+        <div>
+          <span class="eyebrow" style="margin-bottom: 0.2rem;">Puertas de Entrada al Canon · 66 Infografías Completas</span>
+          <h2 style="font-size: 1.65rem;">Pilares para Comenzar tu Recorrido</h2>
+        </div>
+        <span class="panorama-progress-pill" id="panorama-progress-pill">66 de 66 fichas completas</span>
+      </div>
+
+      <div class="panorama-featured-grid" id="panorama-featured-grid">
+        <!-- Renderizado dinámico por js/panorama.js -->
+      </div>
+    </section>
+
+    <!-- Estantería Canónica Completa (Los 66 Libros) -->
+    <section class="container panorama-shelf-section" aria-label="Estantería canónica de los 66 libros">
+      <div class="catalog-controls" style="padding-top: 1.5rem;">
+        <div class="filter-tabs" id="panorama-filters" role="tablist" aria-label="Filtrar libros por testamento">
+          <button type="button" class="filter-tab active" data-filter="todos">Todos los Libros (66)</button>
+          <button type="button" class="filter-tab" data-filter="AT">Antiguo Testamento (39)</button>
+          <button type="button" class="filter-tab" data-filter="NT">Nuevo Testamento (27)</button>
+        </div>
+
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="search"
+            id="panorama-search"
+            class="search-input"
+            placeholder="Buscar libro, autor, personaje o tema (ej. Génesis, Pablo, Pacto)..."
+            autocomplete="off"
+          >
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.25rem; font-size: 0.82rem; color: var(--text-muted);" id="panorama-count">
+        Cargando canon bíblico...
+      </div>
+
+      <div id="panorama-shelf-container" class="panorama-divisions-stack">
+        <!-- Divisiones canónicas y tarjetas de los 66 libros inyectadas por js/panorama.js -->
+      </div>
+    </section>
+
+    <!-- Modal Editorial de Infografía Panorámica de Libro -->
+    <div class="etymos-modal-backdrop" id="panorama-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="panorama-modal-title">
+      <div class="etymos-modal panorama-modal" id="panorama-modal-content">
+        <!-- Inyectado dinámicamente por js/panorama.js -->
+      </div>
+    </div>
+
+    <!-- Modal de Desbloqueo de Descarga HD para Benefactores (Ko-fi) -->
+    <div class="etymos-modal-backdrop" id="download-modal-backdrop" style="z-index: 300;" role="dialog" aria-modal="true" aria-labelledby="download-modal-title">
+      <div class="etymos-modal" style="max-width: 560px;">
+        <button type="button" class="modal-close-btn" id="download-modal-close" aria-label="Cerrar ventana">✕</button>
+        <span class="eyebrow">Edición de Imprenta · Benefactores</span>
+        <h2 id="download-modal-title" style="font-size: 1.85rem; margin-bottom: 0.65rem;">
+          Descargar Lámina Panorámica HD
+        </h2>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+          La consulta en línea de toda nuestra biblioteca y del Panorama Bíblico es y será siempre <strong>100% gratuita</strong>. Como agradecimiento a quienes sostienen este ministerio con una ofrenda voluntaria en <strong>Ko-fi</strong>, habilitamos la descarga directa de todos los estudios en PDF y las Láminas Panorámicas HD listas para imprimir.
+        </p>
+
+        <div style="background: var(--accent-bronze-light); border: 1px solid var(--accent-bronze-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.5rem; text-align: center;">
+          <p style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.85rem; font-weight: 500;">
+            Paso 1: Realiza tu aporte voluntario en Ko-fi y recibirás al instante en pantalla tu <strong>Clave de Benefactor</strong>:
+          </p>
+          <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="btn btn-bronze" style="width: 100%;">
+            ☕ Apoyar en Ko-fi y Obtener Clave
+          </a>
+        </div>
+
+        <form id="benefactor-unlock-form" style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+          <div class="lexicon-field-label" style="margin-bottom: 0.65rem;">
+            ¿Ya apoyaste el ministerio? Desbloquea todas las descargas aquí:
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <input
+              type="email"
+              id="benefactor-email"
+              class="search-input"
+              style="padding-left: 0.9rem;"
+              placeholder="Tu correo electrónico (con el que apoyaste)"
+              required
+            >
+            <input
+              type="text"
+              id="benefactor-code"
+              class="search-input"
+              style="padding-left: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em;"
+              placeholder="Clave de Benefactor entregada en Ko-fi"
+              required
+            >
+            <p id="benefactor-error" style="display: none; font-size: 0.82rem; color: #9E3B30; font-weight: 500;">
+              La clave introducida no es válida. Verifica el mensaje de agradecimiento en Ko-fi.
+            </p>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              🔓 Desbloquear y Descargar Lámina HD Ahora
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Página Editorial -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">CÓDICE BÍBLICO</div>
+          <p class="footer-desc">
+            Plataforma de literatura teológica y análisis exegético comprometida con la suficiencia de las Escrituras y la centralidad de Jesucristo.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Catálogo de Estudios</a></li>
+            <li><a href="panorama.html">Panorama Bíblico (66 Libros)</a></li>
+            <li><a href="genealogia.html">Genealogía de Jesús</a></li>
+            <li><a href="etymos.html">Etymos · Léxico y Nombres</a></li>
+            <li><a href="nosotros.html">Visión y Apoyo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Comunidad y Ministerio</h4>
+          <ul class="footer-links">
+            <li><a href="https://whatsapp.com/channel/0029VbC3wXTDZ4LS6fQ4oB2U" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61582655326586" target="_blank" rel="noopener noreferrer">Página de Facebook</a></li>
+            <li><a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer">Apoyar Ministerio (Ko-fi)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Códice Bíblico · Domingo Curbeira. Todos los derechos reservados.</span>
+        <span class="soli-deo">Soli Deo Gloria</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/panorama.js"></script>
+</body>
+</html>

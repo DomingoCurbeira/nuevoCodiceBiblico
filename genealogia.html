@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EN4P6WTVWE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EN4P6WTVWE');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genealogía de Jesús · Mateo 1 y Lucas 3 | Códice Bíblico</title>
+  <meta name="description" content="Línea genealógica interactiva de Jesucristo: compara Mateo 1 (línea real desde Abraham vía Salomón) y Lucas 3 (línea biológica hasta Adán vía Natán) con fichas teológicas de sus personajes clave.">
+  <meta property="og:title" content="Genealogía de Jesús · Mateo 1 y Lucas 3 | Códice Bíblico">
+  <meta property="og:description" content="Explora la línea redentora de Jesucristo en Mateo 1 y Lucas 3 con fichas históricas y teológicas.">
+  <meta property="og:image" content="https://codicebiblico.netlify.app/assets/sello.png">
+  <link rel="icon" type="image/png" href="assets/sello.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Navegación Clásica Editorial con Desplegable «Recursos Visuales» -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/sello.png" alt="Sello Códice Bíblico" class="brand-seal">
+        <div class="brand-text">
+          <span class="brand-name">CÓDICE BÍBLICO</span>
+          <span class="brand-sub">Biblioteca Teológica · Sola Scriptura</span>
+        </div>
+      </a>
+
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link">Estudios</a>
+
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+            Recursos Visuales
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="panorama.html" class="nav-dropdown-item" role="menuitem">
+              <strong>Panorama Bíblico</strong>
+              <span>Infografías de los 66 libros de la Escritura</span>
+            </a>
+            <a href="genealogia.html" class="nav-dropdown-item active" role="menuitem">
+              <strong>Genealogía de Jesús</strong>
+              <span>Línea redentora interactiva (Mateo 1 y Lucas 3)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="etymos.html" class="nav-link">Etymos (Diccionario)</a>
+        <a href="nosotros.html" class="nav-link">Nosotros / Apoyo</a>
+        <a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          Apoyar Ministerio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Genealogía de Jesús -->
+    <section class="hero-editorial">
+      <div class="container">
+        <span class="eyebrow">Recursos Visuales · Mateo 1:1–17 y Lucas 3:23–38</span>
+        <h1>La Genealogía de Jesucristo</h1>
+        <p class="hero-lead">
+          Mucho más que una lista de nombres: es el hilo inquebrantable de la gracia soberana desde Adán y Abraham hasta el pesebre de Belén, mostrando cómo Dios cumple Sus promesas a través de pecadores redimidos.
+        </p>
+
+        <!-- Selector de 3 Vistas: Mateo 1 | Lucas 3 | Comparativa -->
+        <div class="etymos-mode-switcher" id="genealogy-view-switcher" role="tablist" aria-label="Seleccionar vista genealógica">
+          <button type="button" class="mode-btn active" data-view="mateo" role="tab" aria-selected="true">
+            👑 Mateo 1 (Línea Real · Abraham → Cristo)
+          </button>
+          <button type="button" class="mode-btn" data-view="lucas" role="tab" aria-selected="false">
+            🌍 Lucas 3 (Línea Universal · Adán → Cristo)
+          </button>
+          <button type="button" class="mode-btn" data-view="comparativa" role="tab" aria-selected="false">
+            ⚖️ Comparativa: Mateo vs. Lucas
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container genealogy-main-section">
+      <!-- Barra de Resumen de la Vista Activa + Filtros -->
+      <div class="genealogy-intro-banner" id="genealogy-intro-banner">
+        <!-- Inyectado por js/genealogia.js -->
+      </div>
+
+      <div class="genealogy-controls" id="genealogy-controls">
+        <div class="filter-tabs" id="genealogy-filters" role="group" aria-label="Filtrar nodos de la genealogía">
+          <button type="button" class="filter-tab active" data-filter="todos">Ver Línea Completa</button>
+          <button type="button" class="filter-tab" data-filter="clave">Solo Personajes Clave</button>
+          <button type="button" class="filter-tab" data-filter="mujeres" id="filter-women-btn">Las 5 Mujeres en Mateo</button>
+        </div>
+
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="search"
+            id="genealogy-search"
+            class="search-input"
+            placeholder="Buscar nombre (ej. David, Rahab, Rut, Salomón, Natán)..."
+            autocomplete="off"
+          >
+        </div>
+      </div>
+
+      <!-- Contenedor 1: Línea de Tiempo Vertical (Mateo 1 o Lucas 3) -->
+      <div id="genealogy-timeline-view" class="genealogy-stages-stack">
+        <!-- Renderizado dinámico por js/genealogia.js -->
+      </div>
+
+      <!-- Contenedor 2: Vista Comparativa (Mateo 1 vs. Lucas 3) -->
+      <div id="genealogy-compare-view" style="display: none;">
+        <!-- Renderizado dinámico por js/genealogia.js -->
+      </div>
+    </section>
+
+    <!-- Modal Editorial de Ficha del Personaje -->
+    <div class="etymos-modal-backdrop" id="genealogy-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="genealogy-modal-title">
+      <div class="etymos-modal" id="genealogy-modal-content" style="max-width: 680px;">
+        <!-- Inyectado dinámicamente por js/genealogia.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Página Editorial -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">CÓDICE BÍBLICO</div>
+          <p class="footer-desc">
+            Plataforma de literatura teológica y análisis exegético comprometida con la suficiencia de las Escrituras y la centralidad de Jesucristo.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Catálogo de Estudios</a></li>
+            <li><a href="panorama.html">Panorama Bíblico (66 Libros)</a></li>
+            <li><a href="genealogia.html">Genealogía de Jesús</a></li>
+            <li><a href="etymos.html">Etymos · Léxico y Nombres</a></li>
+            <li><a href="nosotros.html">Visión y Apoyo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Comunidad y Ministerio</h4>
+          <ul class="footer-links">
+            <li><a href="https://whatsapp.com/channel/0029VbC3wXTDZ4LS6fQ4oB2U" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61582655326586" target="_blank" rel="noopener noreferrer">Página de Facebook</a></li>
+            <li><a href="https://ko-fi.com/codicebiblico" target="_blank" rel="noopener noreferrer">Apoyar Ministerio (Ko-fi)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Códice Bíblico · Domingo Curbeira. Todos los derechos reservados.</span>
+        <span class="soli-deo">Soli Deo Gloria</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/genealogia.js"></script>
+</body>
+</html>
