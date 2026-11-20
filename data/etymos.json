@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "skia-gr",
+      "termino": "Skiá",
+      "original": "σκιά",
+      "transliteracion": "skiá",
+      "strong": "G4639",
+      "idioma": "Griego",
+      "raiz": "Sombra, silueta o bosquejo proyectado por un cuerpo sólido bajo la luz.",
+      "significado_exegetico": "En Colosenses 2:17 y Hebreos 10:1, Pablo y el autor de Hebreos usan skiá para describir las fiestas, sacrificios y ordenanzas del Antiguo Pacto. Una sombra no es una falsedad ni un error: es una silueta real proyectada hacia adelante por un objeto real. Sin embargo, carece de sustancia propia y cumple su propósito en el instante en que aparece el cuerpo que la proyectaba.",
+      "cita": "Colosenses 2:17",
+      "versiculo": "«Todo lo cual es sombra (skiá) de lo que ha de venir; pero el cuerpo es de Cristo.»",
+      "cristologia": "Cada sacrificio en Moriah, cada cordero pascual y cada rescate del Antiguo Testamento fue una skiá trazada por la luz soberana de Dios para anunciar el contorno exacto del Calvario. Sería ciego despreciar la sombra que preparó el camino, pero sería trágico aferrarse a ella cuando Cristo, la sustancia real, ya ha venido.",
+      "estudio_relacionado": {
+        "id": "introduccion-sombras",
+        "titulo": "El Camino a Emaús: Cómo Ver a Cristo en las Sombras"
+      }
+    },
+    {
+      "id": "diermeneuo-gr",
+      "termino": "Diermēneúō",
+      "original": "διερμηνεύω",
+      "transliteracion": "diermēneúō",
+      "strong": "G1329",
+      "idioma": "Griego",
+      "raiz": "De diá (a través de, completamente) + hermēneúō (traducir, explicar, interpretar).",
+      "significado_exegetico": "Verbo compuesto de gran intensidad que significa desplegar por completo el sentido de un texto, traducir lo oscuro a claridad plena y exponer su significado verdadero. Lucas lo emplea en el camino a Emaús (Lucas 24:27) para describir la clase magistral en la que Jesús recorrió a Moisés y todos los profetas revelando lo que las Escrituras decían de Él.",
+      "cita": "Lucas 24:27",
+      "versiculo": "«Y comenzando desde Moisés, y siguiendo por todos los profetas, les declaraba (diermēneúō) en todas las Escrituras lo que de él decían.»",
+      "cristologia": "De esta raíz nace nuestra palabra «hermenéutica». La verdadera interpretación bíblica no consiste en exprimir técnicas de autoayuda ni en inventar alegorías caprichosas, sino en dejar que el Cristo resucitado despliegue el Antiguo Testamento hasta que nuestro corazón arda contemplando Su cruz y Su gloria.",
+      "estudio_relacionado": {
+        "id": "introduccion-sombras",
+        "titulo": "El Camino a Emaús: Cómo Ver a Cristo en las Sombras"
+      }
+    },
+    {
+      "id": "apaugasma-gr",
+      "termino": "Apáugasma",
+      "original": "ἀπαύγασμα",
+      "transliteracion": "apáugasma",
+      "strong": "G541",
+      "idioma": "Griego",
+      "raiz": "De apó (desde) + augázō (brillar, irradiar luz). Resplandor que emana de una fuente luminosa.",
+      "significado_exegetico": "Término único en todo el Nuevo Testamento (hápax legómenon), usado en Hebreos 1:3 para proclamar la deidad absoluta y eterna del Hijo. No designa un reflejo prestado y secundario como la luna frente al sol, sino la radiación viva que brota inseparablemente de la esencia misma de la luz.",
+      "cita": "Hebreos 1:3",
+      "versiculo": "«El cual, siendo el resplandor (apáugasma) de su gloria, y la imagen misma de su sustancia...»",
+      "cristologia": "Si el Antiguo Testamento nos mostró siluetas proyectadas en la penumbra, Jesucristo es el apáugasma: el sol mismo del mediodía irradiando la gloria del Padre sin velos. Contemplarlo a Él es ver la gloria plena de Dios manifestada en gracia y verdad.",
+      "estudio_relacionado": {
+        "id": "conclusion-sombras",
+        "titulo": "Cuando las Sombras Encuentran Su Cuerpo"
+      }
+    },
+    {
+      "id": "charakter-gr",
+      "termino": "Charaktḗr",
+      "original": "χαρακτήρ",
+      "transliteracion": "charaktḗr",
+      "strong": "G5481",
+      "idioma": "Griego",
+      "raiz": "De charássō (grabar, cincelar). La marca exacta impresa por un cuño o sello sobre metal o cera.",
+      "significado_exegetico": "Otro término único en el Nuevo Testamento (Hebreos 1:3), tomado del lenguaje de la acuñación de monedas y sellos reales. Describe la representación exacta, fiel y sin distorsión alguna de la sustancia misma (hypóstasis) del original. Quien mira la impronta conoce con certeza absoluta el rostro del Rey.",
+      "cita": "Hebreos 1:3",
+      "versiculo": "«...y la imagen misma (charaktḗr) de su sustancia, y quien sustenta todas las cosas con la palabra de su poder.»",
+      "cristologia": "Dios no dejó a la humanidad adivinando cómo es Su corazón detrás de las sombras. En Cristo hallamos el charaktḗr exacto del Padre: Su justicia santa y Su misericordia inagotable grabadas para siempre en carne humana y selladas con sangre en la cruz.",
+      "estudio_relacionado": {
+        "id": "conclusion-sombras",
+        "titulo": "Cuando las Sombras Encuentran Su Cuerpo"
+      }
+    },
+    {
       "id": "yahve-yireh-moriah",
       "termino": "Yahvé-Yiréh (El Señor Proveerá / Verá por Sí Mismo)",
       "original": "יְהוָה יִרְאֶה",

@@ -1,5 +1,63 @@
 [
   {
+    "id": "introduccion-sombras",
+    "slug": "el-camino-a-emaus-como-ver-a-cristo-en-las-sombras-sin-caer-en-el-moralismo-ni-la-alegoria",
+    "titulo": "El Camino a Emaús: Cómo Ver a Cristo en las Sombras sin Caer en el Moralismo ni la Alegoría",
+    "subtitulo": "Lucas 24:25–27; Colosenses 2:16–17 — Antes de recorrer las once sombras del Antiguo Testamento, aprendemos de labios del Cristo resucitado el lente hermenéutico de Emaús: rechazar tanto el moralismo de autoayuda como la alegoría arbitraria, para contemplar mediante la tipología bíblica una sola historia redentora cuyo único Protagonista es Jesucristo.",
+    "categoria": "SERIE DOCTRINAL: CRISTO EN LAS SOMBRAS",
+    "serie": "Cristo en las Sombras",
+    "referencia": "Lucas 24:25–27, 44–45; Juan 5:39; Colosenses 2:16–17; Hebreos 10:1; 1 Pedro 1:10–12",
+    "autor": "Códice Bíblico",
+    "edicion": "Introducción",
+    "fecha": "20 de noviembre de 2026",
+    "portada": "assets/covers/introduccion-sombras.webp",
+    "pdfUrl": "assets/pdfs/introduccion-sombras.pdf",
+    "palabras": 2151,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "El Lente de Emaús: Leer el Antiguo Testamento por Tipología Cristocéntrica, sin Moralismo ni Alegoría",
+      "contraste": {
+        "error_titulo": "El Moralismo de Autoayuda y la Alegoría Arbitraria",
+        "error_puntos": [
+          "El moralismo convierte cada relato del Antiguo Testamento en una fábula de esfuerzo humano («sé valiente como David, entrega tu Isaac»).",
+          "La alegoría arbitraria fuerza significados místicos caprichosos donde el texto bíblico jamás los puso.",
+          "Ambos extremos esconden a Cristo: uno lo oculta detrás de nuestro ego y el otro detrás de nuestra fantasía."
+        ],
+        "verdad_titulo": "La Tipología Bíblica: Sombra Real que Anuncia el Cuerpo (Luc. 24:27; Col. 2:17)",
+        "verdad_puntos": [
+          "Respeta primero la realidad histórica del texto antes de trazar el puente que el Nuevo Testamento mismo confirma.",
+          "Cada sombra (skiá) y tipo (typos) es real, pero Cristo siempre supera infinitamente al molde que lo prefiguraba.",
+          "Nos ubica en nuestro lugar verdadero: no como el héroe del relato, sino como el pecador rescatado por el Salvador."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Historia Real",
+          "detalle": "Escuchar con rigor qué ocurrió en Moriah, Egipto, el desierto o Belén sin mutilar el texto histórico."
+        },
+        {
+          "paso": "2. Puente Apostólico",
+          "detalle": "Seguir la interpretación inspirada de Jesús y los apóstoles (diermēneúō) que conectan la sombra con la cruz."
+        },
+        {
+          "paso": "3. Adoración Cristocéntrica",
+          "detalle": "Dejar el trono del héroe para descansar en el Sustituto, haciendo arder el corazón como en Emaús."
+        }
+      ],
+      "axiomas": [
+        "«Si el Antiguo Testamento solo te dice \"sé valiente como David y obediente como Abraham\", la Biblia deja de ser Evangelio para convertirse en una sentencia aplastante.»",
+        "«Una sombra no es una mentira: es la silueta real proyectada hacia adelante por la luz de Dios sobre el Cuerpo de Cristo que se aproxima.»",
+        "«En la Biblia tú nunca eres el carnero ni el pariente redentor ni el campeón del valle; tú eres el pecador rescatado en el altar, y Cristo es el único Héroe.»"
+      ],
+      "terminos_etymos": [
+        "Skiá",
+        "Diermēneúō",
+        "Typos",
+        "Logos"
+      ]
+    }
+  },
+  {
     "id": "moriah",
     "slug": "el-monte-moriah-el-carnero-provisto-en-el-zarzal-para-que-el-pecador-descienda-libre-del-altar-del-juicio",
     "titulo": "El Monte Moriah: El Carnero Provisto en el Zarzal para que el Pecador Descienda Libre del Altar del Juicio",
@@ -634,6 +692,64 @@
         "Kohén",
         "Justificar",
         "Mesítēs"
+      ]
+    }
+  },
+  {
+    "id": "conclusion-sombras",
+    "slug": "cuando-las-sombras-encuentran-su-cuerpo-viviendo-en-la-realidad-consumada-de-cristo",
+    "titulo": "Cuando las Sombras Encuentran Su Cuerpo: Viviendo en la Realidad Consumada de Cristo",
+    "subtitulo": "Hebreos 1:1–3; Hebreos 10:1–14; Colosenses 2:17 — Síntesis pastoral y doctrinal de toda la serie: cómo las once ventanas del Antiguo Testamento convergen en un solo Salvador sentado a la diestra del Padre, liberándonos de regresar a las sombras del legalismo para vivir transformados a la luz del Cuerpo.",
+    "categoria": "SERIE DOCTRINAL: CRISTO EN LAS SOMBRAS",
+    "serie": "Cristo en las Sombras",
+    "referencia": "Hebreos 1:1–3; Hebreos 10:1–14; Colosenses 2:16–17; 2 Corintios 1:20; 2 Corintios 3:18",
+    "autor": "Códice Bíblico",
+    "edicion": "Conclusión",
+    "fecha": "20 de noviembre de 2026",
+    "portada": "assets/covers/conclusion-sombras.webp",
+    "pdfUrl": "assets/pdfs/conclusion-sombras.pdf",
+    "palabras": 2125,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "De las Once Sombras Provisionales al Descanso y Transformación en el Cuerpo Consumado de Cristo",
+      "contraste": {
+        "error_titulo": "La Nostalgia Legalista de Volver a las Sombras",
+        "error_puntos": [
+          "Intenta tranquilizar la conciencia añadiendo autocastigos, rituales o desempeño semanal a la obra de la cruz.",
+          "Vive como el sacerdote del Antiguo Pacto que nunca podía sentarse porque su sacrificio jamás terminaba.",
+          "Busca santificarse mirándose obsesivamente al espejo del ego, oscilando entre el orgullo y la desesperación."
+        ],
+        "verdad_titulo": "El Cristo Sentado: Una Sola Ofrenda, Perfección Perpetua (Heb. 1:3; 10:12–14)",
+        "verdad_puntos": [
+          "Todas las promesas y figuras —de Moriah a Zacarías 3— hallan en Jesús su «Sí» y su «Amén» definitivo.",
+          "Cristo se sentó a la diestra de la Majestad porque con una sola ofrenda perfeccionó para siempre a los santificados.",
+          "Somos transformados de gloria en gloria al contemplar a cara descubierta la gloria del Salvador, no al medir nuestro ego."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Once Ventanas, Un Rostro",
+          "detalle": "Altar, reino, redención y tribunal convergen en el Resplandor (apáugasma) e Imagen exacta (charaktḗr) del Padre."
+        },
+        {
+          "paso": "2. El Sacerdote Sentado",
+          "detalle": "La obra está consumada (Tetelestai): no volvemos a sacrificar nada para comprar el favor ya ganado en la cruz."
+        },
+        {
+          "paso": "3. Vida a Plena Luz",
+          "detalle": "La contemplación del Cuerpo (sōma) produce seguridad ante la culpa, consuelo en el fuego y obediencia agradecida."
+        }
+      ],
+      "axiomas": [
+        "«No había ninguna silla en el Lugar Santo porque los sacrificios de las sombras nunca terminaban; Cristo se sentó a la diestra del Padre porque Su obra fue perfecta.»",
+        "«Cada vez que intentas pagar por tu culpa con rendimiento humano o autocastigo, estás intentando abrazar la sombra cuando el Cuerpo ya te abrazó.»",
+        "«No somos transformados mirándonos obsesivamente a nosotros mismos, sino contemplando a cara descubierta la gloria del Cristo que cumple toda la Escritura.»"
+      ],
+      "terminos_etymos": [
+        "Apáugasma",
+        "Charaktḗr",
+        "Sōma",
+        "Tetelestai"
       ]
     }
   },

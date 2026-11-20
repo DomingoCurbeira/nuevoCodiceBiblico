@@ -74,6 +74,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       .replace(/"/g, '&quot;');
 
   function obtenerNumeroEpisodio(edicionStr) {
+    const limpio = String(edicionStr || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+    if (/\b(introduccion|prologo)\b/.test(limpio)) return 0;
+    if (/\b(conclusion|epilogo)\b/.test(limpio)) return 9998;
     const match = String(edicionStr || '').match(/(\d+)/);
     return match ? parseInt(match[1], 10) : 999;
   }
