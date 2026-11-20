@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let paginaActual = 1;
 
   const ORDEN_SERIES = [
+    'Cristo en las Sombras',
     'El Sermón del Monte',
     'Trilogía de la Salvación',
     'La Gracia Soberana',

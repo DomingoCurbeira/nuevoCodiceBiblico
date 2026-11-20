@@ -811,6 +811,21 @@
   transform: translateY(-2px);
 }
 
+.path-card-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-bronze-light) 100%);
+  border-color: var(--accent-bronze-border);
+  border-left-width: 4px;
+}
+
+.path-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 .path-step-chain {
   display: flex;
   flex-wrap: wrap;

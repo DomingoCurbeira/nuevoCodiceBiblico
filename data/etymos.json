@@ -1,6 +1,171 @@
 {
   "palabras": [
     {
+      "id": "yahve-yireh-moriah",
+      "termino": "Yahvé-Yiréh (El Señor Proveerá / Verá por Sí Mismo)",
+      "original": "יְהוָה יִרְאֶה",
+      "transliteracion": "Yahweh Yir’eh",
+      "idioma": "Hebreo",
+      "strong": "H3070",
+      "raiz": "De ra’áh (ver, mirar anticipadamente, proveer por sí mismo).",
+      "significado_exegetico": "En Génesis 22:8 y 22:14, Abraham declara que Dios «se proveerá de cordero» —literalmente, «Dios verá por sí mismo el sacrificio». No señala un mero suministro material, sino la provisión soberana del Sustituto en el monte del juicio.",
+      "conexion_cristo": "Se cumplió literalmente en el Calvario: en el monte de Jehová fue provisto el Cordero de Dios que quita el pecado del mundo para que nosotros descendamos libres del altar.",
+      "estudio_relacionado": {
+        "id": "moriah",
+        "titulo": "El Monte Moriah: El Carnero Provisto en el Zarzal"
+      }
+    },
+    {
+      "id": "pesaj-pascua",
+      "termino": "Pésaj (Pasar por Encima / Cubrir Protegiendo)",
+      "original": "פֶּסַח",
+      "transliteracion": "Pésaḥ",
+      "idioma": "Hebreo",
+      "strong": "H6453",
+      "raiz": "De pasáj (saltar por encima, cernerse protegiendo como un ave sobre su nido, Isa. 31:5).",
+      "significado_exegetico": "En Éxodo 12:13–23 no describe únicamente que el juicio «pasa de largo», sino que Yahvé mismo se interpone en la puerta ensangrentada impidiendo que el destructor entre en la casa cubierta por la sangre del cordero.",
+      "conexion_cristo": "«Nuestra Pascua, que es Cristo, ya fue sacrificada por nosotros» (1 Cor. 5:7). Dios no mira nuestra fragilidad interior, sino la sangre perfecta de Su Hijo aplicada por fe.",
+      "estudio_relacionado": {
+        "id": "pascua",
+        "titulo": "La Pascua y la Sangre en los Dinteles"
+      }
+    },
+    {
+      "id": "nabat-mirar-fe",
+      "termino": "Nabát (Mirar con Fe / Fijar la Vista para Vivir)",
+      "original": "נָבַט",
+      "transliteracion": "Nābaṭ",
+      "idioma": "Hebreo",
+      "strong": "H5027",
+      "raiz": "Verbo hebreo que significa dirigir intensamente la mirada con atención, esperanza y confianza.",
+      "significado_exegetico": "En Números 21:9, todo israelita mordido por las serpientes ardientes que fijaba su mirada (nabát) en la serpiente de bronce levantada en el asta vivía al instante, sin hacer penitencia ni mérito alguno.",
+      "conexion_cristo": "Jesús aplicó directamente esta imagen a Su crucifixión en Juan 3:14–15: la fe salvadora es dejar de mirar el veneno de nuestra carne para alzar los ojos al Cristo levantado en el madero.",
+      "estudio_relacionado": {
+        "id": "roca-y-serpiente",
+        "titulo": "La Roca Golpeada y la Serpiente en el Madero"
+      }
+    },
+    {
+      "id": "chashab-letovah-jose",
+      "termino": "Chasháb le-Továh (Encaminar Soberanamente para Bien)",
+      "original": "חָשַׁב לְטֹבָה",
+      "transliteracion": "Chāshab le-Ṭôbāh",
+      "idioma": "Hebreo",
+      "strong": "H2803",
+      "raiz": "De chasháb (tejer, calcular, diseñar con propósito arquitectónico) + továh (bien, salvación).",
+      "significado_exegetico": "En Génesis 50:20, José usa exactamente el mismo verbo para los hermanos («pensasteis/diseñasteis mal») y para Dios («lo diseñó/tejió para bien»), revelando que la providencia divina gobierna incluso la traición humana sin ser autora del mal.",
+      "conexion_cristo": "La cruz es el clímax de Génesis 50:20 (Hechos 2:23): el mayor crimen de la historia humana fue tejido soberanamente por el Padre para dar perdón y vida a una multitud.",
+      "estudio_relacionado": {
+        "id": "jose",
+        "titulo": "José y sus Hermanos: Del Pánico al Perdón Absoluto"
+      }
+    },
+    {
+      "id": "nagid-ungido-david",
+      "termino": "Nagíd (Príncipe / Gobernante Escogido por Dios)",
+      "original": "נָגִיד",
+      "transliteracion": "Nāgîd",
+      "idioma": "Hebreo",
+      "strong": "H5057",
+      "raiz": "De nagád (colocar al frente, proclamar públicamente).",
+      "significado_exegetico": "A diferencia del rey elegido según el criterio carnal de las naciones (Saúl), Dios declara en 1 Samuel 13:14 que se ha buscado un varón conforme a Su corazón a quien designa como Príncipe (nagíd) sobre Su pueblo.",
+      "conexion_cristo": "Daniel 9:25 llama al Cristo «el Mesías Príncipe» (Mashíaj Nagíd): el único Gobernante cuyo reino no nace de la ambición humana, sino de la elección del Padre y la humildad de la cruz.",
+      "estudio_relacionado": {
+        "id": "saul-y-david",
+        "titulo": "Saúl y David: El Descanso en el Verdadero Ungido"
+      }
+    },
+    {
+      "id": "tamid-perpetuamente",
+      "termino": "Tamíd (De Continuo / Perpetuamente a la Mesa)",
+      "original": "תָּמִיד",
+      "transliteracion": "Tāmîd",
+      "idioma": "Hebreo",
+      "strong": "H8548",
+      "raiz": "Adverbio de continuidad ininterrumpida (usado para el sacrificio perpetuo y el pan de la presencia en el Tabernáculo).",
+      "significado_exegetico": "En 2 Samuel 9 se repite cuatro veces que el lisiado Mefiboset comería «de continuo» (tamíd) a la mesa del rey David: su lugar no era temporal ni condicional a su desempeño, sino perpetuo por causa del pacto.",
+      "conexion_cristo": "En Cristo no somos invitados temporales a prueba, sino hijos adoptados que disfrutan comunión perpetua y segura ante la mesa del Rey bajo el mantel de Su gracia.",
+      "estudio_relacionado": {
+        "id": "mefiboset",
+        "titulo": "Mefiboset en la Mesa del Rey"
+      }
+    },
+    {
+      "id": "goel-pariente-redentor",
+      "termino": "Go’él (Pariente Redentor que Paga el Rescate)",
+      "original": "גֹּאֵל",
+      "transliteracion": "Gō’ēl",
+      "idioma": "Hebreo",
+      "strong": "H1350",
+      "raiz": "Participio de ga’ál (rescatar comprando de vuelta a un familiar caído en deuda o esclavitud).",
+      "significado_exegetico": "En la ley de Israel (Lev. 25; Rut 3–4), el Go’él debía ser pariente cercano, tener solvencia para pagar la deuda y voluntad libre para asumir la causa del desamparado.",
+      "conexion_cristo": "Booz es sombra transparente de Jesucristo: el Verbo se hizo carne para ser nuestro Pariente cercano (Heb. 2:14), pagó nuestra deuda insolvente con Su sangre y nos desposó para siempre.",
+      "estudio_relacionado": {
+        "id": "booz-y-rut",
+        "titulo": "El Pariente Redentor: Booz y Rut"
+      }
+    },
+    {
+      "id": "yeshuah-jonas",
+      "termino": "Yeshu‘áh («La Salvación es de Jehová»)",
+      "original": "יְשׁוּעָה",
+      "transliteracion": "Yeshû‘āh",
+      "idioma": "Hebreo",
+      "strong": "H3444",
+      "raiz": "De yashá‘ (liberar, rescatar con amplitud del peligro mortal); raíz directa del nombre Jesús (Yeshúa).",
+      "significado_exegetico": "En Jonás 2:9, desde el fondo del abismo donde ningún esfuerzo humano puede operar, el profeta resume la teología entera de la gracia en dos palabras hebreas: Yeshu‘atah la-YHWH («la salvación pertenece por entero a Jehová»).",
+      "conexion_cristo": "El nombre mismo de Jesús (Yeshúa) encarna la confesión de Jonás: Dios mismo descendió al abismo de la muerte tres días y resucitó para llevar a cabo una salvación 100% suya.",
+      "estudio_relacionado": {
+        "id": "jonas",
+        "titulo": "Jonás en el Vientre del Gran Pez"
+      }
+    },
+    {
+      "id": "bar-elahin-cuarto-hombre",
+      "termino": "Bar-Elahín (Hijo de Dios / El Cuarto Varón en el Horno)",
+      "original": "בַּר־אֱלָהִין",
+      "transliteracion": "Bar-’Ĕlāhîn",
+      "idioma": "Arameo",
+      "strong": "H1247 / H426",
+      "raiz": "Expresión aramea de Daniel 3:25 («semejante a un hijo de los dioses / Hijo de Dios»).",
+      "significado_exegetico": "Al mirar dentro del horno calentado siete veces, Nabucodonosor ve a cuatro varones caminando sueltos sin daño alguno, reconociendo una presencia divina inconfundible en medio de las llamas.",
+      "conexion_cristo": "Cristofanía gloriosa de Emanuel («Dios con nosotros»): Cristo no promete una vida sin fuego, sino Su presencia personal en medio del horno quemando únicamente las cuerdas que nos ataban.",
+      "estudio_relacionado": {
+        "id": "cuarto-hombre",
+        "titulo": "El Horno de Fuego en Babilonia: El Cuarto Hombre"
+      }
+    },
+    {
+      "id": "paga-intercambio-forense",
+      "termino": "Pagá‘ (Cargar / Hacer Golpear la Iniquidad Sobre Él)",
+      "original": "פָּגַע",
+      "transliteracion": "Pāga‘",
+      "idioma": "Hebreo",
+      "strong": "H6293",
+      "raiz": "Verbo en forma causativa (Hifil) que significa hacer caer de golpe, impactar o descargar con fuerza sobre alguien.",
+      "significado_exegetico": "En Isaías 53:6 («Jehová cargó en él el pecado de todos nosotros»), no describe una transferencia suave, sino el impacto judicial completo de nuestra culpa descargado soberanamente sobre el Siervo inocente.",
+      "conexion_cristo": "Fundamento de la sustitución penal (2 Cor. 5:21): porque toda la descarga penal golpeó a Cristo en el Calvario, ya no queda condenación alguna para los que están en Él (Rom. 8:1).",
+      "estudio_relacionado": {
+        "id": "siervo-sufriente",
+        "titulo": "El Siervo Sufriente y el Intercambio Forense"
+      }
+    },
+    {
+      "id": "tsemaj-renuevo-zacarias",
+      "termino": "Tsémaj (El Renuevo / Vástago Mesiánico)",
+      "original": "צֶמַח",
+      "transliteracion": "Ṣemaḥ",
+      "idioma": "Hebreo",
+      "strong": "H6780",
+      "raiz": "De tsamáj (brotar, germinar vida nueva desde un tronco aparentemente cortado).",
+      "significado_exegetico": "En Zacarías 3:8–9 (y Jer. 23:5), Dios anuncia la venida de Su siervo «el Renuevo», mediante cuya obra sacerdotal quitaría el pecado de la tierra «en un solo día».",
+      "conexion_cristo": "Jesucristo es el Renuevo de David que reúne los oficios de Rey y Sumo Sacerdote, despojándonos de nuestras ropas viles y revistiéndonos de gala eterna en el único día de la cruz.",
+      "estudio_relacionado": {
+        "id": "josue",
+        "titulo": "El Sumo Sacerdote Josué con Ropas Viles"
+      }
+    },
+    {
       "id": "stenos-tethlimmene-gr",
       "termino": "Stenós / Tethlimménē (Puerta Estrecha y Camino Angosto)",
       "original": "στενός / τεθλιμμένη",
