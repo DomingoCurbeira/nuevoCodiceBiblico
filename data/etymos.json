@@ -1,6 +1,193 @@
 {
   "palabras": [
     {
+      "id": "yhwh-rafa-heb",
+      "termino": "YHWH-Rafa (El Señor Tu Sanador)",
+      "original": "יְהוָה רָפָא",
+      "transliteracion": "Yahvé-Rafá",
+      "strong": "H7495",
+      "idioma": "Hebreo",
+      "raiz": "De raphá: coser, reparar, restaurar, sanar y devolver la salud integral.",
+      "significado_exegetico": "Revelado a Israel junto a las aguas amargas de Mara (Éxodo 15:26), tres días después de cruzar el Mar Rojo. El verbo raphá se emplea tanto para la sanidad del cuerpo físico como para la restauración del alma herida, de una nación quebrantada y hasta de las aguas contaminadas.",
+      "cita": "Éxodo 15:26",
+      "versiculo": "«Porque yo soy Jehová tu sanador (YHWH-Rafa).»",
+      "cristologia": "El madero que Dios mostró a Moisés para volver dulces las aguas amargas de Mara prefigura la cruz de Cristo. Por Sus llagas fuimos curados (Isaías 53:5): Jesús es el Médico divino que sana el alma del veneno del pecado y restaurará definitivamente toda la creación.",
+      "estudio_relacionado": {
+        "id": "corazon-padre-1",
+        "titulo": "Conoce el Corazón de tu Padre (Parte I)"
+      }
+    },
+    {
+      "id": "yhwh-nissi-heb",
+      "termino": "YHWH-Nissi (El Señor Es Mi Bandera)",
+      "original": "יְהוָה נִסִּי",
+      "transliteracion": "Yahvé-Nissí",
+      "strong": "H5251",
+      "idioma": "Hebreo",
+      "raiz": "De nes: estandarte, bandera militar alzada sobre un mástil o colina para congregar y guiar al ejército.",
+      "significado_exegetico": "Nombre del altar levantado por Moisés en Refidim (Éxodo 17:15) tras la derrota de Amalec. Mientras Moisés sostenía en alto la vara de Dios en intercesión dependiente, Israel prevalecía en el valle. El estandarte declaraba bajo qué autoridad peleaba el pueblo y quién garantizaba la victoria.",
+      "cita": "Éxodo 17:15",
+      "versiculo": "«Y Moisés edificó un altar, y llamó su nombre Jehová-nisi (YHWH-Nissi).»",
+      "cristologia": "Isaías 11:10 anuncia que la raíz de Isaí —Jesucristo— sería puesta por «pendón» (nes) a los pueblos. Alzado en el madero del Calvario, Cristo es nuestro estandarte definitivo bajo el cual vencemos la culpa, el pecado y las tinieblas.",
+      "estudio_relacionado": {
+        "id": "corazon-padre-2",
+        "titulo": "Conoce el Corazón de tu Padre (Parte II)"
+      }
+    },
+    {
+      "id": "yhwh-mkaddesh-heb",
+      "termino": "YHWH-M'Kaddesh (El Señor Que Te Santifica)",
+      "original": "יְהוָה מְקַדֵּשׁ",
+      "transliteracion": "Yahvé-Meqaddésh",
+      "strong": "H6942",
+      "idioma": "Hebreo",
+      "raiz": "De qadásh: apartar, separar de lo profano, purificar y consagrar exclusivamente para Dios.",
+      "significado_exegetico": "Revelado en el marco del pacto mosaico (Éxodo 31:13; Levítico 20:8), subraya que la santidad de Israel no era un logro producido por el esfuerzo humano, sino la obra soberana de Dios apartando, limpiando y consagrando a Su pueblo para Sí mismo.",
+      "cita": "Levítico 20:8",
+      "versiculo": "«Guardad mis estatutos, y ponedlos por obra. Yo Jehová que os santifico (YHWH-M'Kaddesh).»",
+      "cristologia": "En el Nuevo Pacto, Cristo ha sido hecho para nosotros «justificación, santificación y redención» (1 Corintios 1:30). Él nos apartó de una vez por Su sangre y continúa purificando nuestro carácter por Su Espíritu Santo.",
+      "estudio_relacionado": {
+        "id": "corazon-padre-3",
+        "titulo": "Conoce el Corazón de tu Padre (Parte III)"
+      }
+    },
+    {
+      "id": "yhwh-shammah-heb",
+      "termino": "YHWH-Shammah (El Señor Está Allí)",
+      "original": "יְהוָה שָׁמָּה",
+      "transliteracion": "Yahvé-Shámmah",
+      "strong": "H8033",
+      "idioma": "Hebreo",
+      "raiz": "De sham: allí, en aquel lugar, señalando presencia real, manifiesta y permanente.",
+      "significado_exegetico": "Es la palabra culminante del libro de Ezequiel (48:35), entregada a un pueblo desterrado en Babilonia cuya ciudad y templo yacían en ruinas. La promesa definitiva de la restauración no era solo volver a tener muros de piedra, sino el regreso perpetuo de la gloria y presencia de Dios en medio de los Suyos.",
+      "cita": "Ezequiel 48:35",
+      "versiculo": "«Y el nombre de la ciudad desde aquel día será Jehová-sama (YHWH-Shammah).»",
+      "cristologia": "Cumplido en Jesucristo —Emanuel, Dios con nosotros— quien prometió estar con Su Iglesia todos los días hasta el fin del mundo (Mateo 28:20) y morará eternamente con los redimidos en la Nueva Jerusalén (Apocalipsis 21:3).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-3",
+        "titulo": "Conoce el Corazón de tu Padre (Parte III)"
+      }
+    },
+    {
+      "id": "yhwh-sabaoth-heb",
+      "termino": "YHWH-Sabaoth (Señor de los Ejércitos)",
+      "original": "יְהוָה צְבָאוֹת",
+      "transliteracion": "Yahvé-Tsebaót",
+      "strong": "H6635",
+      "idioma": "Hebreo",
+      "raiz": "De tsabá: ejército ordenado, huestes celestiales, legiones angélicas y estrellas del firmamento.",
+      "significado_exegetico": "Uno de los títulos de majestad más frecuentes en los profetas y libros históricos (más de 260 veces). Aparece por primera vez en labios de Ana (1 Samuel 1:11) y resuena en la victoria de David frente a Goliat (1 Samuel 17:45), proclamando que Dios comanda todas las fuerzas visibles e invisibles del universo.",
+      "cita": "1 Samuel 17:45",
+      "versiculo": "«Yo vengo a ti en el nombre de Jehová de los ejércitos (YHWH-Sabaoth).»",
+      "cristologia": "Jesucristo es el Señor de los Ejércitos que en Getsemaní podía disponer de más de doce legiones de ángeles, pero escogió voluntariamente la cruz para derrotar al gigante del pecado y la muerte, y volverá capitaneando los ejércitos celestiales (Apocalipsis 19:14).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-4",
+        "titulo": "Conoce el Corazón de tu Padre (Parte IV)"
+      }
+    },
+    {
+      "id": "el-kanna-heb",
+      "termino": "El-Kanna (El Dios Celoso)",
+      "original": "אֵל קַנָּא",
+      "transliteracion": "El-Qanná",
+      "strong": "H7067",
+      "idioma": "Hebreo",
+      "raiz": "De qaná: arder con celo intenso, devoción exclusiva y protección apasionada del pacto.",
+      "significado_exegetico": "Proclamado al renovar el pacto tras el becerro de oro (Éxodo 34:14). En la Escritura, el celo divino jamás es inseguridad ni envidia pecaminosa; es la devoción santa y protectora del Esposo del pacto que no tolera que Su amada se destruya entregando su lealtad a ídolos muertos.",
+      "cita": "Éxodo 34:14",
+      "versiculo": "«Jehová, cuyo nombre es Celoso (El-Kanna), Dios celoso es.»",
+      "cristologia": "El celo santo de Dios por Su gloria y por Su pueblo ardió plenamente en Cristo (Juan 2:17) y lo llevó hasta la cruz para rescatar una Esposa pura y exclusiva para Sí (2 Corintios 11:2).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-5",
+        "titulo": "Conoce el Corazón de tu Padre (Parte V)"
+      }
+    },
+    {
+      "id": "yhwh-ori-heb",
+      "termino": "YHWH-Ori (El Señor Es Mi Luz)",
+      "original": "יְהוָה אוֹרִי",
+      "transliteracion": "Yahvé-Orí",
+      "strong": "H216",
+      "idioma": "Hebreo",
+      "raiz": "De or: luz resplandeciente, amanecer, claridad reveladora, salvación y vida.",
+      "significado_exegetico": "Confesión triunfal de David en el Salmo 27:1 frente al asedio de enemigos y noches de persecución. En el pensamiento bíblico, la luz simboliza la verdad, la guía divina, la pureza y la liberación frente al caos y las tinieblas del temor.",
+      "cita": "Salmo 27:1",
+      "versiculo": "«Jehová es mi luz (YHWH-Ori) y mi salvación; ¿de quién temeré?»",
+      "cristologia": "Jesús asumió directamente esta revelación declarando: «Yo soy la luz del mundo; el que me sigue, no andará en tinieblas, sino que tendrá la luz de la vida» (Juan 8:12).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-5",
+        "titulo": "Conoce el Corazón de tu Padre (Parte V)"
+      }
+    },
+    {
+      "id": "yhwh-hoseenu-heb",
+      "termino": "YHWH-Hoseenu (El Señor Nuestro Hacedor)",
+      "original": "יְהוָה עֹשֵׂנוּ",
+      "transliteracion": "Yahvé-Osénu",
+      "strong": "H6213",
+      "idioma": "Hebreo",
+      "raiz": "De asáh: hacer, formar con destreza, labrar, diseñar con propósito y sustentar.",
+      "significado_exegetico": "Título litúrgico de adoración en el Salmo 95:6 que reconoce a Dios no solo como el Creador distante del cosmos, sino como el Artesano personal que nos tejió en el vientre materno (Salmo 139) y que lleva a término la obra de Sus manos (Salmo 138:8).",
+      "cita": "Salmo 95:6",
+      "versiculo": "«Arrodillémonos delante de Jehová nuestro Hacedor (YHWH-Hoseenu).»",
+      "cristologia": "Por medio del Verbo eterno fueron hechas todas las cosas (Juan 1:3), y en la nueva creación somos hechura Suya, creados en Cristo Jesús para buenas obras (Efesios 2:10).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-5",
+        "titulo": "Conoce el Corazón de tu Padre (Parte V)"
+      }
+    },
+    {
+      "id": "ha-tsur-heb",
+      "termino": "Ha-Tsur (La Roca Inconmovible)",
+      "original": "הַצּוּר",
+      "transliteracion": "Ha-Tsur",
+      "strong": "H6697",
+      "idioma": "Hebreo",
+      "raiz": "De tsur: peña maciza de granito, acantilado inamovible, refugio inexpugnable.",
+      "significado_exegetico": "Usado repetidamente por Moisés en Deuteronomio 32:4 y por David en el Salmo 18:2 para contrastar la fidelidad inalterable, perfecta y sólida de Dios frente a la inestabilidad de los hombres y la fragilidad de los ídolos.",
+      "cita": "Deuteronomio 32:4",
+      "versiculo": "«Él es la Roca (Ha-Tsur), cuya obra es perfecta, porque todos sus caminos son rectitud.»",
+      "cristologia": "El apóstol Pablo identifica explícitamente esta Roca espiritual del desierto con Jesucristo (1 Corintios 10:4). Él es la piedra angular escogida y preciosa sobre la cual el creyente edifica su casa sin temor a la tormenta (Mateo 7:24–25).",
+      "estudio_relacionado": {
+        "id": "corazon-padre-5",
+        "titulo": "Conoce el Corazón de tu Padre (Parte V)"
+      }
+    },
+    {
+      "id": "ehyeh-asher-ehyeh-heb",
+      "termino": "Ehyeh Asher Ehyeh (El Gran Yo Soy)",
+      "original": "אֶהְיֶה אֲשֶׁר אֶהְיֶה",
+      "transliteracion": "Ehyéh Ashér Ehyéh",
+      "strong": "H1961",
+      "idioma": "Hebreo",
+      "raiz": "Del verbo hayáh (ser, existir, estar presente activamente). Base verbal directa del Tetragramatón YHWH.",
+      "significado_exegetico": "Declaración suprema de Dios a Moisés desde la zarza ardiendo (Éxodo 3:14). Expresa la aseidad divina (existencia absoluta e independiente), Su inmutabilidad eterna y Su presencia fiel y activa a favor de Su pueblo en toda generación.",
+      "cita": "Éxodo 3:14",
+      "versiculo": "«Y respondió Dios a Moisés: YO SOY EL QUE SOY (Ehyeh Asher Ehyeh).»",
+      "cristologia": "Jesús tomó este nombre incomunicable en sus labios con absoluta claridad («Antes que Abraham fuese, yo soy», Juan 8:58) y lo desplegó en Sus siete grandes declaraciones «Yo Soy», revelándose como el Dios eterno que satisface toda necesidad del alma.",
+      "estudio_relacionado": {
+        "id": "corazon-padre-6",
+        "titulo": "Conoce el Corazón de tu Padre (Parte VI)"
+      }
+    },
+    {
+      "id": "alfa-y-omega-gr",
+      "termino": "Alfa y Omega (Principio y Fin)",
+      "original": "Α καὶ Ω",
+      "transliteracion": "Álpha kaí Ōméga",
+      "strong": "G1 / G5598",
+      "idioma": "Griego",
+      "raiz": "Primera (Alfa, Α) y última (Omega, Ω) letras del alfabeto griego; merismo que denota totalidad absoluta.",
+      "significado_exegetico": "Título solemne de soberanía eterna que aparece en Apocalipsis 1:8, 21:6 y 22:13. Proclama que Dios abarca la totalidad del tiempo, el origen de la creación, el sentido de la historia y la consumación gloriosa del universo.",
+      "cita": "Apocalipsis 1:8",
+      "versiculo": "«Yo soy el Alfa y la Omega, principio y fin, dice el Señor, el que es y que era y que ha de venir, el Todopoderoso.»",
+      "cristologia": "Aplicado tanto al Padre como al Cristo resucitado (Apocalipsis 22:13), garantiza que Aquel que comenzó en nosotros la buena obra la perfeccionará hasta el día final y reinará para siempre sobre toda la creación.",
+      "estudio_relacionado": {
+        "id": "corazon-padre-6",
+        "titulo": "Conoce el Corazón de tu Padre (Parte VI)"
+      }
+    },
+    {
       "id": "energeo-gr",
       "termino": "Energéō",
       "original": "ἐνεργέω",

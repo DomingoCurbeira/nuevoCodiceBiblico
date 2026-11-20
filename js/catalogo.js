@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const leidosSet = obtenerEstudiosLeidos();
 
   const ORDEN_SERIES = [
+    'Conoce el Corazón de tu Padre',
     'Cristo en las Sombras',
     'El Sermón del Monte',
     'Trilogía de la Salvación',
