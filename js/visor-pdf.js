@@ -95,9 +95,69 @@ document.addEventListener('DOMContentLoaded', async () => {
     downloadBtnEl.href = estudio.apoyoUrl;
   }
 
+  // 2a. Progreso local de lectura («✓ Leído» en localStorage)
+  const READ_STORAGE_KEY = 'codice_estudios_leidos';
+  let usuarioDesmarcoManual = false;
+
+  function obtenerLeidosSet() {
+    try {
+      const raw = localStorage.getItem(READ_STORAGE_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch {
+      return new Set();
+    }
+  }
+
+  function guardarLeidosSet(set) {
+    try {
+      localStorage.setItem(READ_STORAGE_KEY, JSON.stringify([...set]));
+    } catch (err) {
+      console.error('No se pudo guardar el progreso de lectura:', err);
+    }
+  }
+
+  const readToggleBtn = document.getElementById('btn-toggle-read');
+
+  function actualizarBotonLeido() {
+    if (!readToggleBtn) return;
+    const estaLeido = obtenerLeidosSet().has(estudio.id);
+    readToggleBtn.classList.toggle('is-read', estaLeido);
+    readToggleBtn.setAttribute('aria-pressed', estaLeido ? 'true' : 'false');
+    readToggleBtn.textContent = estaLeido ? '✓ Leído' : '○ Marcar leído';
+    readToggleBtn.title = estaLeido
+      ? 'Estudio marcado como leído (haz clic para desmarcar)'
+      : 'Marcar este estudio como leído en tu navegador';
+  }
+
+  function marcarEstudioLeido(estado, esManual = false) {
+    const set = obtenerLeidosSet();
+    if (estado) {
+      set.add(estudio.id);
+      if (esManual) usuarioDesmarcoManual = false;
+    } else {
+      set.delete(estudio.id);
+      if (esManual) usuarioDesmarcoManual = true;
+    }
+    guardarLeidosSet(set);
+    actualizarBotonLeido();
+  }
+
+  actualizarBotonLeido();
+  if (readToggleBtn) {
+    readToggleBtn.addEventListener('click', () => {
+      const estaLeido = obtenerLeidosSet().has(estudio.id);
+      marcarEstudioLeido(!estaLeido, true);
+    });
+  }
+
   // 2b. Configurar botones directos de Compartir (WhatsApp, Facebook y Copiar enlace)
+  // Usa la ruta /estudios/<id>/ con metadatos Open Graph para mostrar portada y título propio al compartir
   (function inicializarCompartir() {
-    const shareUrl = window.location.href;
+    const isHttp = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+    const shareUrl = isHttp
+      ? `${window.location.origin}/estudios/${encodeURIComponent(estudio.id)}/`
+      : window.location.href;
     const mensajeWhatsApp =
       `📖 *${estudio.titulo}*\n` +
       `${estudio.serie} · ${estudio.edicion || 'Estudio Bíblico'}\n` +
@@ -174,6 +234,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       return t.length > 64 ? `${t.slice(0, 61)}…` : t;
     };
 
+    const leidosSet = obtenerLeidosSet();
+    const checkLeido = (item) =>
+      leidosSet.has(item.id)
+        ? '<span class="episode-read-check" title="Estudio leído">✓</span>'
+        : '';
+
     if (bottomNavEl) {
       bottomNavEl.style.display = 'block';
       bottomNavEl.innerHTML = `
@@ -186,7 +252,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             prevEstudio
               ? `<a href="estudio.html?id=${encodeURIComponent(prevEstudio.id)}" class="episode-nav-card prev">
                   <span class="episode-nav-dir">← Episodio Anterior · ${escapeHtml(prevEstudio.edicion || 'Estudio')}</span>
-                  <span class="episode-nav-title">${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
+                  <span class="episode-nav-title">${checkLeido(prevEstudio)}${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
                 </a>`
               : `<div class="episode-nav-card empty" aria-hidden="true"></div>`
           }
@@ -194,7 +260,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             nextEstudio
               ? `<a href="estudio.html?id=${encodeURIComponent(nextEstudio.id)}" class="episode-nav-card next">
                   <span class="episode-nav-dir">Siguiente Episodio · ${escapeHtml(nextEstudio.edicion || 'Estudio')} →</span>
-                  <span class="episode-nav-title">${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
+                  <span class="episode-nav-title">${checkLeido(nextEstudio)}${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
                 </a>`
               : `<a href="index.html" class="episode-nav-card next">
                   <span class="episode-nav-dir">Fin de esta serie →</span>
@@ -217,7 +283,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             prevEstudio
               ? `<a href="estudio.html?id=${encodeURIComponent(prevEstudio.id)}" class="sidebar-episode-link">
                   <span class="sidebar-ep-dir">← Anterior (${escapeHtml(prevEstudio.edicion || 'Estudio')})</span>
-                  <span class="sidebar-ep-title">${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
+                  <span class="sidebar-ep-title">${checkLeido(prevEstudio)}${escapeHtml(acortarTitulo(prevEstudio.titulo))}</span>
                 </a>`
               : ''
           }
@@ -225,7 +291,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             nextEstudio
               ? `<a href="estudio.html?id=${encodeURIComponent(nextEstudio.id)}" class="sidebar-episode-link is-next">
                   <span class="sidebar-ep-dir">Siguiente (${escapeHtml(nextEstudio.edicion || 'Estudio')}) →</span>
-                  <span class="sidebar-ep-title">${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
+                  <span class="sidebar-ep-title">${checkLeido(nextEstudio)}${escapeHtml(acortarTitulo(nextEstudio.titulo))}</span>
                 </a>`
               : ''
           }
@@ -406,6 +472,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (bestPage !== currentPage) {
       currentPage = bestPage;
       actualizarControles();
+      if (totalPages > 1 && currentPage >= totalPages && !usuarioDesmarcoManual) {
+        marcarEstudioLeido(true, false);
+      }
     }
   };
 

@@ -14,10 +14,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (!gridEl) return;
 
   const ITEMS_PER_PAGE = 12; // 4 filas de 3 columnas
+  const READ_STORAGE_KEY = 'codice_estudios_leidos';
   let estudios = [];
   let serieActiva = 'Todos';
   let busqueda = '';
   let paginaActual = 1;
+
+  function obtenerEstudiosLeidos() {
+    try {
+      const raw = localStorage.getItem(READ_STORAGE_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch {
+      return new Set();
+    }
+  }
+
+  const leidosSet = obtenerEstudiosLeidos();
 
   const ORDEN_SERIES = [
     'Cristo en las Sombras',
@@ -103,8 +116,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     document.querySelectorAll('[data-select-serie]').forEach(card => {
+      const targetSerie = card.dataset.selectSerie;
+      const deSerie = estudios.filter(e => e.serie === targetSerie);
+      const leidosEnSerie = deSerie.filter(e => leidosSet.has(e.id)).length;
+      if (leidosEnSerie > 0 && deSerie.length > 0) {
+        const pill = document.createElement('span');
+        pill.className = 'path-progress-pill';
+        pill.textContent = `✓ ${leidosEnSerie}/${deSerie.length} leídos`;
+        const head = card.querySelector('.path-card-head');
+        if (head) {
+          head.appendChild(pill);
+        } else {
+          const eyebrow = card.querySelector('.eyebrow');
+          if (eyebrow) {
+            const wrap = document.createElement('div');
+            wrap.className = 'path-card-head';
+            eyebrow.parentNode.insertBefore(wrap, eyebrow);
+            wrap.appendChild(eyebrow);
+            wrap.appendChild(pill);
+          }
+        }
+      }
+
       card.addEventListener('click', () => {
-        const targetSerie = card.dataset.selectSerie;
         serieActiva = targetSerie;
         paginaActual = 1;
         filtersEl.querySelectorAll('.filter-tab').forEach(b => {
@@ -216,14 +250,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     const fin = Math.min(inicio + ITEMS_PER_PAGE, total);
     const paginados = ordenados.slice(inicio, fin);
 
+    const leidosEnVista = ordenados.filter(item => leidosSet.has(item.id)).length;
+    const progresoTexto =
+      leidosEnVista > 0 ? ` · ✓ ${leidosEnVista} de ${total} leídos` : '';
+
     if (countEl) {
       const ordenLabel = serieActiva === 'Todos' ? 'Más recientes primero' : 'Ordenados por episodio';
       if (total === 0) {
         countEl.textContent = '0 estudios disponibles';
       } else if (total <= ITEMS_PER_PAGE) {
-        countEl.textContent = `${total} ${total === 1 ? 'estudio disponible' : 'estudios disponibles'} · ${ordenLabel}`;
+        countEl.textContent = `${total} ${total === 1 ? 'estudio disponible' : 'estudios disponibles'} · ${ordenLabel}${progresoTexto}`;
       } else {
-        countEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} estudios · ${ordenLabel} (Página ${paginaActual} de ${totalPaginas})`;
+        countEl.textContent = `Mostrando ${inicio + 1}–${fin} de ${total} estudios · ${ordenLabel} (Página ${paginaActual} de ${totalPaginas})${progresoTexto}`;
       }
     }
 
@@ -239,11 +277,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     gridEl.innerHTML = paginados
-      .map(
-        estudio => `
-        <article class="study-card">
+      .map(estudio => {
+        const esLeido = leidosSet.has(estudio.id);
+        return `
+        <article class="study-card${esLeido ? ' is-read' : ''}">
           <a href="estudio.html?id=${encodeURIComponent(estudio.id)}" class="study-cover-wrap" aria-label="Leer ${estudio.titulo}">
             <img src="${estudio.portada}" alt="Portada de ${estudio.titulo}" class="study-cover-img" loading="lazy">
+            ${esLeido ? '<span class="study-read-badge" title="Ya leíste este estudio">✓ Leído</span>' : ''}
             <span class="study-edition-badge">${estudio.edicion || 'Estudio'}</span>
           </a>
           <div class="study-body">
@@ -254,9 +294,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="study-scripture">${estudio.referencia}</div>
             <p class="study-excerpt">${estudio.subtitulo}</p>
             <div class="study-footer">
-              <span>Lectura en línea · PDF</span>
+              <span class="${esLeido ? 'study-footer-read' : ''}">${esLeido ? '✓ Estudio leído' : 'Lectura en línea · PDF'}</span>
               <a href="estudio.html?id=${encodeURIComponent(estudio.id)}" class="study-read-link">
-                Leer estudio
+                ${esLeido ? 'Volver a leer' : 'Leer estudio'}
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -264,8 +304,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
           </div>
         </article>
-      `
-      )
+      `;
+      })
       .join('');
 
     renderizarPaginador(total);

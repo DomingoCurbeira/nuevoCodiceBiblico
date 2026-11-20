@@ -420,6 +420,74 @@
   border-radius: var(--radius-sm);
 }
 
+.study-read-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(22, 68, 45, 0.88);
+  backdrop-filter: blur(6px);
+  color: #ECFDF3;
+  border: 1px solid rgba(110, 231, 183, 0.42);
+  font-size: 0.67rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.26rem 0.6rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+.study-card.is-read {
+  border-color: rgba(45, 118, 79, 0.28);
+}
+
+.study-footer-read {
+  color: #216342;
+  font-weight: 600;
+}
+
+.path-progress-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1F5E3F;
+  background: rgba(31, 94, 63, 0.09);
+  border: 1px solid rgba(31, 94, 63, 0.24);
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.reader-read-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.reader-read-btn.is-read {
+  background-color: #EDF7F1;
+  border-color: #2E7D52;
+  color: #1B5E3A;
+  font-weight: 600;
+}
+
+.reader-read-btn.is-read:hover {
+  background-color: #E0F2E8;
+  color: #144A2D;
+}
+
+.episode-read-check {
+  color: #2E7D52;
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
 .study-body {
   padding: 1.5rem;
   display: flex;

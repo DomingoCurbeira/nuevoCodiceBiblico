@@ -12,6 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lectura de Estudio | Códice Bíblico</title>
   <meta name="description" content="Sala de lectura teológica de Códice Bíblico.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Códice Bíblico">
+  <meta property="og:title" content="Lectura de Estudio | Códice Bíblico">
+  <meta property="og:description" content="Estudios exegéticos, infografías doctrinales y vianda sólida en Códice Bíblico.">
+  <meta property="og:image" content="https://codicebiblico.netlify.app/assets/sello.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/sello.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,6 +109,15 @@
           </button>
           <button type="button" class="reader-tab-btn" id="btn-download-pdf">
             📥 Descargar PDF
+          </button>
+          <button
+            type="button"
+            class="reader-tab-btn reader-read-btn"
+            id="btn-toggle-read"
+            aria-pressed="false"
+            title="Guardar progreso de lectura en tu navegador"
+          >
+            ○ Marcar leído
           </button>
           <div class="reader-share-group" aria-label="Compartir estudio">
             <a
