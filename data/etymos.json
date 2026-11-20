@@ -1,6 +1,40 @@
 {
   "palabras": [
     {
+      "id": "stenos-tethlimmene-gr",
+      "termino": "Stenós / Tethlimménē (Puerta Estrecha y Camino Angosto)",
+      "original": "στενός / τεθλιμμένη",
+      "transliteracion": "stenós / tethlimménē",
+      "strong": "G4728 / G2346",
+      "idioma": "Griego",
+      "raiz": "\"Stenós\" (abertura reducida por la que solo se entra de uno en uno sin equipaje) y \"Tethlimménē\" (participio perfecto de \"thlíbō\": comprimido, presionado o estrechado, misma raíz de \"thlîpsis\" [tribulación]).",
+      "significado_exegetico": "En Mateo 7:13–14, la puerta no es estrecha por exigir méritos humanos, sino porque es exclusiva (solo Cristo) y no admite el equipaje del ego; y el camino que sigue es gratuito para entrar, pero presiona nuestra carne y nos lleva a contracorriente del mundo.",
+      "cita": "Mateo 7:13–14",
+      "versiculo": "Porque estrecha [stenḗ] es la puerta, y angosto [tethlimménē] el camino que lleva a la vida, y pocos son los que la hallan.",
+      "cristologia": "Jesús declara en Juan 10:9 y 14:6 que Él mismo es la Puerta y el Camino: entramos con las manos vacías por Su gracia y caminamos sostenidos por Su Espíritu.",
+      "estudio_relacionado": {
+        "id": "camino",
+        "titulo": "Las Dos Puertas y los Dos Caminos"
+      }
+    },
+    {
+      "id": "apoleia-gr",
+      "termino": "Apṓleia (Perdición / Ruina Definitiva)",
+      "original": "ἀπώλεια",
+      "transliteracion": "apṓleia",
+      "strong": "G684",
+      "idioma": "Griego",
+      "raiz": "De \"apóllymi\" (perder por completo, arruinar o destruir el propósito para el cual algo fue diseñado; no simple aniquilación biológica, sino pérdida y ruina total).",
+      "significado_exegetico": "En Mateo 7:13, Jesús advierte que la puerta ancha (platýs) y la ilusión de la mayoría no conducen a la libertad, sino a la apṓleia: el desperdicio definitivo de la existencia y la separación eterna de Dios, en contraste directo con la vida plena (zōē).",
+      "cita": "Mateo 7:13",
+      "versiculo": "Porque ancha es la puerta, y espacioso el camino que lleva a la perdición [apṓleian], y muchos son los que entran por ella.",
+      "cristologia": "Cristo vino a buscar y a salvar lo que se había perdido (Lucas 19:10), cargando sobre sí la ruina que nuestro pecado merecía para otorgarnos vida eterna (zōē) en comunión con el Padre.",
+      "estudio_relacionado": {
+        "id": "camino",
+        "titulo": "Las Dos Puertas y los Dos Caminos"
+      }
+    },
+    {
       "id": "oikodome-nous-gr",
       "termino": "Noûs / Oikodomḗ (Entendimiento para Edificación)",
       "original": "νοῦς / οἰκοδομή",

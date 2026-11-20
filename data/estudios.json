@@ -1,5 +1,63 @@
 [
   {
+    "id": "camino",
+    "slug": "las-dos-puertas-y-los-dos-caminos-la-puerta-estrecha-de-la-gracia-frente-a-la-ancha-del-mundo",
+    "titulo": "Las Dos Puertas y los Dos Caminos: La Puerta Estrecha de la Gracia Frente a la Ancha del Mundo",
+    "subtitulo": "Mateo 7:13–14 — Desmontar la idea equivocada de que la puerta estrecha consiste en ganarse el cielo mediante méritos propios, y confrontar con amor la ilusión de la mayoría para que, rendidos a la gracia de Cristo, escojamos conscientemente el único camino que conduce a la vida verdadera.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 7:13–14; Deuteronomio 30:19; Salmo 1:1–6; Proverbios 14:12; Lucas 13:23–24; Juan 10:9; Juan 14:6",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 25",
+    "fecha": "20 de noviembre de 2026",
+    "portada": "assets/covers/camino.webp",
+    "pdfUrl": "assets/pdfs/camino.pdf",
+    "palabras": 1256,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "El Fin de las Zonas Grises: La Puerta Estrecha de la Gracia Frente a la Ilusión de la Mayoría",
+      "contraste": {
+        "error_titulo": "El Mito del Mérito Moral y la Ilusión de la Mayoría",
+        "error_puntos": [
+          "Cree que la puerta es estrecha porque exige perfección moral o sacrificios humanos para ganarse el cielo.",
+          "Confía en la inercia de la multitud: asume que si muchos caminan por una vía cómoda o religiosa, debe ser segura (Prov. 14:12).",
+          "Se conforma con admirar el Sermón del Monte desde afuera sin rendir su ego ni cruzar el umbral."
+        ],
+        "verdad_titulo": "La Exclusividad de Cristo y el Sendero a Contracorriente (Mateo 7:13–14; Juan 10:9)",
+        "verdad_puntos": [
+          "La puerta es estrecha (stenós) porque solo tiene un nombre —Cristo— y no admite el equipaje del orgullo ni de la justicia propia.",
+          "El camino de la gracia es gratuito para entrar, pero angosto (tethlimménē: presionado) para caminar a contracorriente de la carne y el mundo.",
+          "Frente a Cristo no existe la neutralidad: el imperativo aoristo «entrad» exige soltar el control y escoger la vida plena (zōē)."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Fin de las Zonas Grises",
+          "detalle": "Jesús cierra el Sermón del Monte exigiendo un veredicto definitivo: admirar Sus palabras no salva; hay que cruzar el umbral."
+        },
+        {
+          "paso": "2. Entrar sin Equipaje",
+          "detalle": "Por la puerta estrecha (stenós) se entra de uno en uno y con las manos vacías, dependiendo únicamente de la gracia de Cristo."
+        },
+        {
+          "paso": "3. Caminar hacia la Vida",
+          "detalle": "Aunque el sendero presiona nuestro carácter (tethlimménē), conduce a la paz, el propósito y la vida eterna (zōē) con el Padre."
+        }
+      ],
+      "axiomas": [
+        "«Por la puerta ancha cabe tanto el libertinaje como la religiosidad superficial sin transformación del corazón: puedes ser respetado y religioso y seguir siendo el rey de tu propia vida.»",
+        "«La puerta no es estrecha porque exija perfección moral para ganarse el cielo; es estrecha porque es exclusiva —solo Cristo— y no admite el equipaje del orgullo.»",
+        "«El camino de la gracia es gratuito para entrar, pero costoso para caminar; nadie tropieza por accidente con el sendero de la vida.»"
+      ],
+      "terminos_etymos": [
+        "Stenós",
+        "Tethlimménē",
+        "Apṓleia",
+        "Zōē"
+      ]
+    }
+  },
+  {
     "id": "llamad",
     "slug": "pedid-buscad-llamad-la-bondad-del-padre-que-da-cosas-buenas-y-la-regla-de-oro",
     "titulo": "Pedid, Buscad, Llamad: La Bondad del Padre que Da Cosas Buenas y la Regla de Oro",
