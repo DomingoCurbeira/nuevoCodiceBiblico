@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "pseudoprophetes-gr",
+      "termino": "Pseudoprophḗtēs",
+      "original": "ψευδοπροφήτης",
+      "transliteracion": "pseudoprophḗtēs",
+      "strong": "G5578",
+      "idioma": "Griego",
+      "raiz": "De pseúdos (mentira, engaño, falsificación) + prophḗtēs (portavoz de Dios). Quien habla falsamente afirmando traer mensaje divino.",
+      "significado_exegetico": "En Mateo 7:15, Jesús advierte contra los falsos voceros que se disfrazan con «vestidos de ovejas» mientras por dentro son lobos rapaces (hárpages). Su peligro no es la hostilidad abierta contra la Escritura, sino la falsificación seductora: usan vocabulario bíblico para ofrecer atajos cómodos sin cruz, sin arrepentimiento y sin señorío de Cristo.",
+      "cita": "Mateo 7:15",
+      "versiculo": "«Guardaos de los falsos profetas (pseudoprophḗtēs), que vienen a vosotros con vestidos de ovejas, pero por dentro son lobos rapaces.»",
+      "cristologia": "Frente a los mercaderes y falsos voceros que se sirven del rebaño, Jesucristo es el Profeta verdadero y el Buen Pastor que entrega Su vida por las ovejas (Juan 10:11) y cuya voz genuina siempre conduce a la verdad de la Escritura.",
+      "estudio_relacionado": {
+        "id": "falsos-profetas",
+        "titulo": "Los Falsos Profetas y los Frutos del Corazón"
+      }
+    },
+    {
+      "id": "karpos-gr",
+      "termino": "Karpós",
+      "original": "καρπός",
+      "transliteracion": "karpós",
+      "strong": "G2590",
+      "idioma": "Griego",
+      "raiz": "Fruto, cosecha orgánica que brota inevitablemente de la naturaleza viva del árbol.",
+      "significado_exegetico": "En Mateo 7:16–20, karpós no designa multitudes, carisma ni éxito ministerial externo, sino la evidencia orgánica que revela la raíz real de la persona: doctrina fiel a Cristo y carácter regenerado (humildad, integridad en lo secreto, amor sacrificial y obediencia perseverante). Las obras no fabrican la salvación, pero la nueva naturaleza inevitablemente produce buen fruto.",
+      "cita": "Mateo 7:16",
+      "versiculo": "«Por sus frutos (karpós) los conoceréis. ¿Acaso se recogen uvas de los espinos, o higos de los abrojos?»",
+      "cristologia": "El creyente no fabrica frutos pegándolos sobre ramas secas mediante moralismo. Unido a Cristo, la Vid Verdadera (Juan 15:5), recibe la savia del Espíritu Santo que produce el fruto genuino de justicia para gloria del Padre.",
+      "estudio_relacionado": {
+        "id": "falsos-profetas",
+        "titulo": "Los Falsos Profetas y los Frutos del Corazón"
+      }
+    },
+    {
+      "id": "anomia-gr",
+      "termino": "Anomía",
+      "original": "ἀνομία",
+      "transliteracion": "anomía",
+      "strong": "G458",
+      "idioma": "Griego",
+      "raiz": "De a- (sin, negación) + nómos (ley). Vivir sin ley, rebeldía práctica contra la autoridad soberana de Dios.",
+      "significado_exegetico": "Traducido como «maldad» o «iniquidad» en Mateo 7:23 («apartaos de mí, hacedores de maldad»), anomía revela la paradoja más temible de la religiosidad falsa: personas que profetizaban y hacían prodigios invocando el nombre de Jesús, pero cuya conducta diaria operaba como si Cristo no tuviera autoridad real sobre su voluntad.",
+      "cita": "Mateo 7:23",
+      "versiculo": "«Y entonces les declararé: Nunca os conocí; apartaos de mí, hacedores de maldad (anomía).»",
+      "cristologia": "Cristo no murió solo para perdonar la culpa legal del pecado, sino para redimirnos de toda anomía y purificar para Sí un pueblo celoso de buenas obras (Tito 2:14), escribiendo Su ley de amor en el corazón regenerado.",
+      "estudio_relacionado": {
+        "id": "falsos-profetas",
+        "titulo": "Los Falsos Profetas y los Frutos del Corazón"
+      }
+    },
+    {
+      "id": "ginosko-gr",
+      "termino": "Ginṓskō",
+      "original": "γινώσκω",
+      "transliteracion": "ginṓskō",
+      "strong": "G1097",
+      "idioma": "Griego",
+      "raiz": "Conocer por experiencia íntima, relación personal y unión de pacto (equivalente al hebreo yadá).",
+      "significado_exegetico": "En Mateo 7:23 («Nunca os conocí», oudépote égnōn hymâs), Cristo no declara ignorancia intelectual —pues es omnisciente—, sino la ausencia total de relación redentora y regeneración. En la Escritura, ser conocido por Dios significa ser objeto de Su amor electivo y unión vital con el Salvador (Juan 10:14; 2 Timoteo 2:19).",
+      "cita": "Mateo 7:23",
+      "versiculo": "«Y entonces les declararé: Nunca os conocí (ginṓskō); apartaos de mí, hacedores de maldad.»",
+      "cristologia": "La seguridad eterna del creyente no descansa en cuánto ruido religioso hace por Cristo, sino en haber sido conocido y amado por el Buen Pastor, cuyas ovejas oyen Su voz y le siguen en obediencia fiel (Juan 10:27).",
+      "estudio_relacionado": {
+        "id": "falsos-profetas",
+        "titulo": "Los Falsos Profetas y los Frutos del Corazón"
+      }
+    },
+    {
       "id": "epitimao-gr",
       "termino": "Epitimáō",
       "original": "ἐπιτιμάω",

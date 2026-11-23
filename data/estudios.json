@@ -1,5 +1,63 @@
 [
   {
+    "id": "falsos-profetas",
+    "slug": "los-falsos-profetas-y-los-frutos-del-corazon",
+    "titulo": "Los Falsos Profetas y los Frutos del Corazón",
+    "subtitulo": "Mateo 7:15–23 — Desenmascarar la religiosidad superficial que confunde el carisma, la elocuencia o los dones espectaculares con la verdadera conversión, y comprender la advertencia solemne de Cristo: tanto los falsos maestros como el corazón del oyente se prueban por el fruto real de una vida regenerada y obediente al Padre, jamás por las apariencias externas.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 7:15–23; Mateo 12:33–35; Lucas 6:43–46; Juan 10:14, 27; 2 Timoteo 2:19; 1 Juan 2:3–4; Judas 1:4",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 26",
+    "fecha": "23 de noviembre de 2026",
+    "portada": "assets/covers/falsos-profetas.webp",
+    "pdfUrl": "assets/pdfs/falsos-profetas.pdf",
+    "palabras": 1338,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "El Engaño de las Apariencias, los Milagros sin Obediencia y el Veredicto «Nunca os Conocí»",
+      "contraste": {
+        "error_titulo": "Religiosidad de Disfraz y Milagros sin Obediencia",
+        "error_puntos": [
+          "Confunde carisma, multitudes, elocuencia o dones espectaculares con verdadera conversión.",
+          "Predica atajos cómodos sin cruz ni arrepentimiento, dejando intacta la carne del oyente.",
+          "Pronuncia «Señor, Señor» con los labios mientras vive en rebeldía práctica (anomía)."
+        ],
+        "verdad_titulo": "Fruto Regenerado y Comunión Viva con Cristo (Mat. 7:16–23)",
+        "verdad_puntos": [
+          "Examina toda enseñanza y liderazgo por el fruto doctrinal y el carácter transformado (karpós).",
+          "Reconoce que la evidencia de la gracia es una vida que ama y hace la voluntad del Padre.",
+          "Descansa en ser conocido redentoramente por el Buen Pastor (ginṓskō) y caminar en Su obediencia."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. El Disfraz del Lobo",
+          "detalle": "Los falsos profetas (pseudoprophḗtēs) llegan con piel de oveja y lenguaje bíblico para depredar al rebaño (Mat. 7:15)."
+        },
+        {
+          "paso": "2. La Ley Infalible del Fruto",
+          "detalle": "La raíz define la cosecha (karpós): doctrina centrada en Cristo y carácter regenerado, no espectáculos (Mat. 7:16–20)."
+        },
+        {
+          "paso": "3. El Veredicto del Rey",
+          "detalle": "Sin unión vital con Cristo (ginṓskō) ni obediencia al Padre, los prodigios sin ley (anomía) terminan en «Nunca os conocí»."
+        }
+      ],
+      "axiomas": [
+        "«Un auditorio lleno, una elocuencia cautivadora o un ministerio próspero no son frutos del Espíritu; pueden ser simples adornos colgados en ramas secas.»",
+        "«Los dones espectaculares, las profecías y las liberaciones jamás han sido prueba infalible de salvación; la evidencia bíblica es hacer la voluntad del Padre.»",
+        "«Uno puede conocer mucha teología y pronunciar el nombre de Jesús en público sin haber sido conocido jamás por Él en la gracia.»"
+      ],
+      "terminos_etymos": [
+        "Pseudoprophḗtēs",
+        "Karpós",
+        "Anomía",
+        "Ginṓskō"
+      ]
+    }
+  },
+  {
     "id": "reprender-a-satanas",
     "slug": "debe-el-creyente-reprender-a-satanas-autoridad-divina-y-guerra-espiritual-biblica",
     "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica",
