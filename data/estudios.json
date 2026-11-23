@@ -1,5 +1,64 @@
 [
   {
+    "id": "reprender-a-satanas",
+    "slug": "debe-el-creyente-reprender-a-satanas-autoridad-divina-y-guerra-espiritual-biblica",
+    "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica",
+    "subtitulo": "Judas 1:9, Efesios 6:10–14 y Colosenses 2:15 — Desmontar la costumbre contemporánea de dirigir oraciones, gritos o decretos de reprensión contra el diablo, reconociendo que nuestra carne no tiene poder alguno para guerrear contra las tinieblas y comprendiendo que la batalla decisiva ya la ganó Cristo en la cruz; nuestro llamado no es vencer a Satanás por fuerzas propias, sino menguar, someternos a Dios y estar firmes en Su armadura.",
+    "categoria": "TEOLOGÍA REFORMADA",
+    "serie": "Teología Reformada",
+    "referencia": "Zacarías 3:1–2; Mateo 4:1–11; Juan 3:30; Efesios 6:10–18; Colosenses 2:15; Hebreos 2:14; Santiago 4:7; 1 Pedro 5:8–9; 2 Pedro 2:10–11; Judas 1:9",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 6",
+    "fecha": "23 de noviembre de 2026",
+    "portada": "assets/covers/reprender-a-satanas.webp",
+    "pdfUrl": "assets/pdfs/reprender-a-satanas.pdf",
+    "palabras": 1521,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Del Orgullo Carnal de Reprender al Diablo a Estar Firmes en la Victoria Consumada de Cristo",
+      "contraste": {
+        "error_titulo": "Guerra Espiritual de Espectáculo (Presunción Carnal)",
+        "error_puntos": [
+          "Dirige oraciones, gritos y decretos verbales contra Satanás como si la carne tuviera poder propio.",
+          "Pone más atención en el enemigo y en fórmulas verbales que en el Padre y la suficiencia de Cristo.",
+          "Pelea con ansiedad intentando ganar por fuerzas propias una batalla que Cristo ya consumó."
+        ],
+        "verdad_titulo": "Autoridad Divina y Firmeza en Cristo (Jud. 1:9; Ef. 6:10–14; Col. 2:15)",
+        "verdad_puntos": [
+          "La prerrogativa de reprender al adversario pertenece exclusivamente a Dios («El Señor te reprenda»).",
+          "La victoria decisiva sobre Satanás ya fue ganada por Jesucristo en la cruz al despojar a las potestades.",
+          "El llamado de la Iglesia es menguar, someterse a Dios, velar en oración al Padre y permanecer firmes en Su armadura."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Autoridad Exclusiva de Dios",
+          "detalle": "Ni el arcángel Miguel emitió juicio propio (Jud. 1:9): solo el Señor tiene la prerrogativa de reprender (epitimáō)."
+        },
+        {
+          "paso": "2. Victoria Consumada en la Cruz",
+          "detalle": "Cristo ya despojó (apekdýomai) y derrotó a las potestades en el Calvario (Col. 2:15; Heb. 2:14)."
+        },
+        {
+          "paso": "3. Menguar y Estar Firmes",
+          "detalle": "Sometidos a Dios (hypotássō) y vestidos de Su armadura (panoplía), sostenemos la posición en Cristo (hístēmi)."
+        }
+      ],
+      "axiomas": [
+        "«Si el arcángel Miguel no se atrevió a pronunciar juicio contra el diablo sino que dijo «El Señor te reprenda», mucho menos tiene permiso la carne humana.»",
+        "«El enemigo no retrocede ante el volumen de nuestra voz, sino ante una vida rendida en obediencia a Dios que le cierra la puerta al pecado.»",
+        "«No peleamos para ganar una guerra incierta; permanecemos firmes sosteniendo la posición en una guerra que Cristo ya ganó en la cruz.»"
+      ],
+      "terminos_etymos": [
+        "Epitimáō",
+        "Apekdýomai",
+        "Hypotássō",
+        "Hístēmi",
+        "Panoplía"
+      ]
+    }
+  },
+  {
     "id": "introduccion-corazon-padre",
     "slug": "el-peso-del-nombre-por-que-los-nombres-de-dios-son-la-torre-fuerte-del-pacto",
     "titulo": "El Peso del Nombre (Shem): Por Qué los Nombres de Dios No Son Mantras ni Etiquetas, Sino la Torre Fuerte del Pacto",

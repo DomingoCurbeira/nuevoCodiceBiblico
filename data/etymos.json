@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "epitimao-gr",
+      "termino": "Epitimáō",
+      "original": "ἐπιτιμάω",
+      "transliteracion": "epitimáō",
+      "strong": "G2008",
+      "idioma": "Griego",
+      "raiz": "De epí (sobre) + timáō (valorar, tasar, imponer pena). Reprender con autoridad judicial o censurar soberanamente.",
+      "significado_exegetico": "Verbo jurídico de reprensión autoritativa que en la Septuaginta traduce el hebreo ga'ár (Zacarías 3:2) y reaparece en Judas 1:9 cuando el arcángel Miguel rehúsa emitir juicio por cuenta propia contra el diablo y apela a Dios diciendo: «El Señor te reprenda (epitimḗsai soi Kýrios)». Demuestra que la prerrogativa de reprender al adversario pertenece exclusivamente a la soberanía divina, no a la presunción de las criaturas.",
+      "cita": "Judas 1:9",
+      "versiculo": "«No se atrevió a proferir juicio de maldición contra él, sino que dijo: El Señor te reprenda (epitimáō).»",
+      "cristologia": "En los Evangelios, Jesús ejerce epitimáō sobre vientos, mares y demonios porque es el Hijo de Dios y Creador soberano. La Iglesia no imita esa prerrogativa desde la carne, sino que se refugia en la autoridad consumada de Cristo y remite toda causa al Trono del Padre.",
+      "estudio_relacionado": {
+        "id": "reprender-a-satanas",
+        "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica"
+      }
+    },
+    {
+      "id": "apekdyomai-gr",
+      "termino": "Apekdýomai",
+      "original": "ἀπεκδύομαι",
+      "transliteracion": "apekdýomai",
+      "strong": "G554",
+      "idioma": "Griego",
+      "raiz": "De apó (fuera, completamente) + ekdýō (desvestir, arrancar). Despojar por completo de armas, insignias o poder.",
+      "significado_exegetico": "Término militar de extraordinaria fuerza usado por Pablo en Colosenses 2:15 para declarar que en la cruz Cristo «despojó» (apekdysámenos) a los principados y potestades. Describe al vencedor que desarma completamente a un enemigo rendido, dejándolo sin poder legal de acusación ni dominio sobre los redimidos.",
+      "cita": "Colosenses 2:15",
+      "versiculo": "«Y despojando (apekdýomai) a los principados y a las potestades, los exhibió públicamente, triunfando sobre ellos en la cruz.»",
+      "cristologia": "El único que venció a Satanás fue Jesucristo en el Calvario. Al clavar el acta de los decretos en la cruz, arrancó al acusador su única arma letal: la condenación de nuestros pecados. El creyente no pelea para obtener una victoria incierta, sino que descansa en un desarme ya consumado.",
+      "estudio_relacionado": {
+        "id": "reprender-a-satanas",
+        "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica"
+      }
+    },
+    {
+      "id": "hypotasso-gr",
+      "termino": "Hypotássō",
+      "original": "ὑποτάσσω",
+      "transliteracion": "hypotássō",
+      "strong": "G5293",
+      "idioma": "Griego",
+      "raiz": "De hypó (bajo) + tássō (ordenar, alinear en formación militar). Ponerse voluntariamente bajo el mando y rango del Comandante.",
+      "significado_exegetico": "Verbo de orden militar que en Santiago 4:7 establece la condición previa e innegociable de toda resistencia espiritual: «Someteos (hypotágēte), pues, a Dios; resistid al diablo, y huirá de vosotros». Antes de resistir al enemigo, el soldado debe alinearse en obediencia humilde bajo la autoridad de su Rey.",
+      "cita": "Santiago 4:7",
+      "versiculo": "«Someteos (hypotássō), pues, a Dios; resistid al diablo, y huirá de vosotros.»",
+      "cristologia": "El enemigo no retrocede ante el volumen de nuestra voz ni ante decretos carnales, sino ante una vida rendida a Cristo que muere al ego y cierra la puerta al pecado. Menguar para que Cristo gobierne es la verdadera postura de victoria.",
+      "estudio_relacionado": {
+        "id": "reprender-a-satanas",
+        "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica"
+      }
+    },
+    {
+      "id": "histemi-gr",
+      "termino": "Hístēmi",
+      "original": "ἵστημι",
+      "transliteracion": "hístēmi",
+      "strong": "G2476",
+      "idioma": "Griego",
+      "raiz": "Permanecer en pie, mantenerse firme en el puesto asignado sin retroceder ni abandonar la trinchera.",
+      "significado_exegetico": "En Efesios 6:11–14, Pablo repite cuatro veces este mandato («estar firmes», stēnai / stēte) sin ordenar jamás al creyente salir a atacar, conquistar o reprender al diablo. En la táctica militar antigua, hístēmi describe sostener un territorio que el Rey ya conquistó, resistiendo los engaños y dardos del enemigo sin ceder terreno al pecado.",
+      "cita": "Efesios 6:13–14",
+      "versiculo": "«Y habiendo acabado todo, estar firmes (hístēmi). Estad, pues, firmes, ceñidos vuestros lomos con la verdad.»",
+      "cristologia": "Nuestra carne no tiene poder propio para guerrear contra las tinieblas. Permanecer firmes significa revestirnos de Cristo —Su verdad, Su justicia, Su evangelio de paz y Su Palabra— sosteniendo con sobriedad la posición que Él ganó definitivamente en la cruz.",
+      "estudio_relacionado": {
+        "id": "reprender-a-satanas",
+        "titulo": "¿Debe el Creyente Reprender a Satanás?: Autoridad Divina y Guerra Espiritual Bíblica"
+      }
+    },
+    {
       "id": "yhwh-rafa-heb",
       "termino": "YHWH-Rafa (El Señor Tu Sanador)",
       "original": "יְהוָה רָפָא",
