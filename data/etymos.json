@@ -1,6 +1,74 @@
 {
   "palabras": [
     {
+      "id": "phronimos-gr",
+      "termino": "Phrónimos",
+      "original": "φρόνιμος",
+      "transliteracion": "phrónimos",
+      "strong": "G5429",
+      "idioma": "Griego",
+      "raiz": "De phrḗn (mente, entendimiento práctico). Sabio, sensato, prudente que actúa en coherencia con la realidad eterna.",
+      "significado_exegetico": "En Mateo 7:24, Jesús llama phrónimos al constructor que oye Sus palabras y las pone por obra. La prudencia bíblica no es mera brillantez intelectual ni emoción pasajera al escuchar un sermón, sino la sabiduría práctica que anticipa la tormenta y el juicio venidero, cavando profundo hasta cimentar su vida en obediencia real.",
+      "cita": "Mateo 7:24",
+      "versiculo": "«Cualquiera, pues, que me oye estas palabras, y las hace, le compararé a un hombre prudente (phrónimos), que edificó su casa sobre la roca.»",
+      "cristologia": "Cristo es la sabiduría de Dios encarnada (1 Corintios 1:24). La verdadera prudencia consiste en rendir la autosuficiencia, oír la voz del Rey y edificar toda la existencia sobre Su persona y Su obra consumada.",
+      "estudio_relacionado": {
+        "id": "dos-fundamentos",
+        "titulo": "Los Dos Fundamentos: La Roca y la Arena"
+      }
+    },
+    {
+      "id": "moros-gr",
+      "termino": "Mōrós",
+      "original": "μωρός",
+      "transliteracion": "mōrós",
+      "strong": "G3474",
+      "idioma": "Griego",
+      "raiz": "Necio, insensato, carente de juicio moral y espiritual (de donde deriva el término español «morocho/morón»).",
+      "significado_exegetico": "En Mateo 7:26, el constructor insensato (mōrós) no es un ateo que ignora el mensaje, sino un oyente del mismo Sermón del Monte que escucha y quizá admira las palabras de Cristo, pero toma el atajo de la arena sin obedecerlas. Su necedad consiste en creer que la cercanía externa a la verdad protege el alma cuando llegue la tempestad.",
+      "cita": "Mateo 7:26",
+      "versiculo": "«Pero cualquiera que me oye estas palabras y no las hace, le compararé a un hombre insensato (mōrós), que edificó su casa sobre la arena.»",
+      "cristologia": "El evangelio despierta al necio de su autoengaño (Santiago 1:22): nadie puede sostenerse ante el juicio de Dios con una religión de meras palabras; solo en Cristo hay perdón para nuestra insensatez y poder para obedecer.",
+      "estudio_relacionado": {
+        "id": "dos-fundamentos",
+        "titulo": "Los Dos Fundamentos: La Roca y la Arena"
+      }
+    },
+    {
+      "id": "petra-gr",
+      "termino": "Pétra",
+      "original": "πέτρα",
+      "transliteracion": "pétra",
+      "strong": "G4073",
+      "idioma": "Griego",
+      "raiz": "Masa rocosa sólida, lecho de piedra madre inamovible (a diferencia de pétros, una piedra suelta o fragmento).",
+      "significado_exegetico": "En Mateo 7:24–25 y Lucas 6:48, el constructor prudente cava y ahonda hasta asentar el cimiento sobre la pétra: la roca madre enterrada bajo la tierra superficial del valle. Representa la firmeza inquebrantable de una vida apoyada en la Palabra y el señorío de Cristo, capaz de resistir lluvia, ríos y vientos sin desplomarse.",
+      "cita": "Mateo 7:25",
+      "versiculo": "«Y no cayó, porque estaba fundada sobre la roca (pétra).»",
+      "cristologia": "En toda la Escritura, Dios es la Roca eterna (Salmo 18:2; Isaías 28:16) y Pablo declara explícitamente: «Nadie puede poner otro fundamento que el que está puesto, el cual es Jesucristo» (1 Corintios 3:11). Él es la Pétra inconmovible de nuestra salvación.",
+      "estudio_relacionado": {
+        "id": "dos-fundamentos",
+        "titulo": "Los Dos Fundamentos: La Roca y la Arena"
+      }
+    },
+    {
+      "id": "ekplesso-gr",
+      "termino": "Ekplḗssō",
+      "original": "ἐκπλήσσω",
+      "transliteracion": "ekplḗssō",
+      "strong": "G1605",
+      "idioma": "Griego",
+      "raiz": "De ek (hacia afuera, completamente) + plḗssō (golpear, sacudir). Quedar sobrecogido por un golpe de asombro profundo.",
+      "significado_exegetico": "Usado en imperfecto pasivo (exeplḗssonto) en Mateo 7:28 al concluir el Sermón del Monte: la multitud no sintió una mera curiosidad estética, sino una sacudida interior ante la autoridad soberana (exousía) con la que hablaba Jesús, a diferencia de los escribas que solo repetían cadenas de citas rabínicas.",
+      "cita": "Mateo 7:28–29",
+      "versiculo": "«La gente se admiraba (ekplḗssō) de su doctrina; porque les enseñaba como quien tiene autoridad, y no como los escribas.»",
+      "cristologia": "El asombro ante Jesús nunca debe quedarse en admiración distante. Quien habla con autoridad divina como Legislador y Juez es el mismo Salvador que nos invita a venir pobres en espíritu para recibir Su gracia y obedecer Su voz.",
+      "estudio_relacionado": {
+        "id": "dos-fundamentos",
+        "titulo": "Los Dos Fundamentos: La Roca y la Arena"
+      }
+    },
+    {
       "id": "pseudoprophetes-gr",
       "termino": "Pseudoprophḗtēs",
       "original": "ψευδοπροφήτης",

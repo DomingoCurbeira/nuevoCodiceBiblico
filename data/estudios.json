@@ -1,5 +1,64 @@
 [
   {
+    "id": "dos-fundamentos",
+    "slug": "los-dos-fundamentos-la-roca-y-la-arena",
+    "titulo": "Los Dos Fundamentos: La Roca y la Arena",
+    "subtitulo": "Mateo 7:24–29 — Comprender el cierre magistral del Sermón del Monte, donde Cristo coloca a cada oyente frente a una decisión ineludible: demostrar mediante la obediencia práctica que nuestra vida está cimentada sobre la roca firme de Su Palabra y Su autoridad soberana, o quedar expuestos a la ruina inevitable cuando llegue la tormenta de las pruebas y el juicio final.",
+    "categoria": "SERIE DOCTRINAL: EL SERMÓN DEL MONTE",
+    "serie": "El Sermón del Monte",
+    "referencia": "Mateo 7:24–29; Lucas 6:46–49; Salmo 18:2; Isaías 28:16; 1 Corintios 3:11; Santiago 1:22–25; 1 Pedro 2:6–8",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 27 (Gran Final)",
+    "fecha": "24 de noviembre de 2026",
+    "portada": "assets/covers/dos-fundamentos.webp",
+    "pdfUrl": "assets/pdfs/dos-fundamentos.pdf",
+    "palabras": 1602,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "La Casa Firme Ante la Tormenta, la Obediencia que Prueba la Fe y la Autoridad Incomparable de Jesús",
+      "contraste": {
+        "error_titulo": "El Constructor Insensato (Arena: Oír sin Obedecer)",
+        "error_puntos": [
+          "Escucha el mismo sermón y quizá lo admira, pero vive como si no tuviera que obedecerlo (mōrós).",
+          "Toma el atajo cómodo de la arena: emociones pasajeras, apariencias externas y justicia propia.",
+          "Luce igual bajo el sol, pero al llegar la tormenta y el juicio final se desploma con gran ruina."
+        ],
+        "verdad_titulo": "El Constructor Prudente (Roca: Oír y Hacer en Cristo)",
+        "verdad_puntos": [
+          "Mira hacia la eternidad y somete su vida práctica a las palabras del Rey (phrónimos).",
+          "Cava profundo en lo secreto (Luc. 6:48) hasta asentarse en la roca madre (pétra): Jesucristo (1 Cor. 3:11).",
+          "Afronta la misma lluvia, ríos y vientos, pero permanece inconmovible por la eternidad."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Un Mismo Sermón, Dos Respuestas",
+          "detalle": "Tanto el prudente (phrónimos) como el insensato (mōrós) oyen a Cristo; la frontera decisiva es la obediencia práctica."
+        },
+        {
+          "paso": "2. El Cimiento Invisible",
+          "detalle": "Nadie aplaude los cimientos bajo tierra, pero cavar hasta la roca madre (pétra) determina quién resiste la tormenta."
+        },
+        {
+          "paso": "3. La Autoridad y Gracia del Rey",
+          "detalle": "La multitud se asombra (ekplḗssō) ante Su autoridad soberana (exousía), que nos lleva rendidos a Su gracia."
+        }
+      ],
+      "axiomas": [
+        "«Jesús no compara a un creyente con un ateo, sino a dos personas que asistieron al mismo sermón y construyeron una casa que bajo el sol lucía igual por fuera.»",
+        "«Las tormentas de la vida no fabrican la debilidad de una casa; únicamente arrancan el maquillaje y dejan al descubierto sobre qué estábamos sostenidos.»",
+        "«El estándar del Sermón del Monte nos lleva de regreso a la primera Bienaventuranza: pobres en espíritu, descansando en Aquel que lo cumplió por nosotros.»"
+      ],
+      "terminos_etymos": [
+        "Phrónimos",
+        "Mōrós",
+        "Pétra",
+        "Exousía",
+        "Ekplḗssō"
+      ]
+    }
+  },
+  {
     "id": "falsos-profetas",
     "slug": "los-falsos-profetas-y-los-frutos-del-corazon",
     "titulo": "Los Falsos Profetas y los Frutos del Corazón",
