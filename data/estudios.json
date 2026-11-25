@@ -1,5 +1,300 @@
 [
   {
+    "id": "dios-trino-5",
+    "slug": "conociendo-al-dios-trino-la-trinidad-en-accion-en-tu-vida",
+    "titulo": "La Trinidad en Acción en tu Vida",
+    "subtitulo": "Efesios 1:3–14; 1 Pedro 1:2; Tito 3:4–7 — Integrar todo lo aprendido a lo largo de esta serie para contemplar cómo el Padre, el Hijo y el Espíritu Santo obran en perfecta armonía para salvarnos y sostenernos, descubriendo que la verdadera seguridad del creyente no descansa en su propio rendimiento religioso, sino en la fidelidad inquebrantable del Dios Trino.",
+    "categoria": "CONOCIENDO AL DIOS TRINO",
+    "serie": "Conociendo al Dios Trino",
+    "referencia": "Romanos 8:31–39; 2 Corintios 13:14; Efesios 1:3–14; Efesios 2:18; Tito 3:4–7; 1 Pedro 1:2; Judas 1:20–21",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 5 (Gran Final)",
+    "fecha": "25 de noviembre de 2026",
+    "portada": "assets/covers/dios-trino-5.webp",
+    "pdfUrl": "assets/pdfs/dios-trino-5.pdf",
+    "palabras": 1744,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "La Unidad Perfecta de Dios en Nuestra Salvación, el Fin de la Ansiedad por el Desempeño y la Comunión Diaria con el Dios Trino",
+      "contraste": {
+        "error_titulo": "Ansiedad por el Desempeño y Legalismo Cotidiano",
+        "error_puntos": [
+          "Cree que Dios perdonó el inicio pero mantenerse a salvo depende de rachas morales e intensidad emocional.",
+          "Vive en una montaña rusa: se siente aceptado en días buenos y abandonado cuando tropieza o está cansado.",
+          "Imagina tensión dentro de Dios o ve la oración como una carga solitaria hacia un cielo lejano."
+        ],
+        "verdad_titulo": "Un Fundamento Triple Inquebrantable (Ef. 1:3–14; 2:18; Tito 3:5)",
+        "verdad_puntos": [
+          "El Padre planeó y llamó en amor; el Hijo pagó el rescate entero (apolýtrōsis); el Espíritu sella y garantiza (arrabṓn).",
+          "La salvación descansa en la fidelidad del Dios Trino, produciendo obediencia libre y agradecida sin miedo.",
+          "En cada oración tenemos entrada libre (prosagōgḗ) al Padre, por los méritos del Hijo y sostenidos por el Espíritu."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. El Padre Planea y Llama",
+          "detalle": "Antes de la fundación del mundo nos escogió y predestinó para adopción en amor (Efesios 1:3–6)."
+        },
+        {
+          "paso": "2. El Hijo Paga y Redime",
+          "detalle": "Pagó el rescate completo (apolýtrōsis) con Su sangre y nos abre entrada libre (prosagōgḗ) ante el Padre."
+        },
+        {
+          "paso": "3. El Espíritu Aplica y Sostiene",
+          "detalle": "Obra regeneración (palingenesía) y renovación (anakainōsis), sellándonos como arras (arrabṓn) seguras."
+        }
+      ],
+      "axiomas": [
+        "«La historia de tu salvación no empezó el día en que decidiste buscar a Dios; empezó en el corazón eterno del Padre, fue pagada por el Hijo y sellada por el Espíritu.»",
+        "«Nadie obedece con más libertad, humildad y perseverancia que el hijo que sabe que su lugar en la mesa ya fue pagado y asegurado para siempre.»",
+        "«Cada vez que oras —incluso en tu día más débil— te diriges al Padre, respaldado por los méritos del Hijo y sostenido en tu interior por el Espíritu Santo.»"
+      ],
+      "terminos_etymos": [
+        "Apolýtrōsis",
+        "Prosagōgḗ",
+        "Palingenesía",
+        "Anakainōsis",
+        "Arrabṓn"
+      ]
+    }
+  },
+  {
+    "id": "dios-trino-4",
+    "slug": "conociendo-al-dios-trino-dios-el-espiritu-santo-el-paracleto-que-mora-en-nosotros",
+    "titulo": "Dios el Espíritu Santo: El Parácleto que Mora en Nosotros",
+    "subtitulo": "Juan 14:16–17, 26; Hechos 5:3–4; Romanos 8:26–27 — Conocer bíblicamente a la tercera Persona de la Trinidad, dejando atrás la confusión de tratar al Espíritu Santo como una fuerza impersonal o como un simple estado emocional, para descansar en la realidad de que Dios mismo habita en el creyente, ilumina Su Palabra, transforma el carácter y sostiene nuestra debilidad.",
+    "categoria": "CONOCIENDO AL DIOS TRINO",
+    "serie": "Conociendo al Dios Trino",
+    "referencia": "Salmo 139:7–8; Juan 14:16–17, 26; Juan 16:7–14; Hechos 5:3–4; Hechos 13:2; Romanos 8:9, 26–27; 1 Corintios 2:10–11; 1 Corintios 12:11; Gálatas 5:22–23; Efesios 1:13–14; Efesios 4:30",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 4",
+    "fecha": "25 de noviembre de 2026",
+    "portada": "assets/covers/dios-trino-4.webp",
+    "pdfUrl": "assets/pdfs/dios-trino-4.pdf",
+    "palabras": 1592,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Una Persona Divina y No una Energía: El Parácleto que Ilumina, Sella, Transforma e Intercede en Nuestra Debilidad",
+      "contraste": {
+        "error_titulo": "Energía Impersonal o Emocionalismo Pasajero",
+        "error_puntos": [
+          "Trata al Espíritu como una corriente eléctrica, herramienta para «activar» o sensación intensa de reunión.",
+          "Cree que Su presencia depende del estado de ánimo o está reservada para una élite espiritual.",
+          "Piensa que Dios solo escucha cuando oramos con fórmulas perfectas y fuerza emocional."
+        ],
+        "verdad_titulo": "El Parácleto Divino que Mora en Nosotros (Juan 14:16; Rom. 8:26)",
+        "verdad_puntos": [
+          "Es Persona divina y plenamente Dios (Hech. 5:3–4): conoce, decide, ama, intercede y puede ser contristado.",
+          "Es «otro» de la misma clase (állos Paraklētos) que glorifica a Cristo, abre la Palabra y sella nuestra salvación.",
+          "Toma el otro extremo de nuestra carga (synantilambánomai) e intercede por nosotros cuando faltan las palabras."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Persona Plenamente Divina",
+          "detalle": "No es una fuerza: mentirle es mentir a Dios (Hech. 5:3–4) y es otro Consolador de igual naturaleza (állos)."
+        },
+        {
+          "paso": "2. Iluminación, Sello y Fruto",
+          "detalle": "Glorifica a Cristo, nos sella (sphragízō) como garantía (arrabṓn) y produce fruto duradero (Gál. 5:22–23)."
+        },
+        {
+          "paso": "3. Intercesor en la Debilidad",
+          "detalle": "Levanta la carga a nuestro lado (synantilambánomai) traduciendo nuestro corazón ante el Padre (Rom. 8:26–27)."
+        }
+      ],
+      "axiomas": [
+        "«No se puede mentir a una energía ni entristecer a un símbolo: solo se puede entristecer a una Persona que ama. Al Espíritu Santo no se le usa; se le honra y se le adora.»",
+        "«El Espíritu Santo no es un premio reservado para una élite espiritual, sino el sello y las arras que garantizan la pertenencia de todo creyente en Cristo.»",
+        "«Tu comunión con el Señor no descansa en tu elocuencia ni en tu fuerza emocional, sino en la fidelidad del Parácleto que levanta la carga contigo.»"
+      ],
+      "terminos_etymos": [
+        "Paraklētos",
+        "Állos",
+        "Synantilambánomai",
+        "Arrabṓn",
+        "Sphragízō"
+      ]
+    }
+  },
+  {
+    "id": "dios-trino-3",
+    "slug": "conociendo-al-dios-trino-dios-el-hijo-el-verbo-eterno-hecho-carne",
+    "titulo": "Dios el Hijo: El Verbo Eterno Hecho Carne",
+    "subtitulo": "Juan 1:1–18; Colosenses 1:15–17; Filipenses 2:5–8 — Conocer con precisión bíblica y claridad lógica quién es Jesucristo, el Hijo eterno que comparte la misma esencia que el Padre y el Espíritu Santo, comprendiendo por qué asumió una naturaleza humana verdadera para revelarnos a Dios de forma cercana y consumar para siempre nuestra redención.",
+    "categoria": "CONOCIENDO AL DIOS TRINO",
+    "serie": "Conociendo al Dios Trino",
+    "referencia": "Daniel 7:13–14; Mateo 26:64; Juan 1:1–3, 14, 18; Juan 19:30; Filipenses 2:5–11; Colosenses 1:15–20; 1 Timoteo 2:5; Hebreos 1:1–3; Hebreos 4:15",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 3",
+    "fecha": "25 de noviembre de 2026",
+    "portada": "assets/covers/dios-trino-3.webp",
+    "pdfUrl": "assets/pdfs/dios-trino-3.pdf",
+    "palabras": 1591,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "Su Divinidad Eterna, el Misterio de la Encarnación y la Obra Consumada que Nos Reconcilia con Dios",
+      "contraste": {
+        "error_titulo": "Jesús como Criatura, Disfraz o Simple Ejemplo Moral",
+        "error_puntos": [
+          "Cree que el Hijo comenzó a existir en Belén como una criatura superior o un profeta más.",
+          "Imagina que Jesús era el Padre disfrazado de humano o que perdió Su divinidad al encarnarse.",
+          "Trata la cruz como una obra a medias que el hombre debe completar con méritos religiosos."
+        ],
+        "verdad_titulo": "Verdaderamente Dios y Verdaderamente Hombre (Juan 1:1, 14; Fil. 2:6–8)",
+        "verdad_puntos": [
+          "Es el Lógos eterno, Creador y sustentador de todo (Col. 1:16–17), igual en esencia (morphḗ) al Padre.",
+          "Añadió naturaleza humana real sin perder Su divinidad para dar a conocer (exēgéomai) al Dios invisible.",
+          "Como único Mediador (mesítēs), pagó por completo la deuda (tetélestai) y se compadece de nuestra debilidad."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Eterno Creador (Antes de Belén)",
+          "detalle": "El Verbo (Lógos) existía cara a cara con el Padre desde la eternidad; todo subsiste en Él (Col. 1:17)."
+        },
+        {
+          "paso": "2. Encarnación sin Pérdida Divina",
+          "detalle": "Teniendo forma de Dios (morphḗ), asumió condición real de siervo para explicar (exēgéomai) al Padre."
+        },
+        {
+          "paso": "3. Redención Consumada y Cercana",
+          "detalle": "Con «Tetélestai» canceló nuestra deuda y hoy intercede como Mediador (mesítēs) que conoce nuestra fragilidad."
+        }
+      ],
+      "axiomas": [
+        "«En la Encarnación, el Hijo eterno no dejó de ser Dios ni cambió de esencia; añadió a Su persona una naturaleza humana real y completa.»",
+        "«Solo un hombre verdadero podía ponerse en nuestro lugar, y solo el Hijo eterno de Dios podía dar a Su sacrificio un valor infinito y definitivo.»",
+        "«La salvación no es una obra a medias donde Cristo pone una parte y tú completas el resto con esfuerzo religioso: con «Tetélestai», el Hijo saldó la deuda de principio a fin.»"
+      ],
+      "terminos_etymos": [
+        "Logos",
+        "Morphḗ",
+        "Exēgéomai",
+        "Tetelestai",
+        "Mesítēs"
+      ]
+    }
+  },
+  {
+    "id": "dios-trino-2",
+    "slug": "conociendo-al-dios-trino-dios-el-padre-soberano-creador-y-padre-por-gracia",
+    "titulo": "Dios el Padre: Soberano Creador y Padre por Gracia",
+    "subtitulo": "Hechos 17:28; Juan 4:24; Romanos 8:15–16 — Conocer quién es Dios el Padre según el testimonio completo de la Escritura, uniendo Su soberanía infinita como Creador que sostiene todas las cosas con Su corazón paternal que nos adopta por pura gracia en Cristo, desarmando así la imagen distorsionada de un juez severo y lejano que espera a que fallemos.",
+    "categoria": "CONOCIENDO AL DIOS TRINO",
+    "serie": "Conociendo al Dios Trino",
+    "referencia": "Salmo 103:13; Salmo 139:7–10; Isaías 40:28; Juan 3:16; Juan 4:24; Hechos 17:24–28; Romanos 8:14–17; 1 Corintios 8:6; Efesios 1:3–5; Santiago 1:17; 1 Juan 3:1",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 2",
+    "fecha": "25 de noviembre de 2026",
+    "portada": "assets/covers/dios-trino-2.webp",
+    "pdfUrl": "assets/pdfs/dios-trino-2.pdf",
+    "palabras": 1468,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "El Espíritu que Sostiene el Universo, el Fin del Mito del Dios Distante y la Adopción que Destruye el Legalismo",
+      "contraste": {
+        "error_titulo": "El Mito del Padre Enojado y la Mentalidad de Esclavo",
+        "error_puntos": [
+          "Imagina un Padre severo del AT frente a un Jesús bondadoso que tuvo que convencerlo de amarnos.",
+          "Vive bajo un espíritu de esclavitud (douleía), temiendo que cada tropiezo le cueste su lugar en la casa.",
+          "Proyecta sobre el Padre celestial la frialdad, ausencia o dureza de los padres humanos imperfectos."
+        ],
+        "verdad_titulo": "Soberano Creador y Padre por Gracia (Hech. 17:28; Rom. 8:15)",
+        "verdad_puntos": [
+          "Es Espíritu eterno e infinito (Juan 4:24): nada es tan grande que escape de Él ni tan pequeño que no llene.",
+          "La salvación nació en el corazón del Padre (Juan 3:16; Ef. 1:5); Cristo refleja Su compasión exacta (Juan 14:9).",
+          "Nos adopta por puro afecto (eudokía) para que clamemos «¡Abba, Padre!» descansando en Su amor inmutable."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Soberano que Todo lo Sostiene",
+          "detalle": "Dios es Espíritu (Juan 4:24): en Él vivimos, nos movemos y existimos; gobierna galaxias y conoce cada cabello."
+        },
+        {
+          "paso": "2. Fuente del Plan Redentor",
+          "detalle": "Cristo no murió para convencer al Padre de amarnos: el Padre nos amó primero y nos adoptó según Su eudokía."
+        },
+        {
+          "paso": "3. Descanso de Hijos («¡Abba!»)",
+          "detalle": "Libres de la esclavitud (douleía), descansamos en la compasión (rachám) del Padre de las luces sin mudanza."
+        }
+      ],
+      "axiomas": [
+        "«Nada es tan grande que pueda salirse de la mano del Padre, ni tan pequeño que Él no pueda llenar con Su presencia.»",
+        "«Cristo no murió en la cruz para convencer al Padre de que nos amara; Cristo vino a la cruz porque el Padre ya nos amaba.»",
+        "«El esclavo trabaja con miedo pensando que un error le costará su lugar; el hijo obedece desde la seguridad de que su lugar está garantizado por gracia.»"
+      ],
+      "terminos_etymos": [
+        "Abba",
+        "Huiothesía",
+        "Eudokía",
+        "Rachám",
+        "Douleía"
+      ]
+    }
+  },
+  {
+    "id": "dios-trino-1",
+    "slug": "conociendo-al-dios-trino-un-solo-dios-tres-personas",
+    "titulo": "Un Solo Dios, Tres Personas",
+    "subtitulo": "Deuteronomio 6:4; Mateo 3:16–17; Mateo 28:19 — Establecer con claridad, lógica y absoluto rigor bíblico qué enseña realmente la Escritura sobre la Trinidad, desarmando las confusiones y analogías engañosas más frecuentes para descubrir que conocer a Dios tal como Él se ha revelado —un solo Dios en tres Personas eternas— es el verdadero fundamento de la gracia y de nuestra paz espiritual.",
+    "categoria": "CONOCIENDO AL DIOS TRINO",
+    "serie": "Conociendo al Dios Trino",
+    "referencia": "Deuteronomio 6:4; Isaías 45:5; Mateo 3:16–17; Mateo 28:19; Juan 1:1–3; Juan 17:24; Hechos 5:3–4; 2 Corintios 13:14; 1 Juan 4:8",
+    "autor": "Códice Bíblico",
+    "edicion": "Episodio 1",
+    "fecha": "25 de noviembre de 2026",
+    "portada": "assets/covers/dios-trino-1.webp",
+    "pdfUrl": "assets/pdfs/dios-trino-1.pdf",
+    "palabras": 1676,
+    "apoyoUrl": "https://ko-fi.com/codicebiblico",
+    "infografia": {
+      "tema_central": "El Fundamento Bíblico de la Trinidad: Una Sola Esencia en Tres Personas Eternas y el Dios que Es Amor",
+      "contraste": {
+        "error_titulo": "Triteísmo, Modalismo y Parcialismo (Analogías que Distorsionan)",
+        "error_puntos": [
+          "Imaginar un comité de tres dioses separados trabajando en equipo (triteísmo, rompe Deut. 6:4).",
+          "Creer que Dios es una sola Persona que cambia de máscaras o modos como el agua (modalismo).",
+          "Dividir a Dios en tercios o piezas como un huevo o un trébol (parcialismo), reduciendo cada Persona."
+        ],
+        "verdad_titulo": "Un Solo Dios en Tres Personas Eternas (Deut. 6:4; Mat. 3:16–17; 28:19)",
+        "verdad_puntos": [
+          "¿Qué es Dios? Una sola esencia divina eterna e indivisible (ousía / echád).",
+          "¿Quién es Dios? Tres Personas eternas y distintas —Padre, Hijo y Espíritu— bajo un solo Nombre (ónoma).",
+          "Porque Dios es Trinidad, ya era amor pleno antes de la creación (Juan 17:24) y nos salva por pura gracia."
+        ]
+      },
+      "flujo": [
+        {
+          "paso": "1. Las Tres Columnas Bíblicas",
+          "detalle": "Un único Dios (echád), tres Personas plenamente divinas y realmente distintas entre sí (Mat. 3:16–17)."
+        },
+        {
+          "paso": "2. «Qué» (Ousía) vs. «Quién» (Hypóstasis)",
+          "detalle": "Una sola esencia indivisible en tres Personas eternas unidas bajo un único Nombre singular (ónoma)."
+        },
+        {
+          "paso": "3. El Cimiento de la Gracia",
+          "detalle": "El Dios Trino no nos creó por soledad: desde Su plenitud eterna desborda Su gracia y comunión (koinōnía)."
+        }
+      ],
+      "axiomas": [
+        "«La Trinidad no contradice la lógica: responde a dos preguntas distintas: ¿Qué es Dios? Una sola esencia (ousía). ¿Quién es Dios? Tres Personas eternas (hypóstasis).»",
+        "«Ninguna ilustración tomada de la creación alcanza para encerrar al Creador; siempre es más sano descansar en lo que la Escritura afirma con claridad.»",
+        "«Dios no te salva porque le falte algo ni para llenar un vacío: porque es Trinidad, ya era amor pleno antes de la fundación del mundo y desborda Su gracia hacia ti.»"
+      ],
+      "terminos_etymos": [
+        "Echad",
+        "Ousía",
+        "Hypóstasis",
+        "Ónoma",
+        "Koinōnía"
+      ]
+    }
+  },
+  {
     "id": "dos-fundamentos",
     "slug": "los-dos-fundamentos-la-roca-y-la-arena",
     "titulo": "Los Dos Fundamentos: La Roca y la Arena",

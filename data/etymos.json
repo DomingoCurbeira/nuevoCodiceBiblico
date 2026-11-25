@@ -1,6 +1,278 @@
 {
   "palabras": [
     {
+      "id": "prosagoge-gr",
+      "termino": "Prosagōgḗ",
+      "original": "προσαγωγή",
+      "transliteracion": "prosagōgḗ",
+      "strong": "G4318",
+      "idioma": "Griego",
+      "raiz": "De prós (hacia, ante) + ágō (conducir, llevar). Introducción oficial, entrada libre y audiencia concedida ante un monarca.",
+      "significado_exegetico": "En Efesios 2:18, Pablo resume la experiencia trinitaria de la oración con este término regio: «Por medio de él [Cristo] tenemos entrada (prosagōgḗ) por un mismo Espíritu al Padre». En el mundo antiguo designaba el privilegio de ser presentado personalmente ante la corte de un rey sin temor a ser rechazado.",
+      "cita": "Efesios 2:18",
+      "versiculo": "«Porque por medio de él los unos y los otros tenemos entrada (prosagōgḗ) por un mismo Espíritu al Padre.»",
+      "cristologia": "Cada vez que oras —incluso en tu día más débil— no hablas hacia un cielo cerrado: el Hijo te introduce por Su sangre, el Espíritu te sostiene desde adentro y el Padre te recibe en Su presencia.",
+      "estudio_relacionado": {
+        "id": "dios-trino-5",
+        "titulo": "La Trinidad en Acción en tu Vida"
+      }
+    },
+    {
+      "id": "palingenesia-gr",
+      "termino": "Palingenesía",
+      "original": "παλιγγενεσία",
+      "transliteracion": "palingenesía",
+      "strong": "G3824",
+      "idioma": "Griego",
+      "raiz": "De pálin (de nuevo, otra vez) + génesis (nacimiento, origen). Nuevo nacimiento, regeneración radical de la vida espiritual.",
+      "significado_exegetico": "Usado en Tito 3:5 para afirmar que Dios nos salvó no por obras de justicia nuestras, sino por Su misericordia, «por el lavamiento de la regeneración (palingenesía)». Señala que la salvación no es un retoque moral externo, sino un nuevo génesis obrado soberanamente por el Dios Trino en el corazón muerto en pecados.",
+      "cita": "Tito 3:5",
+      "versiculo": "«Nos salvó, no por obras de justicia que nosotros hubiéramos hecho, sino por su misericordia, por el lavamiento de la regeneración (palingenesía).»",
+      "cristologia": "Lo que el Padre decretó en amor y el Hijo compró en la cruz, el Espíritu lo implanta mediante la palingenesía, haciéndonos nuevas criaturas en Cristo por pura misericordia.",
+      "estudio_relacionado": {
+        "id": "dios-trino-5",
+        "titulo": "La Trinidad en Acción en tu Vida"
+      }
+    },
+    {
+      "id": "anakainosis-gr",
+      "termino": "Anakainōsis",
+      "original": "ἀνακαίνωσις",
+      "transliteracion": "anakainōsis",
+      "strong": "G342",
+      "idioma": "Griego",
+      "raiz": "De aná (de nuevo, hacia arriba) + kainós (nuevo en calidad y naturaleza). Renovación interior progresiva y transformadora.",
+      "significado_exegetico": "En Tito 3:5, Pablo enlaza la regeneración con «la renovación (anakainōsis) en el Espíritu Santo», derramado abundantemente por medio de Jesucristo. Mientras palingenesía apunta al instante del nuevo nacimiento, anakainōsis describe la obra continua y fiel del Espíritu renovando nuestra mente, afectos y voluntad a la imagen de Cristo.",
+      "cita": "Tito 3:5–6",
+      "versiculo": "«Por el lavamiento de la regeneración y por la renovación (anakainōsis) en el Espíritu Santo, el cual derramó en nosotros abundantemente por Jesucristo nuestro Salvador.»",
+      "cristologia": "El creyente no depende de sus propias fuerzas agotadas para cambiar: el mismo Espíritu derramado por el Hijo resucitado obra continuamente la anakainōsis para gloria del Padre.",
+      "estudio_relacionado": {
+        "id": "dios-trino-5",
+        "titulo": "La Trinidad en Acción en tu Vida"
+      }
+    },
+    {
+      "id": "allos-gr",
+      "termino": "Állos",
+      "original": "ἄλλος",
+      "transliteracion": "állos",
+      "strong": "G243",
+      "idioma": "Griego",
+      "raiz": "Otro de exactamente la misma clase, esencia y naturaleza (en contraste con héteros, otro de distinta especie).",
+      "significado_exegetico": "En Juan 14:16, Jesús promete: «El Padre os dará otro (állos) Consolador». Al escoger állos y no héteros, el Señor garantiza que el Espíritu Santo no es un asistente inferior ni una fuerza secundaria, sino una Persona divina de exactamente la misma esencia, gloria y amor que Jesucristo.",
+      "cita": "Juan 14:16",
+      "versiculo": "«Y yo rogaré al Padre, y os dará otro (állos) Consolador, para que esté con vosotros para siempre.»",
+      "cristologia": "Así como Jesús fue el primer Parácleto caminando al lado de Sus discípulos, el Espíritu Santo es el segundo Parácleto de la misma naturaleza divina que hace presente la vida de Cristo en todo creyente para siempre.",
+      "estudio_relacionado": {
+        "id": "dios-trino-4",
+        "titulo": "Dios el Espíritu Santo: El Parácleto que Mora en Nosotros"
+      }
+    },
+    {
+      "id": "synantilambanomai-gr",
+      "termino": "Synantilambánomai",
+      "original": "συναντιλαμβάνομαι",
+      "transliteracion": "synantilambánomai",
+      "strong": "G4878",
+      "idioma": "Griego",
+      "raiz": "De sýn (junto con) + antí (frente a frente, del otro lado) + lambánō (tomar, asir). Tomar el otro extremo de una carga pesada para levantarla juntos.",
+      "significado_exegetico": "En Romanos 8:26 («el Espíritu nos ayuda en nuestra debilidad»), este verbo compuesto dibuja una escena profundamente pastoral: el Espíritu Santo no nos observa desde lejos exigiendo oraciones elocuentes, sino que se coloca frente a nuestra fragilidad, toma el otro extremo del peso que nos aplasta e intercede por nosotros delante del Padre.",
+      "cita": "Romanos 8:26",
+      "versiculo": "«Y de igual manera el Espíritu nos ayuda (synantilambánomai) en nuestra debilidad.»",
+      "cristologia": "Mientras Cristo intercede por nosotros a la diestra del Padre en el cielo, el Espíritu Santo intercede desde nuestro interior, sosteniendo nuestra flaqueza cuando el agotamiento nos deja sin palabras.",
+      "estudio_relacionado": {
+        "id": "dios-trino-4",
+        "titulo": "Dios el Espíritu Santo: El Parácleto que Mora en Nosotros"
+      }
+    },
+    {
+      "id": "arrabon-gr",
+      "termino": "Arrabṓn",
+      "original": "ἀρραβών",
+      "transliteracion": "arrabṓn",
+      "strong": "G728",
+      "idioma": "Griego",
+      "raiz": "Préstamo semítico (del hebreo erabón). Primer pago, fianza legal o anticipo que obliga y garantiza la entrega total del resto.",
+      "significado_exegetico": "Usado por Pablo en Efesios 1:14 para describir al Espíritu Santo como «las arras de nuestra herencia». En el comercio antiguo, el arrabṓn no era una simple promesa verbal, sino parte real del pago total ya entregado de antemano. Así, la morada del Espíritu hoy es el anticipo vivo y seguro de nuestra redención final.",
+      "cita": "Efesios 1:14",
+      "versiculo": "«Que es las arras (arrabṓn) de nuestra herencia hasta la redención de la posesión adquirida, para alabanza de su gloria.»",
+      "cristologia": "La seguridad del creyente no pende de sus emociones inestables, sino de la fidelidad del Dios Trino, quien ya entregó al Espíritu como garantía irrevocable de que completará en nosotros la obra comprada por Cristo.",
+      "estudio_relacionado": {
+        "id": "dios-trino-4",
+        "titulo": "Dios el Espíritu Santo: El Parácleto que Mora en Nosotros"
+      }
+    },
+    {
+      "id": "sphragizo-gr",
+      "termino": "Sphragízō",
+      "original": "σφραγίζω",
+      "transliteracion": "sphragízō",
+      "strong": "G4972",
+      "idioma": "Griego",
+      "raiz": "De sphragís (anillo de sellar, impronta oficial). Estampar el sello de propiedad, autenticidad y protección inviolable.",
+      "significado_exegetico": "En Efesios 1:13 («fuisteis sellados con el Espíritu Santo de la promesa») y 4:30, sphragízō declara que todo creyente que abraza el evangelio recibe inmediatamente la marca oficial de pertenencia a Dios. El Espíritu no es un trofeo para una élite espiritual, sino la firma divina sobre cada hijo redimido.",
+      "cita": "Efesios 1:13",
+      "versiculo": "«Y habiendo creído en él, fuisteis sellados (sphragízō) con el Espíritu Santo de la promesa.»",
+      "cristologia": "Así como un rey estampaba su sello sobre un documento para garantizar su validez y custodia, el Padre estampa al Espíritu Santo sobre todo aquel que ha sido lavado por la sangre de Cristo.",
+      "estudio_relacionado": {
+        "id": "dios-trino-4",
+        "titulo": "Dios el Espíritu Santo: El Parácleto que Mora en Nosotros"
+      }
+    },
+    {
+      "id": "morphe-gr",
+      "termino": "Morphḗ",
+      "original": "μορφή",
+      "transliteracion": "morphḗ",
+      "strong": "G3444",
+      "idioma": "Griego",
+      "raiz": "Forma esencial, naturaleza auténtica e intrínseca que expresa externamente lo que un ser es en realidad (distinto de schēma, apariencia pasajera).",
+      "significado_exegetico": "En Filipenses 2:6–7, Pablo usa morphḗ dos veces con absoluta precisión: Cristo existía en «forma de Dios» (morphḗ Theoû) —poseyendo plenamente la esencia y condición divina— y asumió «forma de siervo» (morphḗ doúlou) —asumiendo una naturaleza humana real y genuina, sin dejar de ser Dios en ningún instante.",
+      "cita": "Filipenses 2:6–7",
+      "versiculo": "«El cual, siendo en forma (morphḗ) de Dios, no estimó el ser igual a Dios como cosa a que aferrarse, sino que se despojó a sí mismo, tomando forma (morphḗ) de siervo.»",
+      "cristologia": "Garantiza las dos naturalezas de nuestro Redentor en una sola Persona: cien por ciento Dios para dar valor infinito a la cruz y cien por ciento hombre para representarnos y morir en nuestro lugar.",
+      "estudio_relacionado": {
+        "id": "dios-trino-3",
+        "titulo": "Dios el Hijo: El Verbo Eterno Hecho Carne"
+      }
+    },
+    {
+      "id": "eikon-gr",
+      "termino": "Eikṓn",
+      "original": "εἰκών",
+      "transliteracion": "eikṓn",
+      "strong": "G1504",
+      "idioma": "Griego",
+      "raiz": "Imagen exacta, representación viva y manifestación fiel que hace visible lo invisible.",
+      "significado_exegetico": "En Colosenses 1:15, Pablo proclama que Cristo es «la imagen (eikṓn) del Dios invisible». En el griego del Nuevo Testamento, eikṓn no significa una copia inferior ni un simple parecido externo, sino la manifestación perfecta y sustancial de la realidad divina misma.",
+      "cita": "Colosenses 1:15",
+      "versiculo": "«Él es la imagen (eikṓn) del Dios invisible, el primogénito de toda creación.»",
+      "cristologia": "Nadie ha visto jamás la esencia invisible de Dios, pero al contemplar la santidad, la mansedumbre y la compasión de Jesucristo vemos el rostro exacto y fiel del Dios eterno.",
+      "estudio_relacionado": {
+        "id": "dios-trino-3",
+        "titulo": "Dios el Hijo: El Verbo Eterno Hecho Carne"
+      }
+    },
+    {
+      "id": "kenoo-gr",
+      "termino": "Kenóō",
+      "original": "κενόω",
+      "transliteracion": "kenóō",
+      "strong": "G2758",
+      "idioma": "Griego",
+      "raiz": "De kenós (vacío). Despojarse voluntariamente de privilegios, reputación o gloria manifiesta para hacerse humilde.",
+      "significado_exegetico": "En Filipenses 2:7 («se despojó a sí mismo», heautòn ekénōsen), el contexto aclara cómo ocurrió ese despojo: no sustrayendo Su divinidad, sino añadiendo la condición de siervo y la semejanza humana. El Hijo eterno veló voluntariamente el esplendor de Su gloria celestial para caminar entre nuestro polvo y obedecer hasta la cruz.",
+      "cita": "Filipenses 2:7",
+      "versiculo": "«Sino que se despojó (kenóō) a sí mismo, tomando forma de siervo, hecho semejante a los hombres.»",
+      "cristologia": "La kénosis de Cristo es el latido mismo de la gracia: en lugar de exigir que escaláramos al cielo por méritos propios, el Rey de gloria descendió en humildad hasta nuestra debilidad para rescatarnos.",
+      "estudio_relacionado": {
+        "id": "dios-trino-3",
+        "titulo": "Dios el Hijo: El Verbo Eterno Hecho Carne"
+      }
+    },
+    {
+      "id": "eudokia-gr",
+      "termino": "Eudokía",
+      "original": "εὐδοκία",
+      "transliteracion": "eudokía",
+      "strong": "G2107",
+      "idioma": "Griego",
+      "raiz": "De eu (bien, bueno) + dokéō (parecer bien, complacerse). Beneplácito soberano, deleite gozoso, puro afecto de la voluntad.",
+      "significado_exegetico": "En Efesios 1:5, Pablo declara que el Padre nos predestinó para ser adoptados hijos Suyos «según el puro afecto (eudokía) de su voluntad». Desarma radicalmente la caricatura de un Padre enojado que nos tolera a regañadientes: nuestra adopción nació del gozo libre y soberano del corazón del Padre antes de la fundación del mundo.",
+      "cita": "Efesios 1:5",
+      "versiculo": "«Habiéndonos predestinado para ser adoptados hijos suyos por medio de Jesucristo, según el puro afecto (eudokía) de su voluntad.»",
+      "cristologia": "Cristo no murió para torcerle el brazo a un Padre severo; el Hijo vino a la cruz como expresión máxima de la eudokía eterna del Padre, quien se complace en adoptar pecadores por pura gracia.",
+      "estudio_relacionado": {
+        "id": "dios-trino-2",
+        "titulo": "Dios el Padre: Soberano Creador y Padre por Gracia"
+      }
+    },
+    {
+      "id": "racham-heb",
+      "termino": "Rachám",
+      "original": "רָחַם",
+      "transliteracion": "rachám",
+      "strong": "H7355",
+      "idioma": "Hebreo",
+      "raiz": "Emparentado con réchem (vientre materno). Compadecerse desde las entrañas, amar con ternura protectora y misericordia visceral.",
+      "significado_exegetico": "Usado en el Salmo 103:13 («Como el padre se compadece [rachám] de los hijos, se compadece Jehová de los que le temen»). Revela que la santidad y la soberanía del Creador no excluyen la ternura más profunda: el Padre conoce nuestra frágil condición de polvo y nos sostiene con misericordia fiel, no como un capataz frío.",
+      "cita": "Salmo 103:13",
+      "versiculo": "«Como el padre se compadece (rachám) de los hijos, se compadece Jehová de los que le temen.»",
+      "cristologia": "Cada vez que Jesús tuvo compasión de los quebrantados, pecadores y afligidos, estaba haciendo visible el rachám eterno del Padre celestial («El que me ha visto a mí, ha visto al Padre», Juan 14:9).",
+      "estudio_relacionado": {
+        "id": "dios-trino-2",
+        "titulo": "Dios el Padre: Soberano Creador y Padre por Gracia"
+      }
+    },
+    {
+      "id": "douleia-gr",
+      "termino": "Douleía",
+      "original": "δουλεία",
+      "transliteracion": "douleía",
+      "strong": "G1397",
+      "idioma": "Griego",
+      "raiz": "De doûlos (esclavo, siervo bajo servidumbre). Estado de esclavitud, sujeción gobernada por el miedo al castigo.",
+      "significado_exegetico": "En Romanos 8:15, Pablo contrapone el «espíritu de esclavitud» (pneûma douleías) que produce temor con el «espíritu de adopción» (huiothesía) que clama «¡Abba, Padre!». El esclavo sirve ansioso temiendo perder su lugar ante cualquier fallo; el hijo adoptado obedece en paz sabiendo que su lugar en la casa del Padre está asegurado en Cristo.",
+      "cita": "Romanos 8:15",
+      "versiculo": "«Pues no habéis recibido el espíritu de esclavitud (douleía) para estar otra vez en temor, sino que habéis recibido el espíritu de adopción.»",
+      "cristologia": "Jesucristo rompió las cadenas del legalismo y de la douleía en la cruz para introducirnos en la libertad gloriosa de los hijos de Dios, donde el amor perfecto del Padre echa fuera el temor.",
+      "estudio_relacionado": {
+        "id": "dios-trino-2",
+        "titulo": "Dios el Padre: Soberano Creador y Padre por Gracia"
+      }
+    },
+    {
+      "id": "echad-heb",
+      "termino": "Echad",
+      "original": "אֶחָד",
+      "transliteracion": "echád",
+      "strong": "H259",
+      "idioma": "Hebreo",
+      "raiz": "Uno, único, unidad compuesta o indivisa (distinto de yachíd, que indica soledad absoluta o singularidad aislada).",
+      "significado_exegetico": "Palabra culminante del Shemá en Deuteronomio 6:4 («Oye, Israel: Jehová nuestro Dios, Jehová uno es»). Cierra toda puerta al politeísmo y al triteísmo afirmando un único Dios verdadero, pero en el hebreo bíblico echád expresa también unidad en armonía (como «una sola carne» en Génesis 2:24), dejando abierta la revelación plena del Nuevo Testamento: una sola esencia divina en tres Personas eternas.",
+      "cita": "Deuteronomio 6:4",
+      "versiculo": "«Oye, Israel: Jehová nuestro Dios, Jehová uno (echád) es.»",
+      "cristologia": "En Cristo se revela el esplendor del Shemá: el Padre, el Hijo y el Espíritu Santo no son tres dioses separados, sino el único Dios eterno (echád) cuya comunión perfecta desborda en gracia hacia los redimidos.",
+      "estudio_relacionado": {
+        "id": "dios-trino-1",
+        "titulo": "Un Solo Dios, Tres Personas"
+      }
+    },
+    {
+      "id": "ousia-gr",
+      "termino": "Ousía",
+      "original": "οὐσία",
+      "transliteracion": "ousía",
+      "strong": "G3776",
+      "idioma": "Griego",
+      "raiz": "Del participio femenino de eimí (ser, existir). Esencia, sustancia, naturaleza o aquello que define qué es un ser.",
+      "significado_exegetico": "En la teología bíblica y trinitaria clásica, ousía responde a la pregunta «¿Qué es Dios?»: una sola esencia divina, eterna, infinita e indivisible. Mientras hypóstasis responde a «¿Quién es Dios?» (Padre, Hijo y Espíritu Santo), ousía garantiza que las tres Personas poseen plenamente la misma y única naturaleza divina sin dividírsela en partes ni caer en el triteísmo.",
+      "cita": "Juan 10:30",
+      "versiculo": "«Yo y el Padre uno somos.»",
+      "cristologia": "El Hijo no es una criatura superior ni una tercera parte de Dios: es de la misma esencia (homoousios) que el Padre y el Espíritu Santo, plenamente Dios y digno de la misma adoración eterna.",
+      "estudio_relacionado": {
+        "id": "dios-trino-1",
+        "titulo": "Un Solo Dios, Tres Personas"
+      }
+    },
+    {
+      "id": "onoma-gr",
+      "termino": "Ónoma",
+      "original": "ὄνομα",
+      "transliteracion": "ónoma",
+      "strong": "G3686",
+      "idioma": "Griego",
+      "raiz": "Nombre, reputación, autoridad revelada y naturaleza personal de quien lo porta (equivalente al hebreo Shem).",
+      "significado_exegetico": "En la Gran Comisión (Mateo 28:19), Jesús ordena bautizar «en el nombre (tò ónoma, en singular) del Padre, y del Hijo, y del Espíritu Santo». El singular deliberado —no «en los nombres»— seguido por tres Personas unidas con artículo propio confirma en una sola frase la unidad de esencia divina y la igualdad absoluta de las tres Personas.",
+      "cita": "Mateo 28:19",
+      "versiculo": "«Bautizándolos en el nombre (ónoma) del Padre, y del Hijo, y del Espíritu Santo.»",
+      "cristologia": "Ser bautizados en el único Nombre trinitario significa ser incorporados por gracia a la comunión y pertenencia del Padre que nos adopta, del Hijo que nos redime y del Espíritu que nos sella.",
+      "estudio_relacionado": {
+        "id": "dios-trino-1",
+        "titulo": "Un Solo Dios, Tres Personas"
+      }
+    },
+    {
       "id": "phronimos-gr",
       "termino": "Phrónimos",
       "original": "φρόνιμος",
